@@ -34,7 +34,7 @@ namespace Menu
             // 
             // btnprueba
             // 
-            this.btnprueba.Location = new System.Drawing.Point(352, 48);
+            this.btnprueba.Location = new System.Drawing.Point(540, 186);
             this.btnprueba.Name = "btnprueba";
             this.btnprueba.Size = new System.Drawing.Size(83, 23);
             this.btnprueba.TabIndex = 0;
