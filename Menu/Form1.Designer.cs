@@ -29,13 +29,33 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnprueba = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnprueba
+            // 
+            this.btnprueba.Location = new System.Drawing.Point(453, 110);
+            this.btnprueba.Name = "btnprueba";
+            this.btnprueba.Size = new System.Drawing.Size(83, 23);
+            this.btnprueba.TabIndex = 0;
+            this.btnprueba.Text = "BotonPrueba";
+            this.btnprueba.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnprueba);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnprueba;
     }
 }
 
