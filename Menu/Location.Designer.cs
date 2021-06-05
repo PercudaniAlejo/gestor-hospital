@@ -29,65 +29,65 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblDateOfArrival = new System.Windows.Forms.Label();
+            this.dtpDateOfArrival = new System.Windows.Forms.DateTimePicker();
+            this.lblRoom = new System.Windows.Forms.Label();
+            this.lblBed = new System.Windows.Forms.Label();
+            this.txtRoom = new System.Windows.Forms.TextBox();
+            this.txtBed = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDateOfArrival
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Date Of Arrival";
+            this.lblDateOfArrival.AutoSize = true;
+            this.lblDateOfArrival.Location = new System.Drawing.Point(13, 13);
+            this.lblDateOfArrival.Name = "lblDateOfArrival";
+            this.lblDateOfArrival.Size = new System.Drawing.Size(76, 13);
+            this.lblDateOfArrival.TabIndex = 0;
+            this.lblDateOfArrival.Text = "Date Of Arrival";
             // 
-            // dateTimePicker1
+            // dtpDateOfArrival
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(96, 13);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpDateOfArrival.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateOfArrival.Location = new System.Drawing.Point(96, 13);
+            this.dtpDateOfArrival.Name = "dtpDateOfArrival";
+            this.dtpDateOfArrival.Size = new System.Drawing.Size(100, 20);
+            this.dtpDateOfArrival.TabIndex = 1;
             // 
-            // label2
+            // lblRoom
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Room";
+            this.lblRoom.AutoSize = true;
+            this.lblRoom.Location = new System.Drawing.Point(13, 40);
+            this.lblRoom.Name = "lblRoom";
+            this.lblRoom.Size = new System.Drawing.Size(35, 13);
+            this.lblRoom.TabIndex = 2;
+            this.lblRoom.Text = "Room";
             // 
-            // label3
+            // lblBed
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Bed";
+            this.lblBed.AutoSize = true;
+            this.lblBed.Location = new System.Drawing.Point(13, 67);
+            this.lblBed.Name = "lblBed";
+            this.lblBed.Size = new System.Drawing.Size(26, 13);
+            this.lblBed.TabIndex = 3;
+            this.lblBed.Text = "Bed";
             // 
-            // textBox1
+            // txtRoom
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtRoom.Location = new System.Drawing.Point(96, 40);
+            this.txtRoom.Name = "txtRoom";
+            this.txtRoom.Size = new System.Drawing.Size(100, 20);
+            this.txtRoom.TabIndex = 4;
             // 
-            // textBox2
+            // txtBed
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 67);
-            this.textBox2.MaxLength = 4;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtBed.Location = new System.Drawing.Point(96, 67);
+            this.txtBed.MaxLength = 4;
+            this.txtBed.Name = "txtBed";
+            this.txtBed.Size = new System.Drawing.Size(100, 20);
+            this.txtBed.TabIndex = 5;
             // 
             // btnConfirm
             // 
@@ -114,12 +114,12 @@ namespace Menu
             this.ClientSize = new System.Drawing.Size(213, 135);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtBed);
+            this.Controls.Add(this.txtRoom);
+            this.Controls.Add(this.lblBed);
+            this.Controls.Add(this.lblRoom);
+            this.Controls.Add(this.dtpDateOfArrival);
+            this.Controls.Add(this.lblDateOfArrival);
             this.Name = "Location";
             this.Text = "Location";
             this.ResumeLayout(false);
@@ -129,12 +129,12 @@ namespace Menu
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblDateOfArrival;
+        private System.Windows.Forms.DateTimePicker dtpDateOfArrival;
+        private System.Windows.Forms.Label lblRoom;
+        private System.Windows.Forms.Label lblBed;
+        private System.Windows.Forms.TextBox txtRoom;
+        private System.Windows.Forms.TextBox txtBed;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
     }

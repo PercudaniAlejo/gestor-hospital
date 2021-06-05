@@ -1,7 +1,7 @@
 ﻿
 namespace Menu
 {
-    partial class SpecialField
+    partial class Document
     {
         /// <summary>
         /// Required designer variable.
@@ -29,57 +29,57 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblSpeciality = new System.Windows.Forms.Label();
-            this.txtSpeciality = new System.Windows.Forms.TextBox();
+            this.lblDocumentType = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.txtDocumentType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // lblSpeciality
+            // lblDocumentType
             // 
-            this.lblSpeciality.AutoSize = true;
-            this.lblSpeciality.Location = new System.Drawing.Point(13, 13);
-            this.lblSpeciality.Name = "lblSpeciality";
-            this.lblSpeciality.Size = new System.Drawing.Size(83, 13);
-            this.lblSpeciality.TabIndex = 0;
-            this.lblSpeciality.Text = "Speciality Name";
-            // 
-            // txtSpeciality
-            // 
-            this.txtSpeciality.Location = new System.Drawing.Point(102, 10);
-            this.txtSpeciality.Name = "txtSpeciality";
-            this.txtSpeciality.Size = new System.Drawing.Size(100, 20);
-            this.txtSpeciality.TabIndex = 1;
+            this.lblDocumentType.AutoSize = true;
+            this.lblDocumentType.Location = new System.Drawing.Point(12, 9);
+            this.lblDocumentType.Name = "lblDocumentType";
+            this.lblDocumentType.Size = new System.Drawing.Size(83, 13);
+            this.lblDocumentType.TabIndex = 0;
+            this.lblDocumentType.Text = "Document Type";
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(12, 36);
+            this.btnConfirm.Location = new System.Drawing.Point(12, 47);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirm.TabIndex = 2;
+            this.btnConfirm.TabIndex = 1;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(93, 36);
+            this.btnCancel.Location = new System.Drawing.Point(93, 47);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 3;
+            this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // SpecialField
+            // txtDocumentType
+            // 
+            this.txtDocumentType.Location = new System.Drawing.Point(101, 6);
+            this.txtDocumentType.Name = "txtDocumentType";
+            this.txtDocumentType.Size = new System.Drawing.Size(100, 20);
+            this.txtDocumentType.TabIndex = 3;
+            // 
+            // Document
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(220, 67);
+            this.ClientSize = new System.Drawing.Size(206, 82);
+            this.Controls.Add(this.txtDocumentType);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.txtSpeciality);
-            this.Controls.Add(this.lblSpeciality);
-            this.Name = "SpecialField";
-            this.Text = "SpecialField";
+            this.Controls.Add(this.lblDocumentType);
+            this.Name = "Document";
+            this.Text = "Document";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,9 +87,9 @@ namespace Menu
 
         #endregion
 
-        private System.Windows.Forms.Label lblSpeciality;
-        private System.Windows.Forms.TextBox txtSpeciality;
+        private System.Windows.Forms.Label lblDocumentType;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtDocumentType;
     }
 }
