@@ -7,5 +7,6 @@ namespace Menu
 {
     public class Location
     {
+
     }
 }
