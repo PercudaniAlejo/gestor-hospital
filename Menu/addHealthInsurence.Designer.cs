@@ -47,27 +47,27 @@ namespace Menu
             // dateDueDate
             // 
             this.dateDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDueDate.Location = new System.Drawing.Point(96, 108);
+            this.dateDueDate.Location = new System.Drawing.Point(31, 141);
             this.dateDueDate.Name = "dateDueDate";
-            this.dateDueDate.Size = new System.Drawing.Size(162, 20);
+            this.dateDueDate.Size = new System.Drawing.Size(178, 20);
             this.dateDueDate.TabIndex = 27;
             // 
             // nudHealthInsurenceNum
             // 
-            this.nudHealthInsurenceNum.Location = new System.Drawing.Point(125, 145);
+            this.nudHealthInsurenceNum.Location = new System.Drawing.Point(31, 201);
             this.nudHealthInsurenceNum.Maximum = new decimal(new int[] {
             276447231,
             23283,
             0,
             0});
             this.nudHealthInsurenceNum.Name = "nudHealthInsurenceNum";
-            this.nudHealthInsurenceNum.Size = new System.Drawing.Size(133, 20);
+            this.nudHealthInsurenceNum.Size = new System.Drawing.Size(178, 20);
             this.nudHealthInsurenceNum.TabIndex = 25;
             // 
             // lblNumber
             // 
             this.lblNumber.AutoSize = true;
-            this.lblNumber.Location = new System.Drawing.Point(25, 147);
+            this.lblNumber.Location = new System.Drawing.Point(28, 185);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(44, 13);
             this.lblNumber.TabIndex = 24;
@@ -76,7 +76,7 @@ namespace Menu
             // lblDueDate
             // 
             this.lblDueDate.AutoSize = true;
-            this.lblDueDate.Location = new System.Drawing.Point(25, 108);
+            this.lblDueDate.Location = new System.Drawing.Point(28, 125);
             this.lblDueDate.Name = "lblDueDate";
             this.lblDueDate.Size = new System.Drawing.Size(56, 13);
             this.lblDueDate.TabIndex = 20;
@@ -85,7 +85,7 @@ namespace Menu
             // lblPlan
             // 
             this.lblPlan.AutoSize = true;
-            this.lblPlan.Location = new System.Drawing.Point(25, 73);
+            this.lblPlan.Location = new System.Drawing.Point(28, 70);
             this.lblPlan.Name = "lblPlan";
             this.lblPlan.Size = new System.Drawing.Size(28, 13);
             this.lblPlan.TabIndex = 19;
@@ -93,7 +93,7 @@ namespace Menu
             // 
             // txtPlan
             // 
-            this.txtPlan.Location = new System.Drawing.Point(80, 70);
+            this.txtPlan.Location = new System.Drawing.Point(31, 86);
             this.txtPlan.Name = "txtPlan";
             this.txtPlan.Size = new System.Drawing.Size(178, 20);
             this.txtPlan.TabIndex = 18;
@@ -101,7 +101,7 @@ namespace Menu
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(25, 38);
+            this.lblName.Location = new System.Drawing.Point(28, 19);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 17;
@@ -109,25 +109,26 @@ namespace Menu
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(66, 35);
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.Location = new System.Drawing.Point(31, 35);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(192, 20);
+            this.txtName.Size = new System.Drawing.Size(178, 20);
             this.txtName.TabIndex = 16;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(147, 235);
+            this.btnCancel.Location = new System.Drawing.Point(131, 301);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(111, 35);
+            this.btnCancel.Size = new System.Drawing.Size(78, 41);
             this.btnCancel.TabIndex = 29;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(16, 235);
+            this.btnConfirm.Location = new System.Drawing.Point(30, 301);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(111, 35);
+            this.btnConfirm.Size = new System.Drawing.Size(79, 41);
             this.btnConfirm.TabIndex = 28;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -135,7 +136,7 @@ namespace Menu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 185);
+            this.label1.Location = new System.Drawing.Point(28, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 31;
@@ -143,16 +144,16 @@ namespace Menu
             // 
             // txtType
             // 
-            this.txtType.Location = new System.Drawing.Point(66, 182);
+            this.txtType.Location = new System.Drawing.Point(31, 260);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(192, 20);
+            this.txtType.Size = new System.Drawing.Size(178, 20);
             this.txtType.TabIndex = 30;
             // 
             // addHealthInsurence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 299);
+            this.ClientSize = new System.Drawing.Size(240, 378);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.btnCancel);
@@ -165,8 +166,8 @@ namespace Menu
             this.Controls.Add(this.txtPlan);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
-            this.MaximumSize = new System.Drawing.Size(295, 338);
-            this.MinimumSize = new System.Drawing.Size(295, 338);
+            this.MaximumSize = new System.Drawing.Size(256, 417);
+            this.MinimumSize = new System.Drawing.Size(256, 417);
             this.Name = "addHealthInsurence";
             this.Text = "addHealthInsurence";
             ((System.ComponentModel.ISupportInitialize)(this.nudHealthInsurenceNum)).EndInit();
