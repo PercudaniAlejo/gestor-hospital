@@ -177,5 +177,8 @@
   <ItemGroup>
     <None Include="Resources\+.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Pacient.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
