@@ -97,6 +97,9 @@
     <EmbeddedResource Include="DoctorMenu.resx">
       <DependentUpon>DoctorMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewDoctor.resx">
       <DependentUpon>NewDoctor.cs</DependentUpon>
     </EmbeddedResource>
