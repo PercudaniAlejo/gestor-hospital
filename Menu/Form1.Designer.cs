@@ -1,7 +1,7 @@
 ﻿
 namespace Menu
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,33 +29,60 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnprueba = new System.Windows.Forms.Button();
+            this.btnpacient = new System.Windows.Forms.Button();
+            this.btndoctor = new System.Windows.Forms.Button();
+            this.btndoc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnprueba
+            // btnpacient
             // 
-            this.btnprueba.Location = new System.Drawing.Point(540, 186);
-            this.btnprueba.Name = "btnprueba";
-            this.btnprueba.Size = new System.Drawing.Size(83, 23);
-            this.btnprueba.TabIndex = 0;
-            this.btnprueba.Text = "BotonPrueba";
-            this.btnprueba.UseVisualStyleBackColor = true;
+            this.btnpacient.Location = new System.Drawing.Point(64, 12);
+            this.btnpacient.Name = "btnpacient";
+            this.btnpacient.Size = new System.Drawing.Size(142, 33);
+            this.btnpacient.TabIndex = 0;
+            this.btnpacient.Text = "Pacient";
+            this.btnpacient.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // btndoctor
+            // 
+            this.btndoctor.Location = new System.Drawing.Point(64, 51);
+            this.btndoctor.Name = "btndoctor";
+            this.btndoctor.Size = new System.Drawing.Size(142, 33);
+            this.btndoctor.TabIndex = 1;
+            this.btndoctor.Text = "Doctor";
+            this.btndoctor.UseVisualStyleBackColor = true;
+            // 
+            // btndoc
+            // 
+            this.btndoc.Location = new System.Drawing.Point(64, 90);
+            this.btndoc.Name = "btndoc";
+            this.btndoc.Size = new System.Drawing.Size(142, 33);
+            this.btndoc.TabIndex = 3;
+            this.btndoc.Text = "Document";
+            this.btndoc.UseVisualStyleBackColor = true;
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnprueba);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(268, 150);
+            this.Controls.Add(this.btndoc);
+            this.Controls.Add(this.btndoctor);
+            this.Controls.Add(this.btnpacient);
+            this.MaximumSize = new System.Drawing.Size(284, 189);
+            this.MinimumSize = new System.Drawing.Size(284, 189);
+            this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnprueba;
+        private System.Windows.Forms.Button btnpacient;
+        private System.Windows.Forms.Button btndoctor;
+        private System.Windows.Forms.Button btndoc;
     }
 }
 
