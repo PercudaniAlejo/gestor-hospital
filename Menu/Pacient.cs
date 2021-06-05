@@ -15,6 +15,8 @@ namespace Menu
         private int documentNumber;
         private Contact contact;
         private Document document;
+        private BloodType bloodType;
+        private HealthInsurance healthInsurance;
         private static List<Pacient> pacients = new List<Pacient>();
         #endregion
         #region Properties
@@ -25,11 +27,13 @@ namespace Menu
         public int DocumentNumber { get => documentNumber; set => documentNumber = value; }
         public Contact Contact { get => contact; set => contact = value; }
         public Document Document { get => document; set => document = value; }
+        public BloodType BloodType { get => bloodType; set => bloodType = value; }
+        public HealthInsurance HealthInsurance { get => healthInsurance; set => healthInsurance = value; }
         #endregion
         #region Methods
         public override string ToString()
         {
-            return name + "" + surname + "" + dateofBirth.ToShortDateString() + "" + gender + "" + contact + "" + document + "" + documentNumber;
+            return name + "" + surname + "" + dateofBirth.ToShortDateString() + "" + gender + "" + contact + "" + document + "" + documentNumber+""+bloodType+""+healthInsurance;
         }
 
         #endregion
@@ -43,8 +47,10 @@ namespace Menu
             documentNumber = 0;
             contact = null;
             document = null;
+            bloodType = null;
+            healthInsurance = null;
         }
-        public Pacient(string name, string surname, DateTime dateofBirth, string gender, int documentNumber, Contact contact, Document document)
+        public Pacient(string name, string surname, DateTime dateofBirth, string gender, int documentNumber, Contact contact, Document document,BloodType bloodType,HealthInsurance healthInsurance)
         {
             this.name = name;
             this.surname = surname;
@@ -53,6 +59,8 @@ namespace Menu
             this.documentNumber = documentNumber;
             this.contact = contact;
             this.document = document;
+            this.bloodType = bloodType;
+            this.healthInsurance = healthInsurance;
         }
 
         #endregion
