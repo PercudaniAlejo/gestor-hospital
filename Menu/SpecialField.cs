@@ -29,6 +29,10 @@ namespace Menu
         #endregion
 
         #region METHODS
+        public override string ToString()
+        {
+            return speciality + "";
+        }
         #endregion
     }
 }

@@ -50,6 +50,10 @@ namespace Menu
         #endregion
 
         #region METHODS
+        public override string ToString()
+        {
+            return name + "" + surname + "" + dateOfBirth.ToShortDateString() + "" + specialField + "" + documentType + "" + documentNumber;
+        }
         #endregion
 
     }

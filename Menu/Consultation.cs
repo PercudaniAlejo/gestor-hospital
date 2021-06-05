@@ -40,6 +40,10 @@ namespace Menu
         #endregion
 
         #region METHODS
+        public override string ToString()
+        {
+            return description + "" + doctor + "" + consultationDate.ToShortDateString() + "" + pacient;
+        }
         #endregion
     }
 }
