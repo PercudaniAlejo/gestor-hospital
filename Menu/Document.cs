@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Menu
 {
-    class Document
+    public class Document
     {
         #region MV
         private string doctype;
