@@ -168,5 +168,14 @@
   <ItemGroup>
     <None Include="Resources\Delete.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\+.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

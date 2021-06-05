@@ -29,11 +29,11 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorMenu));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnNewPacient = new System.Windows.Forms.Button();
             this.lblFilterDoc = new System.Windows.Forms.TextBox();
             this.btnFilterDoc = new System.Windows.Forms.Button();
-            this.lblSearch = new System.Windows.Forms.Label();
+            this.btnNewPacient = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,15 +45,6 @@ namespace Menu
             this.dataGridView1.Size = new System.Drawing.Size(520, 318);
             this.dataGridView1.TabIndex = 3;
             // 
-            // btnNewPacient
-            // 
-            this.btnNewPacient.Location = new System.Drawing.Point(434, 396);
-            this.btnNewPacient.Name = "btnNewPacient";
-            this.btnNewPacient.Size = new System.Drawing.Size(100, 23);
-            this.btnNewPacient.TabIndex = 2;
-            this.btnNewPacient.Text = "New Doctor";
-            this.btnNewPacient.UseVisualStyleBackColor = true;
-            // 
             // lblFilterDoc
             // 
             this.lblFilterDoc.Location = new System.Drawing.Point(121, 22);
@@ -63,32 +54,42 @@ namespace Menu
             // 
             // btnFilterDoc
             // 
-            this.btnFilterDoc.Location = new System.Drawing.Point(411, 21);
+            this.btnFilterDoc.BackColor = System.Drawing.Color.Transparent;
+            this.btnFilterDoc.BackgroundImage = global::Menu.Properties.Resources.Search;
+            this.btnFilterDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterDoc.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFilterDoc.FlatAppearance.BorderSize = 0;
+            this.btnFilterDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilterDoc.Location = new System.Drawing.Point(398, 19);
             this.btnFilterDoc.Name = "btnFilterDoc";
-            this.btnFilterDoc.Size = new System.Drawing.Size(45, 21);
+            this.btnFilterDoc.Size = new System.Drawing.Size(25, 25);
             this.btnFilterDoc.TabIndex = 5;
-            this.btnFilterDoc.Text = "OK";
-            this.btnFilterDoc.UseVisualStyleBackColor = true;
+            this.btnFilterDoc.UseVisualStyleBackColor = false;
             // 
-            // lblSearch
+            // btnNewPacient
             // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(64, 25);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(41, 13);
-            this.lblSearch.TabIndex = 6;
-            this.lblSearch.Text = "Search";
+            this.btnNewPacient.BackColor = System.Drawing.Color.Transparent;
+            this.btnNewPacient.BackgroundImage = global::Menu.Properties.Resources._;
+            this.btnNewPacient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewPacient.FlatAppearance.BorderSize = 0;
+            this.btnNewPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewPacient.Location = new System.Drawing.Point(480, 395);
+            this.btnNewPacient.Name = "btnNewPacient";
+            this.btnNewPacient.Size = new System.Drawing.Size(30, 30);
+            this.btnNewPacient.TabIndex = 2;
+            this.btnNewPacient.UseVisualStyleBackColor = false;
             // 
             // DoctorMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(546, 437);
-            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnFilterDoc);
             this.Controls.Add(this.lblFilterDoc);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnNewPacient);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DoctorMenu";
             this.Text = "DoctorMenu";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -103,6 +104,5 @@ namespace Menu
         private System.Windows.Forms.Button btnNewPacient;
         private System.Windows.Forms.TextBox lblFilterDoc;
         private System.Windows.Forms.Button btnFilterDoc;
-        private System.Windows.Forms.Label lblSearch;
     }
 }
