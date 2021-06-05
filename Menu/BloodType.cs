@@ -8,32 +8,26 @@ namespace Menu
     public class BloodType
     {
         #region Var
-        private string assignedbed;
-        private DateTime dateofarrival;
-        private string room;
-        private static List<BloodType> bloodtypes = new List<BloodType>();
+        private string btype;
+        private static List<BloodType> btypes = new List<BloodType>();
         #endregion
 
         #region Properties
-        public string Assignedbed { get => assignedbed; set => assignedbed = value; }
-        public DateTime Dateofarrival { get => dateofarrival; set => dateofarrival = value; }
-        public string Room { get => room; set => room = value; }
-        public static List<BloodType> Bloodtypes { get => bloodtypes; set => bloodtypes = value; }
+        public string Btype { get => btype; set => btype = value; }
+        public static List<BloodType> Btypes { get => btypes; set => btypes = value; }
         #endregion
 
-        #region Methods
+        #region methods
         public override string ToString()
         {
-            return assignedbed + " " + dateofarrival.ToShortDateString() + " " + room;
+            return btype;
         }
         #endregion
 
-        #region Builders
+        #region builders
         public BloodType()
         {
-            assignedbed = "Default";
-            dateofarrival = new DateTime(2021,1,1);
-            room = "Default";
+            btype = "default";
         }
         #endregion
     }
