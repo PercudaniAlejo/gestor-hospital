@@ -100,11 +100,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SpecialField.cs">
+    <Compile Include="formSpecialField.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SpecialField.Designer.cs">
-      <DependentUpon>SpecialField.cs</DependentUpon>
+    <Compile Include="formSpecialField.Designer.cs">
+      <DependentUpon>formSpecialField.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="addContact.resx">
       <DependentUpon>addContact.cs</DependentUpon>
@@ -143,8 +143,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SpecialField.resx">
-      <DependentUpon>SpecialField.cs</DependentUpon>
+    <EmbeddedResource Include="formSpecialField.resx">
+      <DependentUpon>formSpecialField.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

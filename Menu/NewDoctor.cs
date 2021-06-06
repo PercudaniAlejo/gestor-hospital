@@ -29,7 +29,7 @@ namespace Menu
             if (obj == null){
 
                 Doctor newDoc = new Doctor(txtName.Text, txtSurname.Text, (int)nudDocumentNum.Value,
-                                            cmbDocumentType.SelectedItem as formDocument,
+                                            cmbDocumentType.SelectedItem as Document,
                                             cmbSpecialField.SelectedItem as SpecialField, dateDateOfBirth.Value);
                 Doctor.Doctors.Add(newDoc);
             }

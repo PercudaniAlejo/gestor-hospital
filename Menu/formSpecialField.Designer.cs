@@ -1,7 +1,7 @@
 ﻿
 namespace Menu
 {
-    partial class SpecialField
+    partial class formSpecialField
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpecialField));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSpecialField));
             this.lblSpeciality = new System.Windows.Forms.Label();
             this.txtSpeciality = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -65,6 +65,7 @@ namespace Menu
             this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
@@ -81,8 +82,9 @@ namespace Menu
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 2;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // SpecialField
+            // formSpecialField
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,7 +96,7 @@ namespace Menu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(236, 111);
             this.MinimumSize = new System.Drawing.Size(236, 111);
-            this.Name = "SpecialField";
+            this.Name = "formSpecialField";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SpecialField";
             this.ResumeLayout(false);
