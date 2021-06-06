@@ -15,5 +15,24 @@ namespace Menu
         {
             InitializeComponent();
         }
+        #region events
+     private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Clean();
+        }
+        #endregion
+   
+        #region functions
+        private void Clean()
+        {
+            txtName.Text = "";
+            txtPlan.Text = "";
+            txtType.Text = "";
+            dateDueDate.Value = new DateTime(2021, 1, 1);
+            nudHealthInsurenceNum.Value = 0;
+            
+        }
+        #endregion
+
     }
 }

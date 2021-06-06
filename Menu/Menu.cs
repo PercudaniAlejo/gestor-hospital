@@ -15,6 +15,18 @@ namespace Menu
         public Menu()
         {
             InitializeComponent();
+
+            #region BloodTypesload
+            BloodType.Btypes.Add(new BloodType("A+"));
+            BloodType.Btypes.Add(new BloodType("A-"));
+            BloodType.Btypes.Add(new BloodType("B+"));
+            BloodType.Btypes.Add(new BloodType("B-"));
+            BloodType.Btypes.Add(new BloodType("AB+"));
+            BloodType.Btypes.Add(new BloodType("AB-"));
+            BloodType.Btypes.Add(new BloodType("O+"));
+            BloodType.Btypes.Add(new BloodType("O-"));
+            #endregion
+
         }
         private void btnPacient_Click(object sender, EventArgs e)
         {
