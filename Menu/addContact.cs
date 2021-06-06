@@ -39,7 +39,7 @@ namespace Menu
         {
             if (c == null)
             {
-                Contact contact = new Contact(txtEmail.Text, (int)nudNP.Value, checkBoxMother.Text, (int)nudNP2.Value);
+                Contact contact = new Contact(txtEmail.Text, (int)nudNP.Value, (int)nudNP2.Value, checkBoxMother.Checked, checkBoxFather.Checked, checkBoxTutor.Checked);//no anda 
                 Contact.Contacts.Add(contact);
             }
             else
@@ -49,26 +49,6 @@ namespace Menu
                 c.TutorsPhone = (int)nudNP2.Value;
 
             }
-
-        }
-        private void ValidateCHK()
-        {
-            if (checkBoxMother.Checked==true)
-            {
-                checkBoxFather.Checked = false;
-                checkBoxTutor.Checked = false;
-            }
-            else if (checkBoxFather.Checked==true)
-            {
-                checkBoxMother.Checked = false;
-                checkBoxTutor.Checked = false;
-            }
-            else 
-            {
-                checkBoxMother.Checked = false;
-                checkBoxFather.Checked = false;
-            }
-
 
         }
         private void Clean()
@@ -83,20 +63,32 @@ namespace Menu
 
         private void checkBoxMother_CheckedChanged(object sender, EventArgs e)
         {
-            ValidateCHK();
-            Clean();
+            if (checkBoxMother.Checked)
+            {
+                checkBoxFather.Checked = false;
+                checkBoxTutor.Checked = false;
+            }
+
         }
 
         private void checkBoxFather_CheckedChanged(object sender, EventArgs e)
         {
-            ValidateCHK();
-            Clean();
+            if (checkBoxFather.Checked)
+            {
+                checkBoxMother.Checked = false;
+                checkBoxTutor.Checked = false;
+            }
+
         }
 
         private void checkBoxTutor_CheckedChanged(object sender, EventArgs e)
         {
-            ValidateCHK();
-            Clean();
+            if (checkBoxTutor.Checked)
+            {
+                checkBoxFather.Checked = false;
+                checkBoxMother.Checked = false;
+            }
+
         }
     }
 }
