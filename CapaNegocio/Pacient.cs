@@ -20,6 +20,7 @@ namespace CapaNegocio
         private Location location;
         private static List<Pacient> pacients = new List<Pacient>();
         #endregion
+
         #region Properties
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
@@ -32,6 +33,7 @@ namespace CapaNegocio
         public HealthInsurance HealthInsurance { get => healthInsurance; set => healthInsurance = value; }
         public Location Location { get => location; set => location = value; }
         #endregion
+
         #region Methods
         public override string ToString()
         {
@@ -39,6 +41,7 @@ namespace CapaNegocio
         }
 
         #endregion
+
         #region Builders
         public Pacient()
         {
