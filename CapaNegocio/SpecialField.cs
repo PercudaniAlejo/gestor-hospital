@@ -15,7 +15,7 @@ namespace CapaNegocio
 
         #region PROPERTIES
         public string Speciality { get => speciality; set => speciality = value; }
-        internal static List<SpecialField> Specialities { get => specialities; set => specialities = value; }
+        public static List<SpecialField> Specialities { get => specialities; set => specialities = value; }
         #endregion
 
         #region BUILDERS

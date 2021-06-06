@@ -7,17 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CapaNegocio;
-
 namespace Menu
 {
-    public partial class formDocument : Form
+    public partial class formSpecialField : Form
     {
-        Document obj;
+        SpecialField obj;
         #region EVENTS
-        public formDocument()
+        public formSpecialField()
         {
             InitializeComponent();
         }
+
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             Save();
@@ -25,28 +25,27 @@ namespace Menu
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
         #endregion
-
 
         #region METHODS
         private void Save()
         {
             if (obj == null)
             {
-                Document newDocument = new Document(txtDocumentType.Text);
-                Document.DocTypes.Add(newDocument);
+                SpecialField newSpeacility = new SpecialField(txtSpeciality.Text);
+                SpecialField.Specialities.Add(newSpeacility);
             }
-            else{
-                obj.Doctype = txtDocumentType.Text;
+            else {
+                obj.Speciality = txtSpeciality.Text;
             }
         }
-        private void Clear() {
-            txtDocumentType.Text = "";
+        private void Clear()
+        {
+            txtSpeciality.Text = "";
         }
 
         #endregion
-
     }
 }
