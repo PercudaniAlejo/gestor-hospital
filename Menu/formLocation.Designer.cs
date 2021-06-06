@@ -1,7 +1,7 @@
 ﻿
 namespace Menu
 {
-    partial class Location
+    partial class formLocation
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Location));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLocation));
             this.lblDateOfArrival = new System.Windows.Forms.Label();
             this.dtpDateOfArrival = new System.Windows.Forms.DateTimePicker();
             this.lblRoom = new System.Windows.Forms.Label();
@@ -117,8 +117,9 @@ namespace Menu
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 6;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // Location
+            // formLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +135,7 @@ namespace Menu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(229, 174);
             this.MinimumSize = new System.Drawing.Size(229, 174);
-            this.Name = "Location";
+            this.Name = "formLocation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Location";
             this.ResumeLayout(false);

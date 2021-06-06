@@ -68,11 +68,11 @@
     <Compile Include="formDocument.Designer.cs">
       <DependentUpon>formDocument.cs</DependentUpon>
     </Compile>
-    <Compile Include="Location.cs">
+    <Compile Include="formLocation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Location.Designer.cs">
-      <DependentUpon>Location.cs</DependentUpon>
+    <Compile Include="formLocation.Designer.cs">
+      <DependentUpon>formLocation.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -118,8 +118,8 @@
     <EmbeddedResource Include="formDocument.resx">
       <DependentUpon>formDocument.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Location.resx">
-      <DependentUpon>Location.cs</DependentUpon>
+    <EmbeddedResource Include="formLocation.resx">
+      <DependentUpon>formLocation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
