@@ -53,12 +53,12 @@ namespace Menu
         }
         private void ValidateCHK()
         {
-            if (checkBoxMother.Checked)
+            if (checkBoxMother.Checked==true)
             {
                 checkBoxFather.Checked = false;
                 checkBoxTutor.Checked = false;
             }
-            else if (checkBoxFather.Checked)
+            else if (checkBoxFather.Checked==true)
             {
                 checkBoxMother.Checked = false;
                 checkBoxTutor.Checked = false;
