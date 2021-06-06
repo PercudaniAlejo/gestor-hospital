@@ -15,5 +15,22 @@ namespace Menu
         {
             InitializeComponent();
         }
+        private void btnPacient_Click(object sender, EventArgs e)
+        {
+            PacientMenu f = new PacientMenu();
+            f.ShowDialog();
+        }
+
+        private void btnDocument_Click(object sender, EventArgs e)
+        {
+            Document f = new Document();
+            f.ShowDialog();
+        }
+
+        private void btnDoctor_Click(object sender, EventArgs e)
+        {
+            DoctorMenu f = new DoctorMenu();
+            f.ShowDialog();
+        }
     }
 }

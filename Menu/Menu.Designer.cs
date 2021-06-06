@@ -44,6 +44,7 @@ namespace Menu
             this.btnPacient.TabIndex = 0;
             this.btnPacient.Text = "Pacient";
             this.btnPacient.UseVisualStyleBackColor = true;
+            this.btnPacient.Click += new System.EventHandler(this.btnPacient_Click);
             // 
             // btnDoctor
             // 
@@ -54,6 +55,7 @@ namespace Menu
             this.btnDoctor.TabIndex = 1;
             this.btnDoctor.Text = "Doctor";
             this.btnDoctor.UseVisualStyleBackColor = true;
+            this.btnDoctor.Click += new System.EventHandler(this.btnDoctor_Click);
             // 
             // btnDocument
             // 
@@ -64,6 +66,7 @@ namespace Menu
             this.btnDocument.TabIndex = 2;
             this.btnDocument.Text = "Document";
             this.btnDocument.UseVisualStyleBackColor = true;
+            this.btnDocument.Click += new System.EventHandler(this.btnDocument_Click);
             // 
             // Menu
             // 

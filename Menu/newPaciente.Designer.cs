@@ -54,7 +54,7 @@ namespace Menu
             // 
             this.txtName.Location = new System.Drawing.Point(15, 25);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(192, 20);
+            this.txtName.Size = new System.Drawing.Size(221, 20);
             this.txtName.TabIndex = 0;
             // 
             // lblName
@@ -79,7 +79,7 @@ namespace Menu
             // 
             this.txtSurname.Location = new System.Drawing.Point(15, 64);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(192, 20);
+            this.txtSurname.Size = new System.Drawing.Size(221, 20);
             this.txtSurname.TabIndex = 2;
             // 
             // lbl
@@ -105,7 +105,7 @@ namespace Menu
             this.cmbBloodType.FormattingEnabled = true;
             this.cmbBloodType.Location = new System.Drawing.Point(15, 142);
             this.cmbBloodType.Name = "cmbBloodType";
-            this.cmbBloodType.Size = new System.Drawing.Size(192, 21);
+            this.cmbBloodType.Size = new System.Drawing.Size(221, 21);
             this.cmbBloodType.TabIndex = 8;
             // 
             // lblDocumentType
@@ -126,7 +126,7 @@ namespace Menu
             0,
             0});
             this.nudDocumentNum.Name = "nudDocumentNum";
-            this.nudDocumentNum.Size = new System.Drawing.Size(192, 20);
+            this.nudDocumentNum.Size = new System.Drawing.Size(221, 20);
             this.nudDocumentNum.TabIndex = 13;
             // 
             // lblDocumentNumber
@@ -143,7 +143,7 @@ namespace Menu
             this.cmbDocumentType.FormattingEnabled = true;
             this.cmbDocumentType.Location = new System.Drawing.Point(15, 182);
             this.cmbDocumentType.Name = "cmbDocumentType";
-            this.cmbDocumentType.Size = new System.Drawing.Size(192, 21);
+            this.cmbDocumentType.Size = new System.Drawing.Size(221, 21);
             this.cmbDocumentType.TabIndex = 14;
             // 
             // dateDateOfBirth
@@ -151,7 +151,7 @@ namespace Menu
             this.dateDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDateOfBirth.Location = new System.Drawing.Point(15, 103);
             this.dateDateOfBirth.Name = "dateDateOfBirth";
-            this.dateDateOfBirth.Size = new System.Drawing.Size(192, 20);
+            this.dateDateOfBirth.Size = new System.Drawing.Size(221, 20);
             this.dateDateOfBirth.TabIndex = 15;
             // 
             // btnocationPacient
@@ -171,7 +171,7 @@ namespace Menu
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(67, 345);
+            this.btnCancel.Location = new System.Drawing.Point(206, 347);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 20;
@@ -185,7 +185,7 @@ namespace Menu
             this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirm.FlatAppearance.BorderSize = 0;
             this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirm.Location = new System.Drawing.Point(15, 345);
+            this.btnConfirm.Location = new System.Drawing.Point(154, 347);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 19;
