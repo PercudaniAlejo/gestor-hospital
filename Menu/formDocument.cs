@@ -12,7 +12,7 @@ namespace Menu
 {
     public partial class formDocument : Form
     {
-        formDocument obj;
+        Document obj;
         #region EVENTS
         public formDocument()
         {
@@ -35,11 +35,11 @@ namespace Menu
         {
             if (obj == null)
             {
-                formDocument newDocument = new Document(txtDocumentType.Text);
-                formDocument.DocTypes.Add(newDocument);
+                Document newDocument = new Document(txtDocumentType.Text);
+                Document.DocTypes.Add(newDocument);
             }
             else{
-                obj.doctype = txtDocumentType.Text;
+                obj.Doctype = txtDocumentType.Text;
             }
         }
         private void Clear() {
