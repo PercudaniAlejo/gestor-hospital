@@ -29,8 +29,8 @@ namespace Menu
         }
         private void btnfield_Click(object sender, EventArgs e)
         {
-            formSpecialField f = new formSpecialField();
-            f.ShowDialog();
+            formSpecialField formSF = new formSpecialField();
+            formSF.ShowDialog();
             cmbSpecialField.DataSource = null;
             cmbSpecialField.DataSource = SpecialField.Specialities;
         }

@@ -54,6 +54,12 @@ namespace CapaNegocio
         {
             return name + "" + surname + "" + dateOfBirth.ToShortDateString() + "" + specialField + "" + documentType + "" + documentNumber;
         }
+        public static bool Delete(Doctor newDoc)
+        {
+            if (doctors != null && doctors.Count() > 0)
+                return doctors.Remove(newDoc);
+            return false;
+        }
         #endregion
 
     }

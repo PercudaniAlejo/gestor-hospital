@@ -97,6 +97,7 @@ namespace Menu
             this.btndeletedoc.Size = new System.Drawing.Size(30, 30);
             this.btndeletedoc.TabIndex = 12;
             this.btndeletedoc.UseVisualStyleBackColor = false;
+            this.btndeletedoc.Click += new System.EventHandler(this.btndeletedoc_Click);
             // 
             // btneditdoc
             // 
