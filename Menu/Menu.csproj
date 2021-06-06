@@ -180,5 +180,11 @@
   <ItemGroup>
     <None Include="Resources\Add Pacient.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono contacto.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OS.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

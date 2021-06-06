@@ -29,10 +29,11 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Document));
             this.lblDocumentType = new System.Windows.Forms.Label();
-            this.btnConfirm = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.txtDocumentType = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDocumentType
@@ -44,30 +45,40 @@ namespace Menu
             this.lblDocumentType.TabIndex = 0;
             this.lblDocumentType.Text = "Document Type";
             // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(12, 47);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirm.TabIndex = 1;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(93, 47);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
             // txtDocumentType
             // 
             this.txtDocumentType.Location = new System.Drawing.Point(101, 6);
             this.txtDocumentType.Name = "txtDocumentType";
             this.txtDocumentType.Size = new System.Drawing.Size(100, 20);
             this.txtDocumentType.TabIndex = 3;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(65, 40);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(30, 30);
+            this.btnCancel.TabIndex = 2;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Location = new System.Drawing.Point(15, 40);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(30, 30);
+            this.btnConfirm.TabIndex = 1;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             // 
             // Document
             // 
@@ -78,7 +89,11 @@ namespace Menu
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblDocumentType);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(222, 121);
+            this.MinimumSize = new System.Drawing.Size(222, 121);
             this.Name = "Document";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Document";
             this.ResumeLayout(false);
             this.PerformLayout();

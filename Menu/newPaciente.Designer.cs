@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newPaciente));
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
@@ -41,17 +42,17 @@ namespace Menu
             this.lblDocumentNumber = new System.Windows.Forms.Label();
             this.cmbDocumentType = new System.Windows.Forms.ComboBox();
             this.dateDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.btnAddContact = new System.Windows.Forms.Button();
-            this.btnHealtInsurence = new System.Windows.Forms.Button();
             this.btnocationPacient = new System.Windows.Forms.Button();
-            this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnHealtInsurence = new System.Windows.Forms.Button();
+            this.btnAddContact = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(66, 27);
+            this.txtName.Location = new System.Drawing.Point(15, 25);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(192, 20);
             this.txtName.TabIndex = 0;
@@ -59,7 +60,7 @@ namespace Menu
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(25, 30);
+            this.lblName.Location = new System.Drawing.Point(12, 9);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 1;
@@ -68,7 +69,7 @@ namespace Menu
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(25, 65);
+            this.lblSurname.Location = new System.Drawing.Point(12, 48);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(49, 13);
             this.lblSurname.TabIndex = 3;
@@ -76,15 +77,15 @@ namespace Menu
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(80, 62);
+            this.txtSurname.Location = new System.Drawing.Point(15, 64);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(178, 20);
+            this.txtSurname.Size = new System.Drawing.Size(192, 20);
             this.txtSurname.TabIndex = 2;
             // 
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(25, 100);
+            this.lbl.Location = new System.Drawing.Point(12, 87);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(65, 13);
             this.lbl.TabIndex = 5;
@@ -93,7 +94,7 @@ namespace Menu
             // lblBloodType
             // 
             this.lblBloodType.AutoSize = true;
-            this.lblBloodType.Location = new System.Drawing.Point(25, 133);
+            this.lblBloodType.Location = new System.Drawing.Point(12, 126);
             this.lblBloodType.Name = "lblBloodType";
             this.lblBloodType.Size = new System.Drawing.Size(57, 13);
             this.lblBloodType.TabIndex = 7;
@@ -102,15 +103,15 @@ namespace Menu
             // cmbBloodType
             // 
             this.cmbBloodType.FormattingEnabled = true;
-            this.cmbBloodType.Location = new System.Drawing.Point(97, 130);
+            this.cmbBloodType.Location = new System.Drawing.Point(15, 142);
             this.cmbBloodType.Name = "cmbBloodType";
-            this.cmbBloodType.Size = new System.Drawing.Size(161, 21);
+            this.cmbBloodType.Size = new System.Drawing.Size(192, 21);
             this.cmbBloodType.TabIndex = 8;
             // 
             // lblDocumentType
             // 
             this.lblDocumentType.AutoSize = true;
-            this.lblDocumentType.Location = new System.Drawing.Point(25, 172);
+            this.lblDocumentType.Location = new System.Drawing.Point(12, 166);
             this.lblDocumentType.Name = "lblDocumentType";
             this.lblDocumentType.Size = new System.Drawing.Size(79, 13);
             this.lblDocumentType.TabIndex = 10;
@@ -118,20 +119,20 @@ namespace Menu
             // 
             // nudDocumentNum
             // 
-            this.nudDocumentNum.Location = new System.Drawing.Point(125, 207);
+            this.nudDocumentNum.Location = new System.Drawing.Point(15, 222);
             this.nudDocumentNum.Maximum = new decimal(new int[] {
             276447231,
             23283,
             0,
             0});
             this.nudDocumentNum.Name = "nudDocumentNum";
-            this.nudDocumentNum.Size = new System.Drawing.Size(133, 20);
+            this.nudDocumentNum.Size = new System.Drawing.Size(192, 20);
             this.nudDocumentNum.TabIndex = 13;
             // 
             // lblDocumentNumber
             // 
             this.lblDocumentNumber.AutoSize = true;
-            this.lblDocumentNumber.Location = new System.Drawing.Point(25, 209);
+            this.lblDocumentNumber.Location = new System.Drawing.Point(12, 206);
             this.lblDocumentNumber.Name = "lblDocumentNumber";
             this.lblDocumentNumber.Size = new System.Drawing.Size(94, 13);
             this.lblDocumentNumber.TabIndex = 12;
@@ -140,69 +141,79 @@ namespace Menu
             // cmbDocumentType
             // 
             this.cmbDocumentType.FormattingEnabled = true;
-            this.cmbDocumentType.Location = new System.Drawing.Point(110, 172);
+            this.cmbDocumentType.Location = new System.Drawing.Point(15, 182);
             this.cmbDocumentType.Name = "cmbDocumentType";
-            this.cmbDocumentType.Size = new System.Drawing.Size(148, 21);
+            this.cmbDocumentType.Size = new System.Drawing.Size(192, 21);
             this.cmbDocumentType.TabIndex = 14;
             // 
             // dateDateOfBirth
             // 
             this.dateDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDateOfBirth.Location = new System.Drawing.Point(96, 100);
+            this.dateDateOfBirth.Location = new System.Drawing.Point(15, 103);
             this.dateDateOfBirth.Name = "dateDateOfBirth";
-            this.dateDateOfBirth.Size = new System.Drawing.Size(162, 20);
+            this.dateDateOfBirth.Size = new System.Drawing.Size(192, 20);
             this.dateDateOfBirth.TabIndex = 15;
-            // 
-            // btnAddContact
-            // 
-            this.btnAddContact.Location = new System.Drawing.Point(28, 245);
-            this.btnAddContact.Name = "btnAddContact";
-            this.btnAddContact.Size = new System.Drawing.Size(92, 29);
-            this.btnAddContact.TabIndex = 16;
-            this.btnAddContact.Text = "Add contact";
-            this.btnAddContact.UseVisualStyleBackColor = true;
-            // 
-            // btnHealtInsurence
-            // 
-            this.btnHealtInsurence.Location = new System.Drawing.Point(138, 245);
-            this.btnHealtInsurence.Name = "btnHealtInsurence";
-            this.btnHealtInsurence.Size = new System.Drawing.Size(120, 29);
-            this.btnHealtInsurence.TabIndex = 17;
-            this.btnHealtInsurence.Text = "Add Healt Insurence";
-            this.btnHealtInsurence.UseVisualStyleBackColor = true;
             // 
             // btnocationPacient
             // 
-            this.btnocationPacient.Location = new System.Drawing.Point(66, 292);
+            this.btnocationPacient.Location = new System.Drawing.Point(52, 292);
             this.btnocationPacient.Name = "btnocationPacient";
             this.btnocationPacient.Size = new System.Drawing.Size(126, 29);
             this.btnocationPacient.TabIndex = 18;
             this.btnocationPacient.Text = "Add Location Pacient";
             this.btnocationPacient.UseVisualStyleBackColor = true;
             // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(28, 366);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(111, 35);
-            this.btnConfirm.TabIndex = 19;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(147, 366);
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(67, 345);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(111, 35);
+            this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 20;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Location = new System.Drawing.Point(15, 345);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(30, 30);
+            this.btnConfirm.TabIndex = 19;
+            this.btnConfirm.UseVisualStyleBackColor = false;
+            // 
+            // btnHealtInsurence
+            // 
+            this.btnHealtInsurence.Location = new System.Drawing.Point(116, 257);
+            this.btnHealtInsurence.Name = "btnHealtInsurence";
+            this.btnHealtInsurence.Size = new System.Drawing.Size(120, 29);
+            this.btnHealtInsurence.TabIndex = 17;
+            this.btnHealtInsurence.Text = "Add Healt Insurence";
+            this.btnHealtInsurence.UseVisualStyleBackColor = true;
+            // 
+            // btnAddContact
+            // 
+            this.btnAddContact.Location = new System.Drawing.Point(18, 257);
+            this.btnAddContact.Name = "btnAddContact";
+            this.btnAddContact.Size = new System.Drawing.Size(92, 29);
+            this.btnAddContact.TabIndex = 16;
+            this.btnAddContact.Text = "Add contact";
+            this.btnAddContact.UseVisualStyleBackColor = true;
             // 
             // newPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 450);
+            this.ClientSize = new System.Drawing.Size(248, 389);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnocationPacient);
@@ -220,10 +231,12 @@ namespace Menu
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
-            this.MaximumSize = new System.Drawing.Size(297, 489);
-            this.MinimumSize = new System.Drawing.Size(297, 489);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(264, 428);
+            this.MinimumSize = new System.Drawing.Size(264, 428);
             this.Name = "newPaciente";
-            this.Text = "newPaciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "New Pacient";
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -57,6 +57,7 @@ namespace Menu
             this.btnFilterPacient.BackColor = System.Drawing.Color.Transparent;
             this.btnFilterPacient.BackgroundImage = global::Menu.Properties.Resources.Search;
             this.btnFilterPacient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterPacient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFilterPacient.FlatAppearance.BorderSize = 0;
             this.btnFilterPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFilterPacient.Location = new System.Drawing.Point(398, 25);
@@ -70,6 +71,7 @@ namespace Menu
             this.btnNewPacient.BackColor = System.Drawing.Color.Transparent;
             this.btnNewPacient.BackgroundImage = global::Menu.Properties.Resources.Add_Pacient;
             this.btnNewPacient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewPacient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewPacient.FlatAppearance.BorderSize = 0;
             this.btnNewPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewPacient.Location = new System.Drawing.Point(470, 370);

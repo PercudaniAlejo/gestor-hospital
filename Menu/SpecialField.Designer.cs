@@ -29,10 +29,11 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpecialField));
             this.lblSpeciality = new System.Windows.Forms.Label();
             this.txtSpeciality = new System.Windows.Forms.TextBox();
-            this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSpeciality
@@ -51,34 +52,50 @@ namespace Menu
             this.txtSpeciality.Size = new System.Drawing.Size(100, 20);
             this.txtSpeciality.TabIndex = 1;
             // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(12, 36);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirm.TabIndex = 2;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(93, 36);
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(66, 36);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Location = new System.Drawing.Point(16, 36);
+            this.btnConfirm.MaximumSize = new System.Drawing.Size(30, 30);
+            this.btnConfirm.MinimumSize = new System.Drawing.Size(30, 30);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(30, 30);
+            this.btnConfirm.TabIndex = 2;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             // 
             // SpecialField
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(220, 67);
+            this.ClientSize = new System.Drawing.Size(220, 72);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.txtSpeciality);
             this.Controls.Add(this.lblSpeciality);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(236, 111);
+            this.MinimumSize = new System.Drawing.Size(236, 111);
             this.Name = "SpecialField";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SpecialField";
             this.ResumeLayout(false);
             this.PerformLayout();

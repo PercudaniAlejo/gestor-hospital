@@ -57,6 +57,7 @@ namespace Menu
             this.btnFilterDoc.BackColor = System.Drawing.Color.Transparent;
             this.btnFilterDoc.BackgroundImage = global::Menu.Properties.Resources.Search;
             this.btnFilterDoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterDoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFilterDoc.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnFilterDoc.FlatAppearance.BorderSize = 0;
             this.btnFilterDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -71,6 +72,7 @@ namespace Menu
             this.btnNewPacient.BackColor = System.Drawing.Color.Transparent;
             this.btnNewPacient.BackgroundImage = global::Menu.Properties.Resources._;
             this.btnNewPacient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewPacient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewPacient.FlatAppearance.BorderSize = 0;
             this.btnNewPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewPacient.Location = new System.Drawing.Point(480, 395);
@@ -91,6 +93,7 @@ namespace Menu
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DoctorMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoctorMenu";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

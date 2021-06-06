@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewDoctor));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.dateDateOfBirth = new System.Windows.Forms.DateTimePicker();
@@ -48,54 +49,64 @@ namespace Menu
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(149, 245);
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(61, 250);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(111, 35);
+            this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 37;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(30, 245);
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Location = new System.Drawing.Point(15, 250);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(111, 35);
+            this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 36;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             // 
             // dateDateOfBirth
             // 
             this.dateDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDateOfBirth.Location = new System.Drawing.Point(98, 98);
+            this.dateDateOfBirth.Location = new System.Drawing.Point(15, 103);
             this.dateDateOfBirth.Name = "dateDateOfBirth";
-            this.dateDateOfBirth.Size = new System.Drawing.Size(162, 20);
+            this.dateDateOfBirth.Size = new System.Drawing.Size(192, 20);
             this.dateDateOfBirth.TabIndex = 32;
             // 
             // cmbDocumentType
             // 
             this.cmbDocumentType.FormattingEnabled = true;
-            this.cmbDocumentType.Location = new System.Drawing.Point(112, 130);
+            this.cmbDocumentType.Location = new System.Drawing.Point(15, 138);
             this.cmbDocumentType.Name = "cmbDocumentType";
-            this.cmbDocumentType.Size = new System.Drawing.Size(148, 21);
+            this.cmbDocumentType.Size = new System.Drawing.Size(192, 21);
             this.cmbDocumentType.TabIndex = 31;
             // 
             // nudDocumentNum
             // 
-            this.nudDocumentNum.Location = new System.Drawing.Point(127, 165);
+            this.nudDocumentNum.Location = new System.Drawing.Point(15, 175);
             this.nudDocumentNum.Maximum = new decimal(new int[] {
             276447231,
             23283,
             0,
             0});
             this.nudDocumentNum.Name = "nudDocumentNum";
-            this.nudDocumentNum.Size = new System.Drawing.Size(133, 20);
+            this.nudDocumentNum.Size = new System.Drawing.Size(192, 20);
             this.nudDocumentNum.TabIndex = 30;
             // 
             // lblDocumentNumber
             // 
             this.lblDocumentNumber.AutoSize = true;
-            this.lblDocumentNumber.Location = new System.Drawing.Point(27, 167);
+            this.lblDocumentNumber.Location = new System.Drawing.Point(12, 162);
             this.lblDocumentNumber.Name = "lblDocumentNumber";
             this.lblDocumentNumber.Size = new System.Drawing.Size(94, 13);
             this.lblDocumentNumber.TabIndex = 29;
@@ -104,7 +115,7 @@ namespace Menu
             // lblDocumentType
             // 
             this.lblDocumentType.AutoSize = true;
-            this.lblDocumentType.Location = new System.Drawing.Point(27, 130);
+            this.lblDocumentType.Location = new System.Drawing.Point(12, 126);
             this.lblDocumentType.Name = "lblDocumentType";
             this.lblDocumentType.Size = new System.Drawing.Size(79, 13);
             this.lblDocumentType.TabIndex = 28;
@@ -113,7 +124,7 @@ namespace Menu
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(27, 98);
+            this.lbl.Location = new System.Drawing.Point(12, 87);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(65, 13);
             this.lbl.TabIndex = 25;
@@ -122,7 +133,7 @@ namespace Menu
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(27, 63);
+            this.lblSurname.Location = new System.Drawing.Point(12, 48);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(49, 13);
             this.lblSurname.TabIndex = 24;
@@ -130,15 +141,15 @@ namespace Menu
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(82, 60);
+            this.txtSurname.Location = new System.Drawing.Point(15, 64);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(178, 20);
+            this.txtSurname.Size = new System.Drawing.Size(192, 20);
             this.txtSurname.TabIndex = 23;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(27, 28);
+            this.lblName.Location = new System.Drawing.Point(12, 9);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 22;
@@ -146,7 +157,7 @@ namespace Menu
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(68, 25);
+            this.txtName.Location = new System.Drawing.Point(15, 25);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(192, 20);
             this.txtName.TabIndex = 21;
@@ -154,15 +165,15 @@ namespace Menu
             // cmbSpecialField
             // 
             this.cmbSpecialField.FormattingEnabled = true;
-            this.cmbSpecialField.Location = new System.Drawing.Point(112, 201);
+            this.cmbSpecialField.Location = new System.Drawing.Point(15, 214);
             this.cmbSpecialField.Name = "cmbSpecialField";
-            this.cmbSpecialField.Size = new System.Drawing.Size(148, 21);
+            this.cmbSpecialField.Size = new System.Drawing.Size(192, 21);
             this.cmbSpecialField.TabIndex = 39;
             // 
             // lblSpecialField
             // 
             this.lblSpecialField.AutoSize = true;
-            this.lblSpecialField.Location = new System.Drawing.Point(27, 201);
+            this.lblSpecialField.Location = new System.Drawing.Point(12, 198);
             this.lblSpecialField.Name = "lblSpecialField";
             this.lblSpecialField.Size = new System.Drawing.Size(67, 13);
             this.lblSpecialField.TabIndex = 38;
@@ -172,7 +183,7 @@ namespace Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 307);
+            this.ClientSize = new System.Drawing.Size(227, 291);
             this.Controls.Add(this.cmbSpecialField);
             this.Controls.Add(this.lblSpecialField);
             this.Controls.Add(this.btnCancel);
@@ -187,9 +198,11 @@ namespace Menu
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
-            this.MaximumSize = new System.Drawing.Size(321, 346);
-            this.MinimumSize = new System.Drawing.Size(321, 346);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(243, 330);
+            this.MinimumSize = new System.Drawing.Size(243, 330);
             this.Name = "NewDoctor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Doctor";
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).EndInit();
             this.ResumeLayout(false);

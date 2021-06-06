@@ -161,19 +161,24 @@ namespace Menu
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
             this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
             this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.Location = new System.Drawing.Point(57, 292);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 22;
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnConfirm
             // 
-            this.btnConfirm.BackColor = System.Drawing.Color.White;
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
             this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
             this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
             this.btnConfirm.Location = new System.Drawing.Point(12, 292);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);

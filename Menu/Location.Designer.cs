@@ -29,14 +29,15 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Location));
             this.lblDateOfArrival = new System.Windows.Forms.Label();
             this.dtpDateOfArrival = new System.Windows.Forms.DateTimePicker();
             this.lblRoom = new System.Windows.Forms.Label();
             this.lblBed = new System.Windows.Forms.Label();
             this.txtRoom = new System.Windows.Forms.TextBox();
             this.txtBed = new System.Windows.Forms.TextBox();
-            this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDateOfArrival
@@ -89,23 +90,33 @@ namespace Menu
             this.txtBed.Size = new System.Drawing.Size(100, 20);
             this.txtBed.TabIndex = 5;
             // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(12, 105);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirm.TabIndex = 6;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(93, 105);
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(59, 96);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Location = new System.Drawing.Point(16, 96);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(30, 30);
+            this.btnConfirm.TabIndex = 6;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             // 
             // Location
             // 
@@ -120,7 +131,11 @@ namespace Menu
             this.Controls.Add(this.lblRoom);
             this.Controls.Add(this.dtpDateOfArrival);
             this.Controls.Add(this.lblDateOfArrival);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(229, 174);
+            this.MinimumSize = new System.Drawing.Size(229, 174);
             this.Name = "Location";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Location";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.btnPacient = new System.Windows.Forms.Button();
             this.btnDoctor = new System.Windows.Forms.Button();
             this.btnDocument = new System.Windows.Forms.Button();
@@ -36,27 +37,30 @@ namespace Menu
             // 
             // btnPacient
             // 
-            this.btnPacient.Location = new System.Drawing.Point(12, 12);
+            this.btnPacient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPacient.Location = new System.Drawing.Point(55, 12);
             this.btnPacient.Name = "btnPacient";
-            this.btnPacient.Size = new System.Drawing.Size(450, 23);
+            this.btnPacient.Size = new System.Drawing.Size(99, 31);
             this.btnPacient.TabIndex = 0;
             this.btnPacient.Text = "Pacient";
             this.btnPacient.UseVisualStyleBackColor = true;
             // 
             // btnDoctor
             // 
-            this.btnDoctor.Location = new System.Drawing.Point(12, 41);
+            this.btnDoctor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoctor.Location = new System.Drawing.Point(55, 86);
             this.btnDoctor.Name = "btnDoctor";
-            this.btnDoctor.Size = new System.Drawing.Size(450, 23);
+            this.btnDoctor.Size = new System.Drawing.Size(99, 31);
             this.btnDoctor.TabIndex = 1;
             this.btnDoctor.Text = "Doctor";
             this.btnDoctor.UseVisualStyleBackColor = true;
             // 
             // btnDocument
             // 
-            this.btnDocument.Location = new System.Drawing.Point(12, 70);
+            this.btnDocument.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDocument.Location = new System.Drawing.Point(55, 49);
             this.btnDocument.Name = "btnDocument";
-            this.btnDocument.Size = new System.Drawing.Size(450, 23);
+            this.btnDocument.Size = new System.Drawing.Size(99, 31);
             this.btnDocument.TabIndex = 2;
             this.btnDocument.Text = "Document";
             this.btnDocument.UseVisualStyleBackColor = true;
@@ -65,11 +69,15 @@ namespace Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 105);
+            this.ClientSize = new System.Drawing.Size(211, 125);
             this.Controls.Add(this.btnDocument);
             this.Controls.Add(this.btnDoctor);
             this.Controls.Add(this.btnPacient);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(227, 164);
+            this.MinimumSize = new System.Drawing.Size(227, 164);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.ResumeLayout(false);
 

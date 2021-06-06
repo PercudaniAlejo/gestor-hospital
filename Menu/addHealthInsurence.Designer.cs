@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addHealthInsurence));
             this.dateDueDate = new System.Windows.Forms.DateTimePicker();
             this.nudHealthInsurenceNum = new System.Windows.Forms.NumericUpDown();
             this.lblNumber = new System.Windows.Forms.Label();
@@ -37,10 +38,10 @@ namespace Menu
             this.txtPlan = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnConfirm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtType = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudHealthInsurenceNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,24 +116,6 @@ namespace Menu
             this.txtName.Size = new System.Drawing.Size(178, 20);
             this.txtName.TabIndex = 16;
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(131, 301);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(78, 41);
-            this.btnCancel.TabIndex = 29;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Location = new System.Drawing.Point(30, 301);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(79, 41);
-            this.btnConfirm.TabIndex = 28;
-            this.btnConfirm.Text = "Confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -149,11 +132,40 @@ namespace Menu
             this.txtType.Size = new System.Drawing.Size(178, 20);
             this.txtType.TabIndex = 30;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Location = new System.Drawing.Point(77, 299);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(30, 30);
+            this.btnCancel.TabIndex = 29;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnConfirm
+            // 
+            this.btnConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfirm.FlatAppearance.BorderSize = 0;
+            this.btnConfirm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirm.Location = new System.Drawing.Point(31, 299);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(30, 30);
+            this.btnConfirm.TabIndex = 28;
+            this.btnConfirm.UseVisualStyleBackColor = false;
+            // 
             // addHealthInsurence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 378);
+            this.ClientSize = new System.Drawing.Size(238, 343);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.btnCancel);
@@ -166,10 +178,12 @@ namespace Menu
             this.Controls.Add(this.txtPlan);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
-            this.MaximumSize = new System.Drawing.Size(256, 417);
-            this.MinimumSize = new System.Drawing.Size(256, 417);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(254, 382);
+            this.MinimumSize = new System.Drawing.Size(254, 382);
             this.Name = "addHealthInsurence";
-            this.Text = "addHealthInsurence";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add HealthInsurence";
             ((System.ComponentModel.ISupportInitialize)(this.nudHealthInsurenceNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
