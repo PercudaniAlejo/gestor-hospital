@@ -10,6 +10,7 @@ namespace CapaNegocio
         #region MV       
         private string mail;
         private int numberPhone;
+        private string tutor;
         private int tutorsPhone;
         private static List<Contact> contacts = new List<Contact>();
         #endregion
@@ -18,11 +19,12 @@ namespace CapaNegocio
         public int NumberPhone { get => numberPhone; set => numberPhone = value; }
         public int TutorsPhone { get => tutorsPhone; set => tutorsPhone = value; }
         public static List<Contact> Contacts { get => contacts; set => contacts = value; }
+        public string Tutor { get => tutor; set => tutor = value; }
         #endregion
         #region Methods
         public override string ToString()
         {
-            return mail + "" + numberPhone + "" + tutorsPhone;
+            return mail + "" + numberPhone + "" +""+tutor+""+ tutorsPhone;
         }
 
         #endregion
@@ -31,13 +33,15 @@ namespace CapaNegocio
         {
             mail = "";
             numberPhone = 0;
+            tutor = "";
             tutorsPhone = 0;
         }
-        public Contact(string mail, int numberPhone, int tutorsPhone)
+        public Contact(string mail, int numberPhone,string tutor, int tutorsPhone)
         {
             this.mail = mail;
             this.numberPhone = numberPhone;
             this.tutorsPhone = tutorsPhone;
+            this.tutor = tutor;
         }
         #endregion
     }
