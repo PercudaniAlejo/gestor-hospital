@@ -32,12 +32,19 @@ namespace CapaNegocio
         public BloodType BloodType { get => bloodType; set => bloodType = value; }
         public HealthInsurance HealthInsurance { get => healthInsurance; set => healthInsurance = value; }
         public Location Location { get => location; set => location = value; }
+        public static List<Pacient> Pacients { get => pacients; set => pacients = value; }
         #endregion
 
         #region Methods
         public override string ToString()
         {
             return name + "" + surname + "" + dateofBirth.ToShortDateString() + "" + gender + "" + contact + "" + document + "" + documentNumber + "" + bloodType + "" + healthInsurance + "" + location;
+        }
+        public static bool Delete(Pacient pacient)
+        {
+            if (pacient != null && pacients.Count() > 0)
+                return pacients.Remove(pacient);
+            return false;
         }
 
         #endregion

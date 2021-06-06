@@ -47,6 +47,8 @@ namespace Menu
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnHealtInsurence = new System.Windows.Forms.Button();
             this.btnAddContact = new System.Windows.Forms.Button();
+            this.lblgender = new System.Windows.Forms.Label();
+            this.cmbgender = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +96,7 @@ namespace Menu
             // lblBloodType
             // 
             this.lblBloodType.AutoSize = true;
-            this.lblBloodType.Location = new System.Drawing.Point(12, 126);
+            this.lblBloodType.Location = new System.Drawing.Point(12, 162);
             this.lblBloodType.Name = "lblBloodType";
             this.lblBloodType.Size = new System.Drawing.Size(57, 13);
             this.lblBloodType.TabIndex = 7;
@@ -103,7 +105,7 @@ namespace Menu
             // cmbBloodType
             // 
             this.cmbBloodType.FormattingEnabled = true;
-            this.cmbBloodType.Location = new System.Drawing.Point(15, 142);
+            this.cmbBloodType.Location = new System.Drawing.Point(15, 178);
             this.cmbBloodType.Name = "cmbBloodType";
             this.cmbBloodType.Size = new System.Drawing.Size(221, 21);
             this.cmbBloodType.TabIndex = 8;
@@ -111,7 +113,7 @@ namespace Menu
             // lblDocumentType
             // 
             this.lblDocumentType.AutoSize = true;
-            this.lblDocumentType.Location = new System.Drawing.Point(12, 166);
+            this.lblDocumentType.Location = new System.Drawing.Point(12, 202);
             this.lblDocumentType.Name = "lblDocumentType";
             this.lblDocumentType.Size = new System.Drawing.Size(79, 13);
             this.lblDocumentType.TabIndex = 10;
@@ -119,7 +121,7 @@ namespace Menu
             // 
             // nudDocumentNum
             // 
-            this.nudDocumentNum.Location = new System.Drawing.Point(15, 222);
+            this.nudDocumentNum.Location = new System.Drawing.Point(15, 258);
             this.nudDocumentNum.Maximum = new decimal(new int[] {
             276447231,
             23283,
@@ -132,7 +134,7 @@ namespace Menu
             // lblDocumentNumber
             // 
             this.lblDocumentNumber.AutoSize = true;
-            this.lblDocumentNumber.Location = new System.Drawing.Point(12, 206);
+            this.lblDocumentNumber.Location = new System.Drawing.Point(12, 242);
             this.lblDocumentNumber.Name = "lblDocumentNumber";
             this.lblDocumentNumber.Size = new System.Drawing.Size(94, 13);
             this.lblDocumentNumber.TabIndex = 12;
@@ -141,7 +143,7 @@ namespace Menu
             // cmbDocumentType
             // 
             this.cmbDocumentType.FormattingEnabled = true;
-            this.cmbDocumentType.Location = new System.Drawing.Point(15, 182);
+            this.cmbDocumentType.Location = new System.Drawing.Point(15, 218);
             this.cmbDocumentType.Name = "cmbDocumentType";
             this.cmbDocumentType.Size = new System.Drawing.Size(221, 21);
             this.cmbDocumentType.TabIndex = 14;
@@ -156,7 +158,7 @@ namespace Menu
             // 
             // btnocationPacient
             // 
-            this.btnocationPacient.Location = new System.Drawing.Point(52, 292);
+            this.btnocationPacient.Location = new System.Drawing.Point(52, 319);
             this.btnocationPacient.Name = "btnocationPacient";
             this.btnocationPacient.Size = new System.Drawing.Size(126, 29);
             this.btnocationPacient.TabIndex = 18;
@@ -171,11 +173,12 @@ namespace Menu
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(206, 347);
+            this.btnCancel.Location = new System.Drawing.Point(61, 354);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 20;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
@@ -185,15 +188,16 @@ namespace Menu
             this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirm.FlatAppearance.BorderSize = 0;
             this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirm.Location = new System.Drawing.Point(154, 347);
+            this.btnConfirm.Location = new System.Drawing.Point(9, 354);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 19;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnHealtInsurence
             // 
-            this.btnHealtInsurence.Location = new System.Drawing.Point(116, 257);
+            this.btnHealtInsurence.Location = new System.Drawing.Point(116, 284);
             this.btnHealtInsurence.Name = "btnHealtInsurence";
             this.btnHealtInsurence.Size = new System.Drawing.Size(120, 29);
             this.btnHealtInsurence.TabIndex = 17;
@@ -202,18 +206,37 @@ namespace Menu
             // 
             // btnAddContact
             // 
-            this.btnAddContact.Location = new System.Drawing.Point(18, 257);
+            this.btnAddContact.Location = new System.Drawing.Point(18, 284);
             this.btnAddContact.Name = "btnAddContact";
             this.btnAddContact.Size = new System.Drawing.Size(92, 29);
             this.btnAddContact.TabIndex = 16;
             this.btnAddContact.Text = "Add contact";
             this.btnAddContact.UseVisualStyleBackColor = true;
             // 
+            // lblgender
+            // 
+            this.lblgender.AutoSize = true;
+            this.lblgender.Location = new System.Drawing.Point(12, 126);
+            this.lblgender.Name = "lblgender";
+            this.lblgender.Size = new System.Drawing.Size(42, 13);
+            this.lblgender.TabIndex = 21;
+            this.lblgender.Text = "Gender";
+            // 
+            // cmbgender
+            // 
+            this.cmbgender.FormattingEnabled = true;
+            this.cmbgender.Location = new System.Drawing.Point(15, 139);
+            this.cmbgender.Name = "cmbgender";
+            this.cmbgender.Size = new System.Drawing.Size(221, 21);
+            this.cmbgender.TabIndex = 22;
+            // 
             // newPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(248, 389);
+            this.Controls.Add(this.cmbgender);
+            this.Controls.Add(this.lblgender);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnocationPacient);
@@ -237,6 +260,7 @@ namespace Menu
             this.Name = "newPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Pacient";
+            this.Load += new System.EventHandler(this.newPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -262,5 +286,7 @@ namespace Menu
         private System.Windows.Forms.Button btnocationPacient;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label lblgender;
+        private System.Windows.Forms.ComboBox cmbgender;
     }
 }

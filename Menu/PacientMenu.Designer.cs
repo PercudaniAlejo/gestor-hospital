@@ -30,22 +30,22 @@ namespace Menu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PacientMenu));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPacient = new System.Windows.Forms.DataGridView();
             this.lblFilterPacient = new System.Windows.Forms.TextBox();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             this.btnFilterPacient = new System.Windows.Forms.Button();
             this.btnNewPacient = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacient)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvPacient
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(499, 299);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvPacient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPacient.Location = new System.Drawing.Point(12, 65);
+            this.dgvPacient.Name = "dgvPacient";
+            this.dgvPacient.Size = new System.Drawing.Size(499, 299);
+            this.dgvPacient.TabIndex = 1;
             // 
             // lblFilterPacient
             // 
@@ -81,6 +81,7 @@ namespace Menu
             this.btnedit.Size = new System.Drawing.Size(30, 30);
             this.btnedit.TabIndex = 9;
             this.btnedit.UseVisualStyleBackColor = false;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnFilterPacient
             // 
@@ -109,6 +110,7 @@ namespace Menu
             this.btnNewPacient.Size = new System.Drawing.Size(30, 30);
             this.btnNewPacient.TabIndex = 0;
             this.btnNewPacient.UseVisualStyleBackColor = false;
+            this.btnNewPacient.Click += new System.EventHandler(this.btnNewPacient_Click);
             // 
             // PacientMenu
             // 
@@ -119,7 +121,7 @@ namespace Menu
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnFilterPacient);
             this.Controls.Add(this.lblFilterPacient);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPacient);
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(541, 445);
@@ -127,7 +129,7 @@ namespace Menu
             this.Name = "PacientMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pacient Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,7 +138,7 @@ namespace Menu
         #endregion
 
         private System.Windows.Forms.Button btnNewPacient;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPacient;
         private System.Windows.Forms.Button btnFilterPacient;
         private System.Windows.Forms.TextBox lblFilterPacient;
         private System.Windows.Forms.Button btnedit;
