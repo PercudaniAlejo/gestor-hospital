@@ -44,6 +44,7 @@ namespace Menu
             this.txtName = new System.Windows.Forms.TextBox();
             this.cmbSpecialField = new System.Windows.Forms.ComboBox();
             this.lblSpecialField = new System.Windows.Forms.Label();
+            this.btnfield = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,11 +180,25 @@ namespace Menu
             this.lblSpecialField.TabIndex = 38;
             this.lblSpecialField.Text = "Special Field";
             // 
+            // btnfield
+            // 
+            this.btnfield.BackColor = System.Drawing.Color.Transparent;
+            this.btnfield.BackgroundImage = global::Menu.Properties.Resources._;
+            this.btnfield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnfield.FlatAppearance.BorderSize = 0;
+            this.btnfield.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfield.Location = new System.Drawing.Point(213, 217);
+            this.btnfield.Name = "btnfield";
+            this.btnfield.Size = new System.Drawing.Size(15, 15);
+            this.btnfield.TabIndex = 40;
+            this.btnfield.UseVisualStyleBackColor = false;
+            // 
             // NewDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(227, 291);
+            this.ClientSize = new System.Drawing.Size(237, 291);
+            this.Controls.Add(this.btnfield);
             this.Controls.Add(this.cmbSpecialField);
             this.Controls.Add(this.lblSpecialField);
             this.Controls.Add(this.btnCancel);
@@ -199,8 +214,8 @@ namespace Menu
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(243, 330);
-            this.MinimumSize = new System.Drawing.Size(243, 330);
+            this.MaximumSize = new System.Drawing.Size(253, 330);
+            this.MinimumSize = new System.Drawing.Size(253, 330);
             this.Name = "NewDoctor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Doctor";
@@ -227,5 +242,6 @@ namespace Menu
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.ComboBox cmbSpecialField;
         private System.Windows.Forms.Label lblSpecialField;
+        private System.Windows.Forms.Button btnfield;
     }
 }
