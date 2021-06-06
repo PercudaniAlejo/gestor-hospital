@@ -75,11 +75,12 @@ namespace Menu
             this.btnNewPacient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewPacient.FlatAppearance.BorderSize = 0;
             this.btnNewPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewPacient.Location = new System.Drawing.Point(480, 395);
+            this.btnNewPacient.Location = new System.Drawing.Point(502, 395);
             this.btnNewPacient.Name = "btnNewPacient";
             this.btnNewPacient.Size = new System.Drawing.Size(30, 30);
             this.btnNewPacient.TabIndex = 2;
             this.btnNewPacient.UseVisualStyleBackColor = false;
+            this.btnNewPacient.Click += new System.EventHandler(this.btnNewPacient_Click);
             // 
             // DoctorMenu
             // 

@@ -23,7 +23,7 @@ namespace Menu
 
         private void btnDocument_Click(object sender, EventArgs e)
         {
-            Document f = new Document();
+            formDocument f = new formDocument();
             f.ShowDialog();
         }
 

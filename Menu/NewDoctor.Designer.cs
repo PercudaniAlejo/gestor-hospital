@@ -204,6 +204,7 @@ namespace Menu
             this.Name = "NewDoctor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Doctor";
+            this.Load += new System.EventHandler(this.NewDoctor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudDocumentNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,11 +62,11 @@
     <Compile Include="DoctorMenu.Designer.cs">
       <DependentUpon>DoctorMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Document.cs">
+    <Compile Include="formDocument.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Document.Designer.cs">
-      <DependentUpon>Document.cs</DependentUpon>
+    <Compile Include="formDocument.Designer.cs">
+      <DependentUpon>formDocument.cs</DependentUpon>
     </Compile>
     <Compile Include="Location.cs">
       <SubType>Form</SubType>
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="DoctorMenu.resx">
       <DependentUpon>DoctorMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Document.resx">
-      <DependentUpon>Document.cs</DependentUpon>
+    <EmbeddedResource Include="formDocument.resx">
+      <DependentUpon>formDocument.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Location.resx">
       <DependentUpon>Location.cs</DependentUpon>

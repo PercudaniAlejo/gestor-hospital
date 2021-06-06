@@ -1,7 +1,7 @@
 ﻿
 namespace Menu
 {
-    partial class Document
+    partial class formDocument
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Document));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formDocument));
             this.lblDocumentType = new System.Windows.Forms.Label();
             this.txtDocumentType = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -65,6 +65,7 @@ namespace Menu
             this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
@@ -79,6 +80,7 @@ namespace Menu
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 1;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // Document
             // 
