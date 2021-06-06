@@ -27,6 +27,11 @@ namespace Menu
             BloodType.Btypes.Add(new BloodType("O-"));
             #endregion
 
+            #region GenderLoad
+            Gender.Gen.Add(new Gender("Male"));
+            Gender.Gen.Add(new Gender("Female"));
+            #endregion
+
         }
         private void btnPacient_Click(object sender, EventArgs e)
         {

@@ -12,19 +12,21 @@ namespace Menu
 {
     public partial class newPaciente : Form
     {
-        
+
         Pacient obj;
         public newPaciente()
         {
             InitializeComponent();
-
+            cmbgender.SelectedItem = null;
+            cmbBloodType.SelectedItem = null;
+            cmbDocumentType.SelectedItem = null;
         }
         #region events
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             if (obj == null)
             {
-                // Contact obj2;
+                // Contact obj2; 
                 //obj2.NumberPhone=
                 //  addContact con = new addContact();
                 // Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem, (int)nudDocumentNum.Value, obj2, cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem, );// no funca
@@ -32,9 +34,13 @@ namespace Menu
         }
 
         private void newPaciente_Load(object sender, EventArgs e)
-        {       
-                cmbBloodType.DataSource = null;
-                cmbBloodType.DataSource = BloodType.Btypes;
+        {
+            cmbBloodType.DataSource = null;
+            cmbBloodType.DataSource = BloodType.Btypes;
+            cmbgender.DataSource = null;
+            cmbgender.DataSource = Gender.Gen;
+            cmbDocumentType.DataSource = null;
+            cmbDocumentType.DataSource = Document.DocTypes;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -69,7 +75,7 @@ namespace Menu
             txtSurname.Text = "";
             dateDateOfBirth.Value = new DateTime(1900, 1, 1);
             nudDocumentNum.Value = 0;
-            cmbBloodType.SelectedItem =null;
+            cmbBloodType.SelectedItem = null;
             cmbDocumentType.SelectedItem = null;
             cmbgender.SelectedItem = null;
         }

@@ -41,10 +41,10 @@ namespace Menu
             this.checkBoxTutor = new System.Windows.Forms.CheckBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP2)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -166,24 +166,24 @@ namespace Menu
             this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // panel1
+            // pnl1
             // 
-            this.panel1.Controls.Add(this.checkBoxTutor);
-            this.panel1.Controls.Add(this.checkBoxFather);
-            this.panel1.Controls.Add(this.checkBoxMother);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.nudNP2);
-            this.panel1.Location = new System.Drawing.Point(7, 108);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(205, 90);
-            this.panel1.TabIndex = 23;
+            this.pnl1.Controls.Add(this.checkBoxTutor);
+            this.pnl1.Controls.Add(this.checkBoxFather);
+            this.pnl1.Controls.Add(this.checkBoxMother);
+            this.pnl1.Controls.Add(this.label1);
+            this.pnl1.Controls.Add(this.nudNP2);
+            this.pnl1.Location = new System.Drawing.Point(7, 108);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(205, 90);
+            this.pnl1.TabIndex = 23;
             // 
             // addContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(219, 258);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblNumberPhone);
@@ -198,8 +198,8 @@ namespace Menu
             this.Load += new System.EventHandler(this.addContact_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudNP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,6 +218,6 @@ namespace Menu
         private System.Windows.Forms.CheckBox checkBoxTutor;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnConfirm;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl1;
     }
 }

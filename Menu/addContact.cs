@@ -84,7 +84,9 @@ namespace Menu
         {
             txtEmail.Text = "";
             nudNP.Value = 0;
-            checkBoxMother = null;
+            checkBoxMother.Checked = false;
+            checkBoxFather.Checked = false;
+            checkBoxTutor.Checked = false;
             nudNP2.Value = 0;
         }
 

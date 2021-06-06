@@ -20,14 +20,15 @@ namespace Menu
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+            Save();
+            Clear();
         }
         #region METHODS
         private void Save()
         {
             if (obj == null)
             {
-                CapaNegocio.Location NewLoc = new CapaNegocio.Location(txtBed.Text,dtpDateOfArrival.Value,txtRoom.Text);
+                CapaNegocio.Location NewLoc = new CapaNegocio.Location(txtBed.Text, dtpDateOfArrival.Value, txtRoom.Text);
                 CapaNegocio.Location.Locations.Add(NewLoc);
             }
             else
@@ -41,9 +42,14 @@ namespace Menu
         {
             txtRoom.Text = "";
             txtBed.Text = "";
-            dtpDateOfArrival.Value = new DateTime(2021,1,1);
+            dtpDateOfArrival.Value = new DateTime(2021, 1, 1);
         }
 
         #endregion
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
