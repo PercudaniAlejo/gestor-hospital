@@ -34,6 +34,8 @@ namespace Menu
             this.lblFilterDoc = new System.Windows.Forms.TextBox();
             this.btnFilterDoc = new System.Windows.Forms.Button();
             this.btnNewPacient = new System.Windows.Forms.Button();
+            this.btndeletedoc = new System.Windows.Forms.Button();
+            this.btneditdoc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctorMenu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,12 +84,42 @@ namespace Menu
             this.btnNewPacient.UseVisualStyleBackColor = false;
             this.btnNewPacient.Click += new System.EventHandler(this.btnNewPacient_Click);
             // 
+            // btndeletedoc
+            // 
+            this.btndeletedoc.BackColor = System.Drawing.Color.Transparent;
+            this.btndeletedoc.BackgroundImage = global::Menu.Properties.Resources.biggarbagebin_121980;
+            this.btndeletedoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btndeletedoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndeletedoc.FlatAppearance.BorderSize = 0;
+            this.btndeletedoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndeletedoc.Location = new System.Drawing.Point(48, 395);
+            this.btndeletedoc.Name = "btndeletedoc";
+            this.btndeletedoc.Size = new System.Drawing.Size(30, 30);
+            this.btndeletedoc.TabIndex = 12;
+            this.btndeletedoc.UseVisualStyleBackColor = false;
+            // 
+            // btneditdoc
+            // 
+            this.btneditdoc.BackColor = System.Drawing.Color.Transparent;
+            this.btneditdoc.BackgroundImage = global::Menu.Properties.Resources.edit_modify_icon_149489;
+            this.btneditdoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btneditdoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneditdoc.FlatAppearance.BorderSize = 0;
+            this.btneditdoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneditdoc.Location = new System.Drawing.Point(12, 395);
+            this.btneditdoc.Name = "btneditdoc";
+            this.btneditdoc.Size = new System.Drawing.Size(30, 30);
+            this.btneditdoc.TabIndex = 11;
+            this.btneditdoc.UseVisualStyleBackColor = false;
+            // 
             // DoctorMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(546, 437);
+            this.Controls.Add(this.btndeletedoc);
+            this.Controls.Add(this.btneditdoc);
             this.Controls.Add(this.btnFilterDoc);
             this.Controls.Add(this.lblFilterDoc);
             this.Controls.Add(this.dgvDoctorMenu);
@@ -108,5 +140,7 @@ namespace Menu
         private System.Windows.Forms.Button btnNewPacient;
         private System.Windows.Forms.TextBox lblFilterDoc;
         private System.Windows.Forms.Button btnFilterDoc;
+        private System.Windows.Forms.Button btndeletedoc;
+        private System.Windows.Forms.Button btneditdoc;
     }
 }

@@ -186,5 +186,11 @@
   <ItemGroup>
     <None Include="Resources\OS.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_modify_icon_149489.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biggarbagebin_121980.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

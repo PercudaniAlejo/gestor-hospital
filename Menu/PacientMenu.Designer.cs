@@ -32,6 +32,8 @@ namespace Menu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PacientMenu));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblFilterPacient = new System.Windows.Forms.TextBox();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
             this.btnFilterPacient = new System.Windows.Forms.Button();
             this.btnNewPacient = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -51,6 +53,34 @@ namespace Menu
             this.lblFilterPacient.Name = "lblFilterPacient";
             this.lblFilterPacient.Size = new System.Drawing.Size(271, 20);
             this.lblFilterPacient.TabIndex = 7;
+            // 
+            // btndelete
+            // 
+            this.btndelete.BackColor = System.Drawing.Color.Transparent;
+            this.btndelete.BackgroundImage = global::Menu.Properties.Resources.biggarbagebin_121980;
+            this.btndelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndelete.FlatAppearance.BorderSize = 0;
+            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Location = new System.Drawing.Point(48, 370);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(30, 30);
+            this.btndelete.TabIndex = 10;
+            this.btndelete.UseVisualStyleBackColor = false;
+            // 
+            // btnedit
+            // 
+            this.btnedit.BackColor = System.Drawing.Color.Transparent;
+            this.btnedit.BackgroundImage = global::Menu.Properties.Resources.edit_modify_icon_149489;
+            this.btnedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnedit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnedit.FlatAppearance.BorderSize = 0;
+            this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnedit.Location = new System.Drawing.Point(12, 370);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(30, 30);
+            this.btnedit.TabIndex = 9;
+            this.btnedit.UseVisualStyleBackColor = false;
             // 
             // btnFilterPacient
             // 
@@ -85,6 +115,8 @@ namespace Menu
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 406);
+            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnFilterPacient);
             this.Controls.Add(this.lblFilterPacient);
             this.Controls.Add(this.dataGridView1);
@@ -107,5 +139,7 @@ namespace Menu
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnFilterPacient;
         private System.Windows.Forms.TextBox lblFilterPacient;
+        private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.Button btndelete;
     }
 }

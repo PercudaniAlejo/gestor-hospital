@@ -83,6 +83,16 @@ namespace Menu.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap biggarbagebin_121980 {
+            get {
+                object obj = ResourceManager.GetObject("biggarbagebin_121980", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete {
             get {
                 object obj = ResourceManager.GetObject("Delete", resourceCulture);
@@ -96,6 +106,16 @@ namespace Menu.Properties {
         internal static System.Drawing.Bitmap Doc {
             get {
                 object obj = ResourceManager.GetObject("Doc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_modify_icon_149489 {
+            get {
+                object obj = ResourceManager.GetObject("edit_modify_icon_149489", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
