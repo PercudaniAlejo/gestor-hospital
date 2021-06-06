@@ -52,7 +52,12 @@ namespace Menu
 
         private void btnFilterPacient_Click(object sender, EventArgs e)
         {
-
+            Search();
+        }
+        private void Search()
+        {
+            dgvPacient.DataSource = null;
+            dgvPacient.DataSource = Doctor.Search(txtFilterPacient.Text);
         }
     }
     

@@ -31,7 +31,7 @@ namespace Menu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PacientMenu));
             this.dgvPacient = new System.Windows.Forms.DataGridView();
-            this.lblFilterPacient = new System.Windows.Forms.TextBox();
+            this.txtFilterPacient = new System.Windows.Forms.TextBox();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             this.btnFilterPacient = new System.Windows.Forms.Button();
@@ -47,12 +47,12 @@ namespace Menu
             this.dgvPacient.Size = new System.Drawing.Size(499, 299);
             this.dgvPacient.TabIndex = 1;
             // 
-            // lblFilterPacient
+            // txtFilterPacient
             // 
-            this.lblFilterPacient.Location = new System.Drawing.Point(121, 28);
-            this.lblFilterPacient.Name = "lblFilterPacient";
-            this.lblFilterPacient.Size = new System.Drawing.Size(271, 20);
-            this.lblFilterPacient.TabIndex = 7;
+            this.txtFilterPacient.Location = new System.Drawing.Point(121, 28);
+            this.txtFilterPacient.Name = "txtFilterPacient";
+            this.txtFilterPacient.Size = new System.Drawing.Size(271, 20);
+            this.txtFilterPacient.TabIndex = 7;
             // 
             // btndelete
             // 
@@ -121,7 +121,7 @@ namespace Menu
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnFilterPacient);
-            this.Controls.Add(this.lblFilterPacient);
+            this.Controls.Add(this.txtFilterPacient);
             this.Controls.Add(this.dgvPacient);
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -141,7 +141,7 @@ namespace Menu
         private System.Windows.Forms.Button btnNewPacient;
         private System.Windows.Forms.DataGridView dgvPacient;
         private System.Windows.Forms.Button btnFilterPacient;
-        private System.Windows.Forms.TextBox lblFilterPacient;
+        private System.Windows.Forms.TextBox txtFilterPacient;
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.Button btndelete;
     }
