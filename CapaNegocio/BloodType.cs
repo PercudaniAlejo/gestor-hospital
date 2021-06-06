@@ -10,6 +10,7 @@ namespace CapaNegocio
         #region Var
         private string btype;
         private static List<BloodType> btypes = new List<BloodType>();
+        
         #endregion
 
         #region Properties
@@ -28,6 +29,10 @@ namespace CapaNegocio
         public BloodType()
         {
             btype = "default";
+        }
+        public BloodType(string btype)
+        {
+            this.btype = btype;
         }
         #endregion
     }

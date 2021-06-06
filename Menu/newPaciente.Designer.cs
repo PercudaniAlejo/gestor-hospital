@@ -164,6 +164,7 @@ namespace Menu
             this.btnocationPacient.TabIndex = 18;
             this.btnocationPacient.Text = "Add Location Pacient";
             this.btnocationPacient.UseVisualStyleBackColor = true;
+            this.btnocationPacient.Click += new System.EventHandler(this.btnocationPacient_Click);
             // 
             // btnCancel
             // 
@@ -203,6 +204,7 @@ namespace Menu
             this.btnHealtInsurence.TabIndex = 17;
             this.btnHealtInsurence.Text = "Add Healt Insurence";
             this.btnHealtInsurence.UseVisualStyleBackColor = true;
+            this.btnHealtInsurence.Click += new System.EventHandler(this.btnHealtInsurence_Click);
             // 
             // btnAddContact
             // 
@@ -212,6 +214,7 @@ namespace Menu
             this.btnAddContact.TabIndex = 16;
             this.btnAddContact.Text = "Add contact";
             this.btnAddContact.UseVisualStyleBackColor = true;
+            this.btnAddContact.Click += new System.EventHandler(this.btnAddContact_Click);
             // 
             // lblgender
             // 
