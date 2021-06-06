@@ -32,35 +32,7 @@ namespace Menu
         {
             Clean();
         }
-        private void checkBoxMother_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxMother.Checked)
-            {
-                checkBoxFather.Checked = false;
-                checkBoxTutor.Checked = false;
-            }
 
-        }
-
-        private void checkBoxFather_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxFather.Checked)
-            {
-                checkBoxMother.Checked = false;
-                checkBoxTutor.Checked = false;
-            }
-
-        }
-
-        private void checkBoxTutor_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxTutor.Checked)
-            {
-                checkBoxFather.Checked = false;
-                checkBoxMother.Checked = false;
-            }
-
-        }
         #endregion
 
         #region Functions
@@ -68,7 +40,7 @@ namespace Menu
         {
             if (c == null)
             {
-                Contact contact = new Contact(txtEmail.Text, (int)nudNP.Value, (int)nudNP2.Value, checkBoxMother.Checked, checkBoxFather.Checked, checkBoxTutor.Checked);//no anda 
+                Contact contact = new Contact(txtEmail.Text, (int)nudNP.Value,(int)nudNP2.Value,txttutor.Text);
                 Contact.Contacts.Add(contact);
             }
             else
@@ -76,6 +48,7 @@ namespace Menu
                 c.Mail = txtEmail.Text;
                 c.NumberPhone = (int)nudNP.Value;
                 c.TutorsPhone = (int)nudNP2.Value;
+                c.Tutor1 = txttutor.Text;
 
             }
 
@@ -84,10 +57,8 @@ namespace Menu
         {
             txtEmail.Text = "";
             nudNP.Value = 0;
-            checkBoxMother.Checked = false;
-            checkBoxFather.Checked = false;
-            checkBoxTutor.Checked = false;
             nudNP2.Value = 0;
+            txttutor.Text = "";
         }
 
         #endregion

@@ -46,11 +46,25 @@ namespace CapaNegocio
                 return pacients.Remove(pacient);
             return false;
         }
+        public static List<Pacient> Search(string PacientSearch)
+        {
+            PacientSearch = PacientSearch.ToLower();
+            List<Pacient> PacientFound = new List<Pacient>();
 
-        #endregion
+            foreach (Pacient e in Pacient.pacients)
+            {
+                if (e.Name.ToLower().Contains(PacientSearch) || e.Surname.ToLower().Contains(PacientSearch) || e.HealthInsurance.ToString().Contains(PacientSearch) ||
+                    e.Contact.ToString().Contains(PacientSearch) || e.BloodType.ToString().Contains(PacientSearch) || e.DateofBirth.ToString().Contains(PacientSearch) || e.Document.ToString().Contains(PacientSearch) ||
+                    e.DocumentNumber.ToString().Contains(PacientSearch) || e.Gender.ToLower().Contains(PacientSearch) || e.DocumentNumber.ToString() == PacientSearch || e.Location.ToString().ToLower().Contains(PacientSearch))
+                    PacientFound.Add(e);
+            }
 
-        #region Builders
-        public Pacient()
+            return PacientFound;
+        }
+            #endregion
+
+            #region Builders
+            public Pacient()
         {
             name = "";
             surname = "";

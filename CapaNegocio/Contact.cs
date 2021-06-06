@@ -11,9 +11,7 @@ namespace CapaNegocio
         private string mail;
         private int numberPhone;
         private int tutorsPhone;
-        private bool mother;
-        private bool father;
-        private bool tutor;
+        private string tutor;
         private static List<Contact> contacts = new List<Contact>();
         #endregion
 
@@ -22,28 +20,14 @@ namespace CapaNegocio
         public int NumberPhone { get => numberPhone; set => numberPhone = value; }
         public int TutorsPhone { get => tutorsPhone; set => tutorsPhone = value; }
         public static List<Contact> Contacts { get => contacts; set => contacts = value; }
-        public bool Mother { get => mother; set => mother = value; }
-        public bool Father { get => father; set => father = value; }
-        public bool Tutor { get => tutor; set => tutor = value; }
+        public string Tutor1 { get => tutor; set => tutor = value; }
 
         #endregion
 
         #region Methods
         public override string ToString()
         {
-            if (mother)
-            {
-              return mail + " " + numberPhone + " "+ "Mother" + " "+ tutorsPhone;
-            }
-            if (father)
-            {
-                return mail + " " + numberPhone + " " + "Father" + " " + tutorsPhone;
-            }
-            if (tutor)
-            {
-                return mail + " " + numberPhone + " " + "Tutor" + " " + tutorsPhone;
-            }
-            return mail + " " + numberPhone;
+            return mail + " " + numberPhone + " " + " " + tutor + " " + tutorsPhone;
         }
         #endregion
 
@@ -52,18 +36,14 @@ namespace CapaNegocio
         {
             mail = "";
             numberPhone = 0;
+            tutor = "";
             tutorsPhone = 0;
-            mother = false;
-            father = false;
-            tutor = false;
         }
-        public Contact(string mail, int numberPhone, int tutorsPhone, bool mother, bool father, bool tutor)
+        public Contact(string mail, int numberPhone, int tutorsPhone, string tutor)
         {
             this.mail = mail;
             this.numberPhone = numberPhone;
             this.tutorsPhone = tutorsPhone;
-            this.mother = mother;
-            this.father = father;
             this.tutor = tutor;
         }
         #endregion

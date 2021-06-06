@@ -96,6 +96,7 @@ namespace Menu
             this.btnFilterPacient.Size = new System.Drawing.Size(25, 25);
             this.btnFilterPacient.TabIndex = 8;
             this.btnFilterPacient.UseVisualStyleBackColor = false;
+            this.btnFilterPacient.Click += new System.EventHandler(this.btnFilterPacient_Click);
             // 
             // btnNewPacient
             // 

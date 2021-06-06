@@ -36,15 +36,14 @@ namespace Menu
             this.lblNumberPhone = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nudNP2 = new System.Windows.Forms.NumericUpDown();
-            this.checkBoxMother = new System.Windows.Forms.CheckBox();
-            this.checkBoxFather = new System.Windows.Forms.CheckBox();
-            this.checkBoxTutor = new System.Windows.Forms.CheckBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
-            this.pnl1 = new System.Windows.Forms.Panel();
+            this.pnl1mas18 = new System.Windows.Forms.Panel();
+            this.lbltutor = new System.Windows.Forms.Label();
+            this.txttutor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP2)).BeginInit();
-            this.pnl1.SuspendLayout();
+            this.pnl1mas18.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -105,39 +104,6 @@ namespace Menu
             this.nudNP2.Size = new System.Drawing.Size(189, 20);
             this.nudNP2.TabIndex = 4;
             // 
-            // checkBoxMother
-            // 
-            this.checkBoxMother.AutoSize = true;
-            this.checkBoxMother.Location = new System.Drawing.Point(7, 7);
-            this.checkBoxMother.Name = "checkBoxMother";
-            this.checkBoxMother.Size = new System.Drawing.Size(59, 17);
-            this.checkBoxMother.TabIndex = 10;
-            this.checkBoxMother.Text = "Mother";
-            this.checkBoxMother.UseVisualStyleBackColor = true;
-            this.checkBoxMother.CheckedChanged += new System.EventHandler(this.checkBoxMother_CheckedChanged);
-            // 
-            // checkBoxFather
-            // 
-            this.checkBoxFather.AutoSize = true;
-            this.checkBoxFather.Location = new System.Drawing.Point(72, 7);
-            this.checkBoxFather.Name = "checkBoxFather";
-            this.checkBoxFather.Size = new System.Drawing.Size(56, 17);
-            this.checkBoxFather.TabIndex = 11;
-            this.checkBoxFather.Text = "Father";
-            this.checkBoxFather.UseVisualStyleBackColor = true;
-            this.checkBoxFather.CheckedChanged += new System.EventHandler(this.checkBoxFather_CheckedChanged);
-            // 
-            // checkBoxTutor
-            // 
-            this.checkBoxTutor.AutoSize = true;
-            this.checkBoxTutor.Location = new System.Drawing.Point(134, 7);
-            this.checkBoxTutor.Name = "checkBoxTutor";
-            this.checkBoxTutor.Size = new System.Drawing.Size(51, 17);
-            this.checkBoxTutor.TabIndex = 12;
-            this.checkBoxTutor.Text = "Tutor";
-            this.checkBoxTutor.UseVisualStyleBackColor = true;
-            this.checkBoxTutor.CheckedChanged += new System.EventHandler(this.checkBoxTutor_CheckedChanged);
-            // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
@@ -166,24 +132,39 @@ namespace Menu
             this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // pnl1
+            // pnl1mas18
             // 
-            this.pnl1.Controls.Add(this.checkBoxTutor);
-            this.pnl1.Controls.Add(this.checkBoxFather);
-            this.pnl1.Controls.Add(this.checkBoxMother);
-            this.pnl1.Controls.Add(this.label1);
-            this.pnl1.Controls.Add(this.nudNP2);
-            this.pnl1.Location = new System.Drawing.Point(7, 108);
-            this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(205, 90);
-            this.pnl1.TabIndex = 23;
+            this.pnl1mas18.Controls.Add(this.txttutor);
+            this.pnl1mas18.Controls.Add(this.lbltutor);
+            this.pnl1mas18.Controls.Add(this.label1);
+            this.pnl1mas18.Controls.Add(this.nudNP2);
+            this.pnl1mas18.Location = new System.Drawing.Point(7, 108);
+            this.pnl1mas18.Name = "pnl1mas18";
+            this.pnl1mas18.Size = new System.Drawing.Size(205, 90);
+            this.pnl1mas18.TabIndex = 23;
+            // 
+            // lbltutor
+            // 
+            this.lbltutor.AutoSize = true;
+            this.lbltutor.Location = new System.Drawing.Point(5, 2);
+            this.lbltutor.Name = "lbltutor";
+            this.lbltutor.Size = new System.Drawing.Size(61, 13);
+            this.lbltutor.TabIndex = 24;
+            this.lbltutor.Text = "Tutor name";
+            // 
+            // txttutor
+            // 
+            this.txttutor.Location = new System.Drawing.Point(5, 18);
+            this.txttutor.Name = "txttutor";
+            this.txttutor.Size = new System.Drawing.Size(189, 20);
+            this.txttutor.TabIndex = 24;
             // 
             // addContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(219, 258);
-            this.Controls.Add(this.pnl1);
+            this.Controls.Add(this.pnl1mas18);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblNumberPhone);
@@ -198,8 +179,8 @@ namespace Menu
             this.Load += new System.EventHandler(this.addContact_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudNP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP2)).EndInit();
-            this.pnl1.ResumeLayout(false);
-            this.pnl1.PerformLayout();
+            this.pnl1mas18.ResumeLayout(false);
+            this.pnl1mas18.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,11 +194,10 @@ namespace Menu
         private System.Windows.Forms.Label lblNumberPhone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown nudNP2;
-        private System.Windows.Forms.CheckBox checkBoxMother;
-        private System.Windows.Forms.CheckBox checkBoxFather;
-        private System.Windows.Forms.CheckBox checkBoxTutor;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnConfirm;
-        private System.Windows.Forms.Panel pnl1;
+        private System.Windows.Forms.Panel pnl1mas18;
+        private System.Windows.Forms.TextBox txttutor;
+        private System.Windows.Forms.Label lbltutor;
     }
 }

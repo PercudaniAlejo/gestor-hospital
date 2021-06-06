@@ -49,6 +49,11 @@ namespace Menu
             else
                 MessageBox.Show("Select doctor to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void btnFilterPacient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
