@@ -17,6 +17,7 @@ namespace Menu
         public NewDoctor()
         {
             InitializeComponent();
+
         }
         private void NewDoctor_Load(object sender, EventArgs e)
         {
@@ -26,6 +27,23 @@ namespace Menu
             cmbSpecialField.DataSource = null;
             cmbSpecialField.DataSource = SpecialField.Specialities;
         }
+        private void btnfield_Click(object sender, EventArgs e)
+        {
+            formSpecialField f = new formSpecialField();
+            f.ShowDialog();
+            cmbSpecialField.DataSource = null;
+            cmbSpecialField.DataSource = SpecialField.Specialities;
+        }
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            Save();
+            Clear();
+        }
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
         #endregion
 
         #region METHODS
@@ -54,7 +72,7 @@ namespace Menu
             nudDocumentNum.Value= 0;
             dateDateOfBirth.Value = new DateTime(1900, 1, 1);
         }
-        private void Confirm() {
+        private void Confirm() { // cambiar nombre
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
             nudDocumentNum.Value = obj.DocumentNumber;
@@ -62,6 +80,7 @@ namespace Menu
             cmbSpecialField.Text = obj.SpecialField.ToString();
             dateDateOfBirth.Value = obj.DateOfBirth;
         }
+
         #endregion
     }
 }

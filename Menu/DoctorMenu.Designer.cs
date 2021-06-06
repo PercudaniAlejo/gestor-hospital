@@ -30,20 +30,20 @@ namespace Menu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorMenu));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDoctorMenu = new System.Windows.Forms.DataGridView();
             this.lblFilterDoc = new System.Windows.Forms.TextBox();
             this.btnFilterDoc = new System.Windows.Forms.Button();
             this.btnNewPacient = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoctorMenu)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvDoctorMenu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 60);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 318);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvDoctorMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoctorMenu.Location = new System.Drawing.Point(12, 60);
+            this.dgvDoctorMenu.Name = "dgvDoctorMenu";
+            this.dgvDoctorMenu.Size = new System.Drawing.Size(520, 318);
+            this.dgvDoctorMenu.TabIndex = 3;
             // 
             // lblFilterDoc
             // 
@@ -90,13 +90,13 @@ namespace Menu
             this.ClientSize = new System.Drawing.Size(546, 437);
             this.Controls.Add(this.btnFilterDoc);
             this.Controls.Add(this.lblFilterDoc);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDoctorMenu);
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DoctorMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoctorMenu";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoctorMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,7 +104,7 @@ namespace Menu
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDoctorMenu;
         private System.Windows.Forms.Button btnNewPacient;
         private System.Windows.Forms.TextBox lblFilterDoc;
         private System.Windows.Forms.Button btnFilterDoc;

@@ -61,6 +61,7 @@ namespace Menu
             this.btnCancel.Size = new System.Drawing.Size(30, 30);
             this.btnCancel.TabIndex = 37;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
@@ -75,6 +76,7 @@ namespace Menu
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 36;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // dateDateOfBirth
             // 
@@ -96,8 +98,8 @@ namespace Menu
             // 
             this.nudDocumentNum.Location = new System.Drawing.Point(15, 175);
             this.nudDocumentNum.Maximum = new decimal(new int[] {
-            276447231,
-            23283,
+            2147483646,
+            0,
             0,
             0});
             this.nudDocumentNum.Name = "nudDocumentNum";
@@ -192,6 +194,7 @@ namespace Menu
             this.btnfield.Size = new System.Drawing.Size(15, 15);
             this.btnfield.TabIndex = 40;
             this.btnfield.UseVisualStyleBackColor = false;
+            this.btnfield.Click += new System.EventHandler(this.btnfield_Click);
             // 
             // NewDoctor
             // 
