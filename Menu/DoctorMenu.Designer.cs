@@ -31,7 +31,7 @@ namespace Menu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorMenu));
             this.dgvDoctorMenu = new System.Windows.Forms.DataGridView();
-            this.lblFilterDoc = new System.Windows.Forms.TextBox();
+            this.txtFilterDoc = new System.Windows.Forms.TextBox();
             this.btnFilterDoc = new System.Windows.Forms.Button();
             this.btnNewPacient = new System.Windows.Forms.Button();
             this.btndeletedoc = new System.Windows.Forms.Button();
@@ -47,12 +47,12 @@ namespace Menu
             this.dgvDoctorMenu.Size = new System.Drawing.Size(520, 318);
             this.dgvDoctorMenu.TabIndex = 3;
             // 
-            // lblFilterDoc
+            // txtFilterDoc
             // 
-            this.lblFilterDoc.Location = new System.Drawing.Point(121, 22);
-            this.lblFilterDoc.Name = "lblFilterDoc";
-            this.lblFilterDoc.Size = new System.Drawing.Size(271, 20);
-            this.lblFilterDoc.TabIndex = 4;
+            this.txtFilterDoc.Location = new System.Drawing.Point(121, 22);
+            this.txtFilterDoc.Name = "txtFilterDoc";
+            this.txtFilterDoc.Size = new System.Drawing.Size(271, 20);
+            this.txtFilterDoc.TabIndex = 4;
             // 
             // btnFilterDoc
             // 
@@ -68,6 +68,7 @@ namespace Menu
             this.btnFilterDoc.Size = new System.Drawing.Size(25, 25);
             this.btnFilterDoc.TabIndex = 5;
             this.btnFilterDoc.UseVisualStyleBackColor = false;
+            this.btnFilterDoc.Click += new System.EventHandler(this.btnFilterDoc_Click);
             // 
             // btnNewPacient
             // 
@@ -122,10 +123,12 @@ namespace Menu
             this.Controls.Add(this.btndeletedoc);
             this.Controls.Add(this.btneditdoc);
             this.Controls.Add(this.btnFilterDoc);
-            this.Controls.Add(this.lblFilterDoc);
+            this.Controls.Add(this.txtFilterDoc);
             this.Controls.Add(this.dgvDoctorMenu);
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(562, 476);
+            this.MinimumSize = new System.Drawing.Size(562, 476);
             this.Name = "DoctorMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoctorMenu";
@@ -139,7 +142,7 @@ namespace Menu
 
         private System.Windows.Forms.DataGridView dgvDoctorMenu;
         private System.Windows.Forms.Button btnNewPacient;
-        private System.Windows.Forms.TextBox lblFilterDoc;
+        private System.Windows.Forms.TextBox txtFilterDoc;
         private System.Windows.Forms.Button btnFilterDoc;
         private System.Windows.Forms.Button btndeletedoc;
         private System.Windows.Forms.Button btneditdoc;

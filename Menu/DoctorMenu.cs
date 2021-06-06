@@ -25,6 +25,10 @@ namespace Menu
             dgvDoctorMenu.DataSource = null;
             dgvDoctorMenu.DataSource = Doctor.Doctors;
         }
+        private void btnFilterDoc_Click(object sender, EventArgs e)
+        {
+            Search();
+        }
 
         private void btndeletedoc_Click(object sender, EventArgs e)
         {
@@ -34,8 +38,7 @@ namespace Menu
                 if (Doctor.Delete(selected))
                 {
                     MessageBox.Show("Doctor deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgvDoctorMenu.DataSource = null;
-                    dgvDoctorMenu.DataSource = Doctor.Doctors;
+                    Search();
                 }
                 else
                     MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -52,6 +55,12 @@ namespace Menu
                 return dgvDoctorMenu.CurrentRow.DataBoundItem as Doctor;
             return null;
         }
+
+        private void Search() {
+            dgvDoctorMenu.DataSource = null;
+            dgvDoctorMenu.DataSource = Doctor.Search(txtFilterDoc.Text);
+        }
         #endregion
+
     }
 }

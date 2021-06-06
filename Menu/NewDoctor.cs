@@ -71,7 +71,11 @@ namespace Menu
             txtSurname.Text = "";
             nudDocumentNum.Value= 0;
             dateDateOfBirth.Value = new DateTime(1900, 1, 1);
+            cmbDocumentType.SelectedItem = null;
+            cmbSpecialField.SelectedItem = null;
         }
+
+
         private void Confirm() { // cambiar nombre
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
@@ -80,6 +84,8 @@ namespace Menu
             cmbSpecialField.Text = obj.SpecialField.ToString();
             dateDateOfBirth.Value = obj.DateOfBirth;
         }
+
+
 
         #endregion
     }

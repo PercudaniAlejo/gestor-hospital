@@ -60,6 +60,20 @@ namespace CapaNegocio
                 return doctors.Remove(newDoc);
             return false;
         }
+        public static List<Doctor> Search(string DoctorSearch)
+        {
+            DoctorSearch = DoctorSearch.ToLower();
+            List<Doctor> DoctorFound = new List<Doctor>();
+
+            foreach (Doctor e in Doctor.doctors)
+            {
+                if (e.Name.ToLower().Contains(DoctorSearch) || e.Surname.ToLower().Contains(DoctorSearch) ||
+                    e.DocumentNumber.ToString() == DoctorSearch || e.SpecialField.ToString().ToLower().Contains(DoctorSearch))
+                    DoctorFound.Add(e);
+            }
+
+            return DoctorFound;
+        }
         #endregion
 
     }
