@@ -15,7 +15,7 @@ namespace Menu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addContact());
+            Application.Run(new Menu());
         }
     }
 }

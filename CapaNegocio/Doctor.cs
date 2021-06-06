@@ -23,7 +23,7 @@ namespace CapaNegocio
         public int DocumentNumber { get => documentNumber; set => documentNumber = value; }
         public Document DocumentType { get => documentType; set => documentType = value; }
         public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
-        internal SpecialField SpecialField { get => specialField; set => specialField = value; }
+        public SpecialField SpecialField { get => specialField; set => specialField = value; }
         public static List<Doctor> Doctors { get => doctors; set => doctors = value; }
         #endregion
 

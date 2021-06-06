@@ -20,6 +20,11 @@ namespace Menu
         }
         private void NewDoctor_Load(object sender, EventArgs e)
         {
+            cmbDocumentType.DataSource = null;
+            cmbDocumentType.DataSource = Document.DocTypes;
+
+            cmbSpecialField.DataSource = null;
+            cmbSpecialField.DataSource = SpecialField.Specialities;
         }
         #endregion
 
@@ -34,8 +39,28 @@ namespace Menu
                 Doctor.Doctors.Add(newDoc);
             }
             else{
-
+                obj.Name = txtName.Text;
+                obj.Surname = txtSurname.Text;
+                obj.DocumentNumber = (int)nudDocumentNum.Value;
+                obj.DocumentType = cmbDocumentType.SelectedItem as Document;
+                obj.SpecialField = cmbSpecialField.SelectedItem as SpecialField;
+                obj.DateOfBirth = dateDateOfBirth.Value;
             }
+        }
+        private void Clear()
+        {
+            txtName.Text = "";
+            txtSurname.Text = "";
+            nudDocumentNum.Value= 0;
+            dateDateOfBirth.Value = new DateTime(1900, 1, 1);
+        }
+        private void Confirm() {
+            txtName.Text = obj.Name;
+            txtSurname.Text = obj.Surname;
+            nudDocumentNum.Value = obj.DocumentNumber;
+            cmbDocumentType.Text = obj.DocumentType.ToString();
+            cmbSpecialField.Text = obj.SpecialField.ToString();
+            dateDateOfBirth.Value = obj.DateOfBirth;
         }
         #endregion
     }
