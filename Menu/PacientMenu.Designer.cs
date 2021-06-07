@@ -67,6 +67,7 @@ namespace Menu
             this.btndelete.Size = new System.Drawing.Size(30, 30);
             this.btndelete.TabIndex = 10;
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnedit
             // 

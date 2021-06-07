@@ -14,8 +14,7 @@ namespace Menu
         public PacientMenu()
         {
             InitializeComponent();
-            dgvPacient.DataSource = null;
-            dgvPacient.DataSource = Pacient.Pacients;
+            DGVLoad();
         }
         private Pacient Selected()
         {
@@ -28,26 +27,11 @@ namespace Menu
         {
             newPaciente newPaciente = new newPaciente();
             newPaciente.ShowDialog();
-            dgvPacient.DataSource = null;
-            dgvPacient.DataSource = Pacient.Pacients;
+            DGVLoad();
         }
 
         private void btnedit_Click(object sender, EventArgs e)
         {
-            Pacient selected = Selected();
-            if (selected != null)
-            {
-                if (Pacient.Delete(selected))
-                {
-                    MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgvPacient.DataSource = null;
-                    dgvPacient.DataSource = Pacient.Pacients;
-                }
-                else
-                    MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-                MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void btnFilterPacient_Click(object sender, EventArgs e)
@@ -59,6 +43,28 @@ namespace Menu
             dgvPacient.DataSource = null;
             dgvPacient.DataSource = Doctor.Search(txtFilterPacient.Text);
         }
+        private void DGVLoad()
+        {
+            dgvPacient.DataSource = null;
+            dgvPacient.DataSource = Pacient.Pacients.ToList();
+        }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            Pacient selected = Selected();
+            if (selected != null)
+            {
+                if (Pacient.Delete(selected))
+                {
+                    MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DGVLoad();
+                }
+                else
+                    MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+                MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
-    
+
 }
