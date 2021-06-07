@@ -43,7 +43,6 @@ namespace Menu
         {
             Clear();
         }
-
         #endregion
 
         #region METHODS
@@ -76,14 +75,14 @@ namespace Menu
         }
 
 
-        private void Load() {
+        /*private void Load() {
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
             nudDocumentNum.Value = obj.DocumentNumber;
             cmbDocumentType.Text = obj.DocumentType.ToString();
             cmbSpecialField.Text = obj.SpecialField.ToString();
             dateDateOfBirth.Value = obj.DateOfBirth;
-        }
+        }*/
 
 
 

@@ -39,7 +39,7 @@ namespace Menu
             {
                 if (Pacient.Delete(selected))
                 {
-                    MessageBox.Show("Doctor deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dgvPacient.DataSource = null;
                     dgvPacient.DataSource = Pacient.Pacients;
                 }
@@ -47,7 +47,7 @@ namespace Menu
                     MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
-                MessageBox.Show("Select doctor to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void btnFilterPacient_Click(object sender, EventArgs e)

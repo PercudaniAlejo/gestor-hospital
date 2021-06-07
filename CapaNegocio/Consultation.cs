@@ -46,6 +46,26 @@ namespace CapaNegocio
         {
             return description + "" + doctor + "" + consultationDate.ToShortDateString() + "" + pacient;
         }
+
+        public static bool Delete(Consultation newConsult)
+        {
+            if (consultations != null && consultations.Count() > 0)
+                return consultations.Remove(newConsult);
+            return false;
+        }
+        public static List<Consultation> Search(string ConsultSearch)
+        {
+            ConsultSearch = ConsultSearch.ToLower();
+            List<Consultation> ConsultFound = new List<Consultation>();
+
+            foreach (Consultation e in Consultation.consultations)
+            {
+                if (e.doctor.ToString().ToLower().Contains(ConsultSearch) || 
+                    e.pacient.ToString().ToLower().Contains(ConsultSearch))
+                    ConsultFound.Add(e); ;
+            }
+            return ConsultFound;
+        }
         #endregion
     }
 }

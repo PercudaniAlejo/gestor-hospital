@@ -32,8 +32,8 @@ namespace Menu
             this.dgvconsult = new System.Windows.Forms.DataGridView();
             this.txtbuscon = new System.Windows.Forms.TextBox();
             this.btnbuscon = new System.Windows.Forms.Button();
-            this.btnConfirmcons = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvconsult)).BeginInit();
             this.SuspendLayout();
@@ -62,23 +62,24 @@ namespace Menu
             this.btnbuscon.Text = "Buscar";
             this.btnbuscon.UseVisualStyleBackColor = true;
             // 
-            // btnConfirmcons
+            // btnModify
             // 
-            this.btnConfirmcons.Location = new System.Drawing.Point(12, 216);
-            this.btnConfirmcons.Name = "btnConfirmcons";
-            this.btnConfirmcons.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirmcons.TabIndex = 3;
-            this.btnConfirmcons.Text = "Confirm";
-            this.btnConfirmcons.UseVisualStyleBackColor = true;
+            this.btnModify.Location = new System.Drawing.Point(12, 216);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.TabIndex = 3;
+            this.btnModify.Text = "Modify";
+            this.btnModify.UseVisualStyleBackColor = true;
             // 
-            // btncancel
+            // btnDelete
             // 
-            this.btncancel.Location = new System.Drawing.Point(93, 216);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 23);
-            this.btncancel.TabIndex = 4;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(93, 216);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnadd
             // 
@@ -96,13 +97,14 @@ namespace Menu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 279);
             this.Controls.Add(this.btnadd);
-            this.Controls.Add(this.btncancel);
-            this.Controls.Add(this.btnConfirmcons);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnModify);
             this.Controls.Add(this.btnbuscon);
             this.Controls.Add(this.txtbuscon);
             this.Controls.Add(this.dgvconsult);
             this.Name = "ConsultationMenu";
             this.Text = "ConsultationMenu";
+            this.Load += new System.EventHandler(this.ConsultationMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvconsult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,8 +116,8 @@ namespace Menu
         private System.Windows.Forms.DataGridView dgvconsult;
         private System.Windows.Forms.TextBox txtbuscon;
         private System.Windows.Forms.Button btnbuscon;
-        private System.Windows.Forms.Button btnConfirmcons;
-        private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnadd;
     }
 }

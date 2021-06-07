@@ -32,7 +32,8 @@ namespace Menu
             if (obj == null)
             {
 
-                Consultation newConsultation = new Consultation(txtdescrip.Text, cmbdoctor.SelectedItem as Doctor,cmbPaciente.SelectedItem as Pacient,dtpCD.Value);
+                Consultation newConsultation = new Consultation(txtdescrip.Text, cmbdoctor.SelectedItem as Doctor,
+                                            cmbPaciente.SelectedItem as Pacient,dtpCD.Value);
                 Consultation.Consultations.Add(newConsultation);
             }
             else
@@ -50,5 +51,6 @@ namespace Menu
             cmbPaciente.SelectedItem = null;
             dtpCD.Value = new DateTime(2021,1,1);
         }
+
     }
 }
