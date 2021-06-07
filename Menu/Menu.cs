@@ -50,5 +50,11 @@ namespace Menu
             DoctorMenu f = new DoctorMenu();
             f.ShowDialog();
         }
+
+        private void btnConsult_Click(object sender, EventArgs e)
+        {
+            ConsultationMenu f = new ConsultationMenu();
+            f.ShowDialog();
+        }
     }
 }
