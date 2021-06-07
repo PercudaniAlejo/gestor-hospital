@@ -26,6 +26,10 @@ namespace Menu
 
         private void btnNewPacient_Click(object sender, EventArgs e)
         {
+            Contact.Obj = null;
+            CapaNegocio.Location.Obj = null;
+            HealthInsurance.Obj = null;
+
             newPaciente newPaciente = new newPaciente();
             newPaciente.ShowDialog();
             DGVLoad();

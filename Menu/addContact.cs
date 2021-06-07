@@ -63,10 +63,6 @@ namespace Menu
             nudNP2.Value = 0;
             txttutor.Text = "";
         }
-        private void CalculateAge()
-        {
-            
-        }
 
         #endregion
 

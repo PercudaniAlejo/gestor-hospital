@@ -17,9 +17,7 @@ namespace Menu
         public newPaciente(Pacient objpac = null)
         {
             InitializeComponent();
-            Contact.Obj = null;
-            CapaNegocio.Location.Obj = null;
-            HealthInsurance.Obj = null;
+
             if (objpac != null)
             {
                 obj = objpac;
