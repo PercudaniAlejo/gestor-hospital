@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace Menu
 {
@@ -14,6 +15,8 @@ namespace Menu
         public addHealthInsurence()
         {
             InitializeComponent();
+            dgvhi.DataSource = null;
+            dgvhi.DataSource = HealthInsurance.Obj;
         }
         #region events
      private void btnCancel_Click(object sender, EventArgs e)
@@ -53,7 +56,7 @@ namespace Menu
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+            HealthInsurance.Obj = new HealthInsurance(txtName.Text,txtPlan.Text,(int)nudHealthInsurenceNum.Value,dateDueDate.Value,txtType.Text);
         }
     }
 }

@@ -28,8 +28,7 @@ namespace Menu
         {
             if (obj == null)
             {
-                CapaNegocio.Location NewLoc = new CapaNegocio.Location(txtBed.Text, dtpDateOfArrival.Value, txtRoom.Text);
-                CapaNegocio.Location.Locations.Add(NewLoc);
+                CapaNegocio.Location.Obj = new CapaNegocio.Location(txtBed.Text, dtpDateOfArrival.Value, txtRoom.Text);
             }
             else
             {

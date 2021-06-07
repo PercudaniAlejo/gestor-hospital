@@ -40,8 +40,7 @@ namespace Menu
         {
             if (c == null)
             {
-                Contact contact = new Contact(txtEmail.Text, (int)nudNP.Value,(int)nudNP2.Value,txttutor.Text);
-                Contact.Contacts.Add(contact);
+                Contact.Obj = new Contact(txtEmail.Text, (int)nudNP.Value,(int)nudNP2.Value,txttutor.Text);
             }
             else
             {

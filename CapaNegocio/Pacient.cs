@@ -11,7 +11,7 @@ namespace CapaNegocio
         private string name;
         private string surname;
         private DateTime dateofBirth;
-        private string gender;
+        private Gender gender;
         private int documentNumber;
         private Contact contact;
         private Document document;
@@ -25,7 +25,7 @@ namespace CapaNegocio
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
         public DateTime DateofBirth { get => dateofBirth; set => dateofBirth = value; }
-        public string Gender { get => gender; set => gender = value; }
+        public Gender Gender { get => gender; set => gender = value; }
         public int DocumentNumber { get => documentNumber; set => documentNumber = value; }
         public Contact Contact { get => contact; set => contact = value; }
         public Document Document { get => document; set => document = value; }
@@ -55,7 +55,7 @@ namespace CapaNegocio
             {
                 if (e.Name.ToLower().Contains(PacientSearch) || e.Surname.ToLower().Contains(PacientSearch) || e.HealthInsurance.ToString().Contains(PacientSearch) ||
                     e.Contact.ToString().Contains(PacientSearch) || e.BloodType.ToString().Contains(PacientSearch) || e.DateofBirth.ToString().Contains(PacientSearch) || e.Document.ToString().Contains(PacientSearch) ||
-                    e.DocumentNumber.ToString().Contains(PacientSearch) || e.Gender.ToLower().Contains(PacientSearch) || e.DocumentNumber.ToString() == PacientSearch || e.Location.ToString().ToLower().Contains(PacientSearch))
+                    e.DocumentNumber.ToString().Contains(PacientSearch) || e.Gender.ToString().Contains(PacientSearch) || e.DocumentNumber.ToString() == PacientSearch || e.Location.ToString().ToLower().Contains(PacientSearch))
                     PacientFound.Add(e);
             }
 
@@ -69,7 +69,7 @@ namespace CapaNegocio
             name = "";
             surname = "";
             dateofBirth = new DateTime(1900, 1, 1);
-            gender = "";
+            gender = null;
             documentNumber = 0;
             contact = null;
             document = null;
@@ -77,7 +77,7 @@ namespace CapaNegocio
             healthInsurance = null;
             location = null;
         }
-        public Pacient(string name, string surname, DateTime dateofBirth, string gender, int documentNumber, Contact contact, Document document, BloodType bloodType, HealthInsurance healthInsurance, Location location)
+        public Pacient(string name, string surname, DateTime dateofBirth, Gender gender, int documentNumber, Contact contact, Document document, BloodType bloodType, HealthInsurance healthInsurance, Location location)
         {
             this.name = name;
             this.surname = surname;

@@ -26,7 +26,8 @@ namespace Menu
         {
             if (obj == null)
             {
-                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as String, (int)nudDocumentNum.Value,Contact.Obj , cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
+                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as Gender, (int)nudDocumentNum.Value,Contact.Obj , cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
+                Pacient.Pacients.Add(pacient);
             }
         }
 
