@@ -76,6 +76,7 @@ namespace Menu
             MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 
-}
+       
+    }
 
 }

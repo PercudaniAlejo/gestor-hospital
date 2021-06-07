@@ -46,6 +46,7 @@ namespace Menu
             this.dgvPacient.Name = "dgvPacient";
             this.dgvPacient.Size = new System.Drawing.Size(499, 299);
             this.dgvPacient.TabIndex = 1;
+           
             // 
             // txtFilterPacient
             // 
