@@ -61,6 +61,7 @@ namespace Menu
             this.btnbuscon.TabIndex = 2;
             this.btnbuscon.Text = "Buscar";
             this.btnbuscon.UseVisualStyleBackColor = true;
+            this.btnbuscon.Click += new System.EventHandler(this.btnbuscon_Click);
             // 
             // btnModify
             // 
@@ -70,6 +71,7 @@ namespace Menu
             this.btnModify.TabIndex = 3;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnDelete
             // 
@@ -104,7 +106,6 @@ namespace Menu
             this.Controls.Add(this.dgvconsult);
             this.Name = "ConsultationMenu";
             this.Text = "ConsultationMenu";
-            this.Load += new System.EventHandler(this.ConsultationMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvconsult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,7 +62,7 @@ namespace CapaNegocio
             {
                 if (e.doctor.ToString().ToLower().Contains(ConsultSearch) || 
                     e.pacient.ToString().ToLower().Contains(ConsultSearch))
-                    ConsultFound.Add(e); ;
+                    ConsultFound.Add(e); 
             }
             return ConsultFound;
         }

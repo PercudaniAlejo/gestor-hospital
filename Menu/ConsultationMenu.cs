@@ -18,17 +18,17 @@ namespace Menu
             dgvconsult.DataSource = null;
             dgvconsult.DataSource = Consultation.Consultations;
         }
-        private void ConsultationMenu_Load(object sender, EventArgs e)
+        #region events
+        private void btnadd_Click(object sender, EventArgs e)
         {
+            NewConsultation fa = new NewConsultation();
+            fa.ShowDialog();
             dgvconsult.DataSource = null;
             dgvconsult.DataSource = Consultation.Consultations;
         }
-        private void btnadd_Click(object sender, EventArgs e)
+        private void btnbuscon_Click(object sender, EventArgs e)
         {
-            NewConsultation f = new NewConsultation();
-            f.ShowDialog();
-            dgvconsult.DataSource = null;
-            dgvconsult.DataSource = Consultation.Consultations;
+            Search();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -49,6 +49,12 @@ namespace Menu
 
         }
 
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
         #region METHODS
         private Consultation Selected()
         {
@@ -61,8 +67,7 @@ namespace Menu
             dgvconsult.DataSource = null;
             dgvconsult.DataSource = Consultation.Search(txtbuscon.Text);
         }
+
         #endregion
-
-
     }
 }
