@@ -15,8 +15,6 @@ namespace Menu
         public addHealthInsurence()
         {
             InitializeComponent();
-            dgvhi.DataSource = null;
-            dgvhi.DataSource = HealthInsurance.Obj;
         }
         #region events
      private void btnCancel_Click(object sender, EventArgs e)

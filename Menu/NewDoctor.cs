@@ -12,11 +12,16 @@ namespace Menu
 {
     public partial class NewDoctor : Form
     {
-        Doctor obj;
+        Doctor obj, newDoc;
         #region EVENTS
-        public NewDoctor()
+        public NewDoctor(Doctor modifyDoctor = null)
         {
             InitializeComponent();
+            if (modifyDoctor != null)
+            {
+                obj = modifyDoctor;
+                Modify(obj);
+            }
 
         }
         private void NewDoctor_Load(object sender, EventArgs e)
@@ -50,7 +55,7 @@ namespace Menu
         {
             if (obj == null){
 
-                Doctor newDoc = new Doctor(txtName.Text, txtSurname.Text, (int)nudDocumentNum.Value,
+                newDoc = new Doctor(txtName.Text, txtSurname.Text, (int)nudDocumentNum.Value,
                                             cmbDocumentType.SelectedItem as Document,
                                             cmbSpecialField.SelectedItem as SpecialField, dateDateOfBirth.Value);
                 Doctor.Doctors.Add(newDoc);
@@ -73,19 +78,14 @@ namespace Menu
             cmbDocumentType.SelectedItem = null;
             cmbSpecialField.SelectedItem = null;
         }
-
-
-        /*private void Load() {
+        private void Modify(Doctor modifyDoctor) {
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
             nudDocumentNum.Value = obj.DocumentNumber;
-            cmbDocumentType.Text = obj.DocumentType.ToString();
-            cmbSpecialField.Text = obj.SpecialField.ToString();
+            cmbDocumentType.SelectedItem = obj.DocumentType;
+            cmbSpecialField.SelectedItem = obj.SpecialField;
             dateDateOfBirth.Value = obj.DateOfBirth;
-        }*/
-
-
-
+        }
         #endregion
     }
 }

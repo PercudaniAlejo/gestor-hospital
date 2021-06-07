@@ -11,6 +11,8 @@ namespace Menu
 {
     public partial class DoctorMenu : Form
     {
+        Doctor objDoctor;
+         
         public DoctorMenu()
         {
             InitializeComponent();
@@ -27,7 +29,13 @@ namespace Menu
         {
             Search();
         }
-
+        private void btneditdoc_Click(object sender, EventArgs e)
+        {
+            objDoctor = Selected();
+            NewDoctor nD = new NewDoctor(objDoctor);
+            nD.ShowDialog();
+            dgvLoad();
+        }
         private void btndeletedoc_Click(object sender, EventArgs e)
         {
             Doctor selected = Selected();

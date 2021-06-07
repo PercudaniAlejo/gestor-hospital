@@ -113,6 +113,7 @@ namespace Menu
             this.btneditdoc.Size = new System.Drawing.Size(30, 30);
             this.btneditdoc.TabIndex = 11;
             this.btneditdoc.UseVisualStyleBackColor = false;
+            this.btneditdoc.Click += new System.EventHandler(this.btneditdoc_Click);
             // 
             // DoctorMenu
             // 
