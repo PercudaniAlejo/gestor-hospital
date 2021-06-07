@@ -14,17 +14,15 @@ namespace Menu
     {
         public ConsultationMenu()
         {
-            InitializeComponent(); 
-            dgvconsult.DataSource = null;
-            dgvconsult.DataSource = Consultation.Consultations;
+            InitializeComponent();
+            dgvLoad();
         }
         #region events
         private void btnadd_Click(object sender, EventArgs e)
         {
             NewConsultation fa = new NewConsultation();
             fa.ShowDialog();
-            dgvconsult.DataSource = null;
-            dgvconsult.DataSource = Consultation.Consultations;
+            dgvLoad();
         }
         private void btnbuscon_Click(object sender, EventArgs e)
         {
@@ -66,6 +64,12 @@ namespace Menu
         {
             dgvconsult.DataSource = null;
             dgvconsult.DataSource = Consultation.Search(txtbuscon.Text);
+        }
+
+        private void dgvLoad()
+        {
+            dgvconsult.DataSource = null;
+            dgvconsult.DataSource = Consultation.Consultations.ToList();
         }
 
         #endregion
