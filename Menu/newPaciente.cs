@@ -48,7 +48,8 @@ namespace Menu
 
         private void btnAddContact_Click(object sender, EventArgs e)
         {
-            addContact f = new addContact();
+            DateTime tempAge = dateDateOfBirth.Value;
+            addContact f = new addContact(tempAge);
             f.ShowDialog();
         }
 
@@ -77,6 +78,8 @@ namespace Menu
             cmbDocumentType.SelectedItem = null;
             cmbgender.SelectedItem = null;
         }
+
+      
         #endregion
     }
 }

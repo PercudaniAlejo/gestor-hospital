@@ -13,16 +13,20 @@ namespace Menu
     public partial class addContact : Form
     {
         Contact c;
-        public addContact()
+        public addContact(DateTime fecNac)
         {
             InitializeComponent();
+            int age = DateTime.Today.AddTicks(-fecNac.Ticks).Year - 1;
+            if (age > 18)
+                pnl1mas18.Enabled = false;
+            else
+                pnl1mas18.Enabled = true;
         }
         #region Events
         private void addContact_Load(object sender, EventArgs e)
         {
 
         }
-
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             Save();
@@ -58,6 +62,10 @@ namespace Menu
             nudNP.Value = 0;
             nudNP2.Value = 0;
             txttutor.Text = "";
+        }
+        private void CalculateAge()
+        {
+            
         }
 
         #endregion

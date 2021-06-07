@@ -76,7 +76,7 @@ namespace Menu
         }
 
 
-        private void Confirm() { // cambiar nombre
+        private void Load() {
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
             nudDocumentNum.Value = obj.DocumentNumber;
