@@ -29,13 +29,15 @@ namespace CapaNegocio
             description = "";
             doctor = null;
             pacient = null;
+            consultationDate = new DateTime(2021,1,1);
         }
 
-        public Consultation(string description, Doctor doctor, Pacient pacient)
+        public Consultation(string description, Doctor doctor, Pacient pacient,DateTime consultationDate)
         {
             this.description = description;
             this.doctor = doctor;
             this.pacient = pacient;
+            this.consultationDate = consultationDate;
         }
         #endregion
 
