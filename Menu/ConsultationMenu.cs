@@ -27,6 +27,8 @@ namespace Menu
         {
             NewConsultation f = new NewConsultation();
             f.ShowDialog();
+            dgvconsult.DataSource = null;
+            dgvconsult.DataSource = Consultation.Consultations;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
