@@ -50,7 +50,7 @@ namespace Menu
         private void Search()
         {
             dgvPacient.DataSource = null;
-            dgvPacient.DataSource = Doctor.Search(txtFilterPacient.Text);
+            dgvPacient.DataSource = Pacient.Search(txtFilterPacient.Text);
         }
         private void DGVLoad()
         {
@@ -78,6 +78,7 @@ namespace Menu
             MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 
-}
+       
+    }
 
 }
