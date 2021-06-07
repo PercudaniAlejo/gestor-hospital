@@ -14,9 +14,17 @@ namespace Menu
     {
 
         Pacient obj;
-        public newPaciente()
+        public newPaciente(Pacient objpac = null)
         {
             InitializeComponent();
+            Contact.Obj = null;
+            CapaNegocio.Location.Obj = null;
+            HealthInsurance.Obj = null;
+            if (objpac != null)
+            {
+                obj = objpac;
+                modify(obj);
+            }
             cmbgender.SelectedItem = null;
             cmbBloodType.SelectedItem = null;
             cmbDocumentType.SelectedItem = null;
@@ -26,8 +34,22 @@ namespace Menu
         {
             if (obj == null)
             {
-                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as Gender, (int)nudDocumentNum.Value,Contact.Obj , cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
+                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as Gender, (int)nudDocumentNum.Value, Contact.Obj, cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
                 Pacient.Pacients.Add(pacient);
+                Clean();
+            }
+            else
+            {
+                obj.Name = txtName.Text;
+                obj.Surname = txtSurname.Text;
+                obj.DateofBirth = dateDateOfBirth.Value;
+                obj.Gender = cmbgender.SelectedItem as Gender;
+                obj.Document = cmbDocumentType.SelectedItem as Document;
+                obj.BloodType = cmbBloodType.SelectedItem as BloodType;
+                obj.DocumentNumber = (int)nudDocumentNum.Value;
+                obj.Contact = Contact.Obj;
+                obj.HealthInsurance = HealthInsurance.Obj;
+                obj.Location = CapaNegocio.Location.Obj;
             }
         }
 
@@ -78,8 +100,18 @@ namespace Menu
             cmbDocumentType.SelectedItem = null;
             cmbgender.SelectedItem = null;
         }
+        private void modify(Pacient obj)
+        {
+            txtName.Text = obj.Name;
+            txtSurname.Text = obj.Surname;
+            nudDocumentNum.Value = obj.DocumentNumber;
+            cmbBloodType.SelectedItem = obj.BloodType;
+            cmbDocumentType.SelectedItem = obj.Document;
+            cmbgender.SelectedItem = obj.Gender;
+            dateDateOfBirth.Value = obj.DateofBirth;
+        }
 
-      
+
         #endregion
     }
 }

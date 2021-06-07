@@ -11,6 +11,7 @@ namespace Menu
 {
     public partial class PacientMenu : Form
     {
+        Pacient objpac;
         public PacientMenu()
         {
             InitializeComponent();
@@ -32,6 +33,10 @@ namespace Menu
 
         private void btnedit_Click(object sender, EventArgs e)
         {
+            objpac = Selected();
+            newPaciente np = new newPaciente(objpac);
+            np.ShowDialog();
+            DGVLoad();
         }
 
         private void btnFilterPacient_Click(object sender, EventArgs e)
@@ -65,6 +70,7 @@ namespace Menu
             else
                 MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
     }
 
 }
