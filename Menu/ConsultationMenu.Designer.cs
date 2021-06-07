@@ -105,6 +105,7 @@ namespace Menu
             this.Controls.Add(this.txtbuscon);
             this.Controls.Add(this.dgvconsult);
             this.Name = "ConsultationMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultationMenu";
             ((System.ComponentModel.ISupportInitialize)(this.dgvconsult)).EndInit();
             this.ResumeLayout(false);
