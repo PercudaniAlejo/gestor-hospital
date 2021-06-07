@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultationMenu));
             this.dgvconsult = new System.Windows.Forms.DataGridView();
             this.txtbuscon = new System.Windows.Forms.TextBox();
             this.btnbuscon = new System.Windows.Forms.Button();
@@ -48,62 +49,85 @@ namespace Menu
             // 
             // txtbuscon
             // 
-            this.txtbuscon.Location = new System.Drawing.Point(85, 25);
+            this.txtbuscon.Location = new System.Drawing.Point(113, 25);
             this.txtbuscon.Name = "txtbuscon";
-            this.txtbuscon.Size = new System.Drawing.Size(219, 20);
+            this.txtbuscon.Size = new System.Drawing.Size(247, 20);
             this.txtbuscon.TabIndex = 1;
             // 
             // btnbuscon
             // 
-            this.btnbuscon.Location = new System.Drawing.Point(310, 23);
+            this.btnbuscon.BackColor = System.Drawing.Color.Transparent;
+            this.btnbuscon.BackgroundImage = global::Menu.Properties.Resources.Search;
+            this.btnbuscon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnbuscon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscon.FlatAppearance.BorderSize = 0;
+            this.btnbuscon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscon.Location = new System.Drawing.Point(366, 19);
             this.btnbuscon.Name = "btnbuscon";
-            this.btnbuscon.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscon.Size = new System.Drawing.Size(30, 30);
             this.btnbuscon.TabIndex = 2;
-            this.btnbuscon.Text = "Buscar";
-            this.btnbuscon.UseVisualStyleBackColor = true;
+            this.btnbuscon.UseVisualStyleBackColor = false;
             this.btnbuscon.Click += new System.EventHandler(this.btnbuscon_Click);
             // 
             // btnModify
             // 
+            this.btnModify.BackColor = System.Drawing.Color.Transparent;
+            this.btnModify.BackgroundImage = global::Menu.Properties.Resources.edit_modify_icon_149489;
+            this.btnModify.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnModify.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModify.FlatAppearance.BorderSize = 0;
+            this.btnModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModify.Location = new System.Drawing.Point(12, 216);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.Size = new System.Drawing.Size(30, 30);
             this.btnModify.TabIndex = 3;
-            this.btnModify.Text = "Modify";
-            this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.UseVisualStyleBackColor = false;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(93, 216);
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BackgroundImage = global::Menu.Properties.Resources.biggarbagebin_121980;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Location = new System.Drawing.Point(48, 216);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(30, 30);
             this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(435, 216);
+            this.btnadd.BackColor = System.Drawing.Color.Transparent;
+            this.btnadd.BackgroundImage = global::Menu.Properties.Resources._;
+            this.btnadd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnadd.FlatAppearance.BorderSize = 0;
+            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadd.Location = new System.Drawing.Point(480, 216);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(75, 23);
+            this.btnadd.Size = new System.Drawing.Size(30, 30);
             this.btnadd.TabIndex = 5;
-            this.btnadd.Text = "Add";
-            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.UseVisualStyleBackColor = false;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // ConsultationMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 279);
+            this.ClientSize = new System.Drawing.Size(526, 254);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.btnbuscon);
             this.Controls.Add(this.txtbuscon);
             this.Controls.Add(this.dgvconsult);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(542, 293);
+            this.MinimumSize = new System.Drawing.Size(542, 293);
             this.Name = "ConsultationMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultationMenu";

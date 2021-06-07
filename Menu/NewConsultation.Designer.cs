@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewConsultation));
             this.Lbldescrip = new System.Windows.Forms.Label();
             this.txtdescrip = new System.Windows.Forms.TextBox();
             this.lblDoctor = new System.Windows.Forms.Label();
@@ -115,28 +116,38 @@ namespace Menu
             // 
             // btnconfirm
             // 
-            this.btnconfirm.Location = new System.Drawing.Point(15, 165);
+            this.btnconfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btnconfirm.BackgroundImage = global::Menu.Properties.Resources.Tick;
+            this.btnconfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnconfirm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnconfirm.FlatAppearance.BorderSize = 0;
+            this.btnconfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconfirm.Location = new System.Drawing.Point(14, 136);
             this.btnconfirm.Name = "btnconfirm";
-            this.btnconfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnconfirm.Size = new System.Drawing.Size(30, 30);
             this.btnconfirm.TabIndex = 8;
-            this.btnconfirm.Text = "Confirm";
-            this.btnconfirm.UseVisualStyleBackColor = true;
+            this.btnconfirm.UseVisualStyleBackColor = false;
             this.btnconfirm.Click += new System.EventHandler(this.btnconfirm_Click);
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(96, 165);
+            this.btncancel.BackColor = System.Drawing.Color.Transparent;
+            this.btncancel.BackgroundImage = global::Menu.Properties.Resources.Delete;
+            this.btncancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncancel.FlatAppearance.BorderSize = 0;
+            this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancel.Location = new System.Drawing.Point(50, 136);
             this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 23);
+            this.btncancel.Size = new System.Drawing.Size(30, 30);
             this.btncancel.TabIndex = 9;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.UseVisualStyleBackColor = false;
             // 
             // NewConsultation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 205);
+            this.ClientSize = new System.Drawing.Size(405, 174);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnconfirm);
             this.Controls.Add(this.label1);
@@ -147,8 +158,9 @@ namespace Menu
             this.Controls.Add(this.lblDoctor);
             this.Controls.Add(this.txtdescrip);
             this.Controls.Add(this.Lbldescrip);
-            this.MaximumSize = new System.Drawing.Size(426, 244);
-            this.MinimumSize = new System.Drawing.Size(426, 244);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(421, 213);
+            this.MinimumSize = new System.Drawing.Size(421, 213);
             this.Name = "NewConsultation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewConsultation";
