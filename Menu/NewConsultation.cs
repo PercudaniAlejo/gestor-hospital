@@ -12,7 +12,7 @@ namespace Menu
 {
     public partial class NewConsultation : Form
     {
-        Consultation obj;
+        Consultation obj = null;
         public NewConsultation()
         {
             InitializeComponent();
