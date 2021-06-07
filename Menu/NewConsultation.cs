@@ -13,9 +13,15 @@ namespace Menu
     public partial class NewConsultation : Form
     {
         Consultation obj = null;
-        public NewConsultation()
+        public NewConsultation(Consultation modifyConsult = null)
         {
             InitializeComponent();
+            if (modifyConsult != null)
+            {
+                obj = modifyConsult;
+                Modify(obj);
+            }
+
             cmbPaciente.DataSource = null;
             cmbPaciente.DataSource = Pacient.Pacients;
             cmbdoctor.DataSource = null;
@@ -50,6 +56,13 @@ namespace Menu
             cmbdoctor.SelectedItem = null;
             cmbPaciente.SelectedItem = null;
             dtpCD.Value = new DateTime(2021,1,1);
+        }
+
+        private void Modify(Consultation modifyConsult) {
+            txtdescrip.Text = obj.Description;
+            cmbdoctor.SelectedItem = obj.Doctor;
+            cmbPaciente.SelectedItem = obj.Pacient;
+            dtpCD.Value = obj.ConsultationDate;
         }
 
     }

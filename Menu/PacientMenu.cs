@@ -56,25 +56,28 @@ namespace Menu
         {
             dgvPacient.DataSource = null;
             dgvPacient.DataSource = Pacient.Pacients.ToList();
+            //dgvPacient.DataSource = HealthInsurance.Healthinsurances.ToList();
+            
+
         }
 
-        private void btndelete_Click(object sender, EventArgs e)
+    private void btndelete_Click(object sender, EventArgs e)
+    {
+        Pacient selected = Selected();
+        if (selected != null)
         {
-            Pacient selected = Selected();
-            if (selected != null)
+            if (Pacient.Delete(selected))
             {
-                if (Pacient.Delete(selected))
-                {
-                    MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    DGVLoad();
-                }
-                else
-                    MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DGVLoad();
             }
             else
-                MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-
+        else
+            MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
+
+}
 
 }

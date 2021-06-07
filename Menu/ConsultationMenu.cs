@@ -12,6 +12,7 @@ namespace Menu
 {
     public partial class ConsultationMenu : Form
     {
+        Consultation objConsult;
         public ConsultationMenu()
         {
             InitializeComponent();
@@ -49,7 +50,10 @@ namespace Menu
 
         private void btnModify_Click(object sender, EventArgs e)
         {
-
+            objConsult = Selected();
+            NewConsultation nC = new NewConsultation(objConsult);
+            nC.ShowDialog();
+            dgvLoad();
         }
         #endregion
 
