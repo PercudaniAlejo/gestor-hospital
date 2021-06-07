@@ -50,15 +50,13 @@ namespace Menu
         private void Search()
         {
             dgvPacient.DataSource = null;
-            dgvPacient.DataSource = Doctor.Search(txtFilterPacient.Text);
+            dgvPacient.DataSource = Pacient.Search(txtFilterPacient.Text);
         }
         private void DGVLoad()
         {
+
             dgvPacient.DataSource = null;
             dgvPacient.DataSource = Pacient.Pacients.ToList();
-            //dgvPacient.DataSource = HealthInsurance.Healthinsurances.ToList();
-            
-
         }
 
     private void btndelete_Click(object sender, EventArgs e)

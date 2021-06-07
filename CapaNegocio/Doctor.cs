@@ -71,7 +71,7 @@ namespace CapaNegocio
                     e.DocumentNumber.ToString() == DoctorSearch || e.SpecialField.ToString().ToLower().Contains(DoctorSearch))
                     DoctorFound.Add(e);
             }
-
+                
             return DoctorFound;
         }
         #endregion
