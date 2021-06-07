@@ -38,6 +38,10 @@ namespace Menu
             this.txtBed = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.dgvloc = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvloc)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDateOfArrival
@@ -120,11 +124,40 @@ namespace Menu
             this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(316, 277);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 40;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnModify
+            // 
+            this.btnModify.Location = new System.Drawing.Point(235, 277);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.TabIndex = 39;
+            this.btnModify.Text = "Modify";
+            this.btnModify.UseVisualStyleBackColor = true;
+            // 
+            // dgvloc
+            // 
+            this.dgvloc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvloc.Location = new System.Drawing.Point(235, 13);
+            this.dgvloc.Name = "dgvloc";
+            this.dgvloc.Size = new System.Drawing.Size(436, 245);
+            this.dgvloc.TabIndex = 38;
+            // 
             // formLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(213, 135);
+            this.ClientSize = new System.Drawing.Size(691, 312);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnModify);
+            this.Controls.Add(this.dgvloc);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.txtBed);
@@ -134,11 +167,12 @@ namespace Menu
             this.Controls.Add(this.dtpDateOfArrival);
             this.Controls.Add(this.lblDateOfArrival);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(229, 174);
-            this.MinimumSize = new System.Drawing.Size(229, 174);
+            this.MaximumSize = new System.Drawing.Size(707, 351);
+            this.MinimumSize = new System.Drawing.Size(707, 351);
             this.Name = "formLocation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Location";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvloc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +188,8 @@ namespace Menu
         private System.Windows.Forms.TextBox txtBed;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.DataGridView dgvloc;
     }
 }

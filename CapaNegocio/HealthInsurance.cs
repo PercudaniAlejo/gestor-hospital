@@ -14,6 +14,7 @@ namespace CapaNegocio
         private DateTime duedate;
         private string typehi;
         private static List<HealthInsurance> healthinsurances = new List<HealthInsurance>();
+        static HealthInsurance obj;
         #endregion
 
         #region Properties
@@ -23,6 +24,7 @@ namespace CapaNegocio
         public DateTime DueDate { get => duedate; set => duedate = value; }
         public string Typehi { get => typehi; set => typehi = value; }
         public static List<HealthInsurance> Healthinsurances { get => healthinsurances; set => healthinsurances = value; }
+        public static HealthInsurance Obj { get => obj; set => obj = value; }
         #endregion
 
         #region Methods

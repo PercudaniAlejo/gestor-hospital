@@ -12,6 +12,7 @@ namespace CapaNegocio
         private DateTime dateofarrival;
         private string room;
         private static List<Location> locations = new List<Location>();
+        static CapaNegocio.Location obj;
         #endregion
 
         #region Properties
@@ -19,6 +20,7 @@ namespace CapaNegocio
         public DateTime Dateofarrival { get => dateofarrival; set => dateofarrival = value; }
         public string Room { get => room; set => room = value; }
         public static List<Location> Locations { get => locations; set => locations = value; }
+        public static Location Obj { get => obj; set => obj = value; }
         #endregion
 
         #region Methods

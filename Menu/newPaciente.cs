@@ -26,10 +26,7 @@ namespace Menu
         {
             if (obj == null)
             {
-                // Contact obj2; 
-                //obj2.NumberPhone=
-                //  addContact con = new addContact();
-                // Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem, (int)nudDocumentNum.Value, obj2, cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem, );// no funca
+                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as String, (int)nudDocumentNum.Value,Contact.Obj , cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
             }
         }
 

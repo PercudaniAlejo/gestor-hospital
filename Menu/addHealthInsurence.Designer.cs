@@ -42,7 +42,11 @@ namespace Menu
             this.txtType = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
+            this.dgvhi = new System.Windows.Forms.DataGridView();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudHealthInsurenceNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvhi)).BeginInit();
             this.SuspendLayout();
             // 
             // dateDueDate
@@ -161,12 +165,43 @@ namespace Menu
             this.btnConfirm.Size = new System.Drawing.Size(30, 30);
             this.btnConfirm.TabIndex = 28;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            // 
+            // dgvhi
+            // 
+            this.dgvhi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvhi.Location = new System.Drawing.Point(267, 35);
+            this.dgvhi.Name = "dgvhi";
+            this.dgvhi.Size = new System.Drawing.Size(436, 245);
+            this.dgvhi.TabIndex = 32;
+            // 
+            // btnModify
+            // 
+            this.btnModify.Location = new System.Drawing.Point(267, 299);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.TabIndex = 33;
+            this.btnModify.Text = "Modify";
+            this.btnModify.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(348, 299);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 34;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // addHealthInsurence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 343);
+            this.ClientSize = new System.Drawing.Size(726, 343);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnModify);
+            this.Controls.Add(this.dgvhi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.btnCancel);
@@ -180,12 +215,13 @@ namespace Menu
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(254, 382);
-            this.MinimumSize = new System.Drawing.Size(254, 382);
+            this.MaximumSize = new System.Drawing.Size(742, 382);
+            this.MinimumSize = new System.Drawing.Size(742, 382);
             this.Name = "addHealthInsurence";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add HealthInsurence";
             ((System.ComponentModel.ISupportInitialize)(this.nudHealthInsurenceNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvhi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +241,8 @@ namespace Menu
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtType;
+        private System.Windows.Forms.DataGridView dgvhi;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

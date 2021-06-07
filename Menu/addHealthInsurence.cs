@@ -34,5 +34,26 @@ namespace Menu
         }
         #endregion
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            /*Doctor selected = Selected();
+            if (selected != null)
+            {
+                if (Doctor.Delete(selected))
+                {
+                    MessageBox.Show("Doctor deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Search();
+                }
+                else
+                    MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+                MessageBox.Show("Select doctor to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);*/
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

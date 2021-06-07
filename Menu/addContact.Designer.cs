@@ -39,11 +39,15 @@ namespace Menu
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.pnl1mas18 = new System.Windows.Forms.Panel();
-            this.lbltutor = new System.Windows.Forms.Label();
             this.txttutor = new System.Windows.Forms.TextBox();
+            this.lbltutor = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.dgvcontact = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNP2)).BeginInit();
             this.pnl1mas18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcontact)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -143,6 +147,13 @@ namespace Menu
             this.pnl1mas18.Size = new System.Drawing.Size(205, 90);
             this.pnl1mas18.TabIndex = 23;
             // 
+            // txttutor
+            // 
+            this.txttutor.Location = new System.Drawing.Point(5, 18);
+            this.txttutor.Name = "txttutor";
+            this.txttutor.Size = new System.Drawing.Size(189, 20);
+            this.txttutor.TabIndex = 24;
+            // 
             // lbltutor
             // 
             this.lbltutor.AutoSize = true;
@@ -152,18 +163,40 @@ namespace Menu
             this.lbltutor.TabIndex = 24;
             this.lbltutor.Text = "Tutor name";
             // 
-            // txttutor
+            // btnDelete
             // 
-            this.txttutor.Location = new System.Drawing.Point(5, 18);
-            this.txttutor.Name = "txttutor";
-            this.txttutor.Size = new System.Drawing.Size(189, 20);
-            this.txttutor.TabIndex = 24;
+            this.btnDelete.Location = new System.Drawing.Point(319, 280);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 37;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnModify
+            // 
+            this.btnModify.Location = new System.Drawing.Point(238, 280);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(75, 23);
+            this.btnModify.TabIndex = 36;
+            this.btnModify.Text = "Modify";
+            this.btnModify.UseVisualStyleBackColor = true;
+            // 
+            // dgvcontact
+            // 
+            this.dgvcontact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcontact.Location = new System.Drawing.Point(238, 16);
+            this.dgvcontact.Name = "dgvcontact";
+            this.dgvcontact.Size = new System.Drawing.Size(436, 245);
+            this.dgvcontact.TabIndex = 35;
             // 
             // addContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(219, 258);
+            this.ClientSize = new System.Drawing.Size(700, 316);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnModify);
+            this.Controls.Add(this.dgvcontact);
             this.Controls.Add(this.pnl1mas18);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
@@ -172,7 +205,8 @@ namespace Menu
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(228, 297);
+            this.MaximumSize = new System.Drawing.Size(716, 355);
+            this.MinimumSize = new System.Drawing.Size(716, 355);
             this.Name = "addContact";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Contact";
@@ -181,6 +215,7 @@ namespace Menu
             ((System.ComponentModel.ISupportInitialize)(this.nudNP2)).EndInit();
             this.pnl1mas18.ResumeLayout(false);
             this.pnl1mas18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcontact)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +234,8 @@ namespace Menu
         private System.Windows.Forms.Panel pnl1mas18;
         private System.Windows.Forms.TextBox txttutor;
         private System.Windows.Forms.Label lbltutor;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.DataGridView dgvcontact;
     }
 }

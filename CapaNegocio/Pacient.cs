@@ -63,7 +63,7 @@ namespace CapaNegocio
         }
             #endregion
 
-            #region Builders
+        #region Builders
             public Pacient()
         {
             name = "";
