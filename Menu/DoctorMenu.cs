@@ -14,16 +14,14 @@ namespace Menu
         public DoctorMenu()
         {
             InitializeComponent();
-            dgvDoctorMenu.DataSource = null;
-            dgvDoctorMenu.DataSource = Doctor.Doctors;
+            dgvLoad();
         }
         #region EVENTS
         private void btnNewPacient_Click(object sender, EventArgs e)
         {
             NewDoctor formNewDoctor = new NewDoctor();
             formNewDoctor.ShowDialog();
-            dgvDoctorMenu.DataSource = null;
-            dgvDoctorMenu.DataSource = Doctor.Doctors;
+            dgvLoad();
         }
         private void btnFilterDoc_Click(object sender, EventArgs e)
         {
@@ -59,6 +57,11 @@ namespace Menu
         private void Search() {
             dgvDoctorMenu.DataSource = null;
             dgvDoctorMenu.DataSource = Doctor.Search(txtFilterDoc.Text);
+        }
+
+        private void dgvLoad() {
+            dgvDoctorMenu.DataSource = null;
+            dgvDoctorMenu.DataSource = Doctor.Doctors.ToList();
         }
         #endregion
 
