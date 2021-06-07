@@ -22,7 +22,6 @@ namespace Menu
                 obj = modifyDoctor;
                 Modify(obj);
             }
-
         }
         private void NewDoctor_Load(object sender, EventArgs e)
         {

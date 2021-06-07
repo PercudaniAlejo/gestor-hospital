@@ -155,6 +155,7 @@ namespace Menu
             this.dateDateOfBirth.Name = "dateDateOfBirth";
             this.dateDateOfBirth.Size = new System.Drawing.Size(221, 20);
             this.dateDateOfBirth.TabIndex = 15;
+            this.dateDateOfBirth.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // btnocationPacient
             // 

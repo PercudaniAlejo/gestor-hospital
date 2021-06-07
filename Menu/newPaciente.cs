@@ -66,7 +66,6 @@ namespace Menu
         }
         #endregion
 
-
         #region functions
         private void Clean()
         {
@@ -77,9 +76,7 @@ namespace Menu
             cmbBloodType.SelectedItem = null;
             cmbDocumentType.SelectedItem = null;
             cmbgender.SelectedItem = null;
-        }
-
-      
+        }     
         #endregion
     }
 }
