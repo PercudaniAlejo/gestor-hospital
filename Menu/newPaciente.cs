@@ -30,25 +30,7 @@ namespace Menu
         #region events
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            if (obj == null)
-            {
-                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as Gender, (int)nudDocumentNum.Value, Contact.Obj, cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
-                Pacient.Pacients.Add(pacient);
-                Clean();
-            }
-            else
-            {
-                obj.Name = txtName.Text;
-                obj.Surname = txtSurname.Text;
-                obj.DateofBirth = dateDateOfBirth.Value;
-                obj.Gender = cmbgender.SelectedItem as Gender;
-                obj.Document = cmbDocumentType.SelectedItem as Document;
-                obj.BloodType = cmbBloodType.SelectedItem as BloodType;
-                obj.DocumentNumber = (int)nudDocumentNum.Value;
-                obj.Contact = Contact.Obj;
-                obj.HealthInsurance = HealthInsurance.Obj;
-                obj.Location = CapaNegocio.Location.Obj;
-            }
+            Save();
         }
 
         private void newPaciente_Load(object sender, EventArgs e)
@@ -87,6 +69,28 @@ namespace Menu
         #endregion
 
         #region functions
+
+        private void Save() {
+            if (obj == null)
+            {
+                Pacient pacient = new Pacient(txtName.Text, txtSurname.Text, dateDateOfBirth.Value, cmbgender.SelectedItem as Gender, (int)nudDocumentNum.Value, Contact.Obj, cmbDocumentType.SelectedItem as Document, cmbBloodType.SelectedItem as BloodType, HealthInsurance.Obj, CapaNegocio.Location.Obj);// no funca
+                Pacient.Pacients.Add(pacient);
+                Clean();
+            }
+            else
+            {
+                obj.Name = txtName.Text;
+                obj.Surname = txtSurname.Text;
+                obj.DateofBirth = dateDateOfBirth.Value;
+                obj.Gender = cmbgender.SelectedItem as Gender;
+                obj.Document = cmbDocumentType.SelectedItem as Document;
+                obj.BloodType = cmbBloodType.SelectedItem as BloodType;
+                obj.DocumentNumber = (int)nudDocumentNum.Value;
+                obj.Contact = Contact.Obj;
+                obj.HealthInsurance = HealthInsurance.Obj;
+                obj.Location = CapaNegocio.Location.Obj;
+            }
+        }
         private void Clean()
         {
             txtName.Text = "";

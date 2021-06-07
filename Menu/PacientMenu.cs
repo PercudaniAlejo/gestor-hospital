@@ -17,12 +17,8 @@ namespace Menu
             InitializeComponent();
             DGVLoad();
         }
-        private Pacient Selected()
-        {
-            if (dgvPacient.CurrentRow != null)
-                return dgvPacient.CurrentRow.DataBoundItem as Pacient;
-            return null;
-        }
+        #region EVENTS
+
 
         private void btnNewPacient_Click(object sender, EventArgs e)
         {
@@ -47,6 +43,27 @@ namespace Menu
         {
             Search();
         }
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            Pacient selected = Selected();
+            if (selected != null)
+            {
+                if (Pacient.Delete(selected))
+                {
+                    MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DGVLoad();
+                }
+                else
+                    MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+                MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion
+
+        #region METHODS
+
         private void Search()
         {
             dgvPacient.DataSource = null;
@@ -59,24 +76,17 @@ namespace Menu
             dgvPacient.DataSource = Pacient.Pacients.ToList();
         }
 
-    private void btndelete_Click(object sender, EventArgs e)
-    {
-        Pacient selected = Selected();
-        if (selected != null)
+        private Pacient Selected()
         {
-            if (Pacient.Delete(selected))
-            {
-                MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DGVLoad();
-            }
-            else
-                MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (dgvPacient.CurrentRow != null)
+                return dgvPacient.CurrentRow.DataBoundItem as Pacient;
+            return null;
         }
-        else
-            MessageBox.Show("Select pacient to delete.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-    }
 
-       
+        #endregion
+
+
+
     }
 
 }

@@ -13,7 +13,6 @@ namespace Menu
     public partial class NewDoctor : Form
     {
         Doctor obj, newDoc;
-        #region EVENTS
         public NewDoctor(Doctor modifyDoctor = null)
         {
             InitializeComponent();
@@ -23,6 +22,8 @@ namespace Menu
                 Modify(obj);
             }
         }
+
+        #region EVENTS
         private void NewDoctor_Load(object sender, EventArgs e)
         {
             cmbDocumentType.DataSource = null;

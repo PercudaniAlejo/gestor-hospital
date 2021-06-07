@@ -17,12 +17,18 @@ namespace Menu
         {
             InitializeComponent();
         }
+        #region EVENTS
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             Save();
             Clear();
         }
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+        #endregion
         #region METHODS
         private void Save()
         {
@@ -46,9 +52,5 @@ namespace Menu
 
         #endregion
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Clear();
-        }
     }
 }

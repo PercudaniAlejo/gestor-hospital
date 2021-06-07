@@ -12,11 +12,11 @@ namespace Menu
     public partial class formSpecialField : Form
     {
         SpecialField obj;
-        #region EVENTS
         public formSpecialField()
         {
             InitializeComponent();
         }
+        #region EVENTS
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {

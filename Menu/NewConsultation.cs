@@ -27,12 +27,18 @@ namespace Menu
             cmbdoctor.DataSource = null;
             cmbdoctor.DataSource = Doctor.Doctors;
         }
+        #region EVENTS
 
         private void btnconfirm_Click(object sender, EventArgs e)
         {
             Save();
             Clear();
         }
+
+        #endregion
+
+        #region METHODS
+
         private void Save()
         {
             if (obj == null)
@@ -64,6 +70,7 @@ namespace Menu
             cmbPaciente.SelectedItem = obj.Pacient;
             dtpCD.Value = obj.ConsultationDate;
         }
+        #endregion
 
     }
 }

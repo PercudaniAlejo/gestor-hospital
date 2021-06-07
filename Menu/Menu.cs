@@ -33,6 +33,9 @@ namespace Menu
             #endregion
 
         }
+
+        #region EVENTS
+
         private void btnPacient_Click(object sender, EventArgs e)
         {
             PacientMenu f = new PacientMenu();
@@ -57,5 +60,7 @@ namespace Menu
             f.ShowDialog();
 
         }
+
+        #endregion
     }
 }
