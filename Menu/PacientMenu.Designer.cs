@@ -36,7 +36,13 @@ namespace Menu
             this.btnedit = new System.Windows.Forms.Button();
             this.btnFilterPacient = new System.Windows.Forms.Button();
             this.btnNewPacient = new System.Windows.Forms.Button();
+            this.dgvHealthInsurence = new System.Windows.Forms.DataGridView();
+            this.dgvContact = new System.Windows.Forms.DataGridView();
+            this.dgvLocation = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHealthInsurence)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContact)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocation)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPacient
@@ -114,11 +120,38 @@ namespace Menu
             this.btnNewPacient.UseVisualStyleBackColor = false;
             this.btnNewPacient.Click += new System.EventHandler(this.btnNewPacient_Click);
             // 
+            // dgvHealthInsurence
+            // 
+            this.dgvHealthInsurence.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHealthInsurence.Location = new System.Drawing.Point(12, 382);
+            this.dgvHealthInsurence.Name = "dgvHealthInsurence";
+            this.dgvHealthInsurence.Size = new System.Drawing.Size(307, 62);
+            this.dgvHealthInsurence.TabIndex = 11;
+            // 
+            // dgvContact
+            // 
+            this.dgvContact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvContact.Location = new System.Drawing.Point(336, 382);
+            this.dgvContact.Name = "dgvContact";
+            this.dgvContact.Size = new System.Drawing.Size(296, 62);
+            this.dgvContact.TabIndex = 12;
+            // 
+            // dgvLocation
+            // 
+            this.dgvLocation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLocation.Location = new System.Drawing.Point(648, 382);
+            this.dgvLocation.Name = "dgvLocation";
+            this.dgvLocation.Size = new System.Drawing.Size(249, 62);
+            this.dgvLocation.TabIndex = 13;
+            // 
             // PacientMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 380);
+            this.ClientSize = new System.Drawing.Size(909, 463);
+            this.Controls.Add(this.dgvLocation);
+            this.Controls.Add(this.dgvContact);
+            this.Controls.Add(this.dgvHealthInsurence);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnFilterPacient);
@@ -126,12 +159,14 @@ namespace Menu
             this.Controls.Add(this.dgvPacient);
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(925, 419);
             this.MinimumSize = new System.Drawing.Size(925, 419);
             this.Name = "PacientMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pacient Menu";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHealthInsurence)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContact)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +180,8 @@ namespace Menu
         private System.Windows.Forms.TextBox txtFilterPacient;
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.DataGridView dgvHealthInsurence;
+        private System.Windows.Forms.DataGridView dgvContact;
+        private System.Windows.Forms.DataGridView dgvLocation;
     }
 }

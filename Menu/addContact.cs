@@ -17,7 +17,7 @@ namespace Menu
         {
             InitializeComponent();
             int age = DateTime.Today.AddTicks(-fecNac.Ticks).Year - 1;
-            if (age > 18)
+            if (age >= 18)
                 pnl1mas18.Enabled = false;
             else
                 pnl1mas18.Enabled = true;
