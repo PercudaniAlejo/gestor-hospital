@@ -38,7 +38,7 @@ namespace CapaNegocio
         #region Methods
         public override string ToString()
         {
-            return name + "" + surname + "" + dateofBirth.ToShortDateString() + "" + gender + "" + contact + "" + document + "" + documentNumber + "" + bloodType + "" + healthInsurance + "" + location;
+            return name + " " + surname;
         }
         public static bool Delete(Pacient pacient)
         {

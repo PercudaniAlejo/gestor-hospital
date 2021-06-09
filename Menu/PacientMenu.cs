@@ -78,20 +78,20 @@ namespace Menu
         }
         private void DGVLoad()
         {
-
+            /*
             dgvHealthInsurence.DataSource = null;
             dgvHealthInsurence.DataSource = HealthInsurance.Healthinsurances.ToList();
             dgvContact.DataSource = null;
             dgvContact.DataSource = Contact.Contacts.ToList();
             dgvLocation.DataSource = null;
             dgvLocation.DataSource = CapaNegocio.Location.Locations.ToList();
-
+            */
 
             dgvPacient.DataSource = null;
             dgvPacient.DataSource = Pacient.Pacients.ToList();
-            dgvPacient.Columns[5].Visible = false;
-            dgvPacient.Columns[6].Visible = false;
-            dgvPacient.Columns[8].Visible = false;
+            //dgvPacient.Columns[5].Visible = false;
+            //dgvPacient.Columns[6].Visible = false;
+            //dgvPacient.Columns[8].Visible = false;
         }
 
         private Pacient Selected()

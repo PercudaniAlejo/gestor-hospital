@@ -35,7 +35,7 @@ namespace Menu
             if (obj == null)
             {
                 CapaNegocio.Location.Obj = new CapaNegocio.Location(txtRoom.Text, txtBed.Text, dtpDateOfArrival.Value);
-                CapaNegocio.Location.Locations.Add(CapaNegocio.Location.Obj);
+               // CapaNegocio.Location.Locations.Add(CapaNegocio.Location.Obj);
                 this.Close();
             }
             else

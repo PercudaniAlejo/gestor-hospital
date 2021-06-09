@@ -45,7 +45,7 @@ namespace Menu
             if (c == null)
             {
                 Contact.Obj = new Contact(txtEmail.Text, (int)nudNP.Value,(int)nudNP2.Value,txttutor.Text);
-                Contact.Contacts.Add(Contact.Obj);
+                //Contact.Contacts.Add(Contact.Obj);
                 this.Close();
             }
             else
