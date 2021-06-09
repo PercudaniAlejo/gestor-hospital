@@ -7,18 +7,19 @@ namespace CapaNegocio
 {
     public class Location
     {
-        #region Var
+        #region Var 
+        private string room;
         private string assignedbed;
         private DateTime dateofarrival;
-        private string room;
+
         private static List<Location> locations = new List<Location>();
         static CapaNegocio.Location obj;
         #endregion
 
-        #region Properties
+        #region Properties 
+        public string Room { get => room; set => room = value; }
         public string Assignedbed { get => assignedbed; set => assignedbed = value; }
         public DateTime Dateofarrival { get => dateofarrival; set => dateofarrival = value; }
-        public string Room { get => room; set => room = value; }
         public static List<Location> Locations { get => locations; set => locations = value; }
         public static Location Obj { get => obj; set => obj = value; }
         #endregion
@@ -26,22 +27,24 @@ namespace CapaNegocio
         #region Methods
         public override string ToString()
         {
-            return assignedbed + " " + dateofarrival.ToShortDateString() + " " + room;
+            return room + " " + assignedbed + " " + dateofarrival.ToShortDateString();
         }
         #endregion
 
         #region Builders
         public Location()
         {
+            room = "Default";
             assignedbed = "Default";
             dateofarrival = new DateTime(2021, 1, 1);
-            room = "Default";
+
         }
-        public Location(string assignedbed, DateTime dateofarrival, string room)
+        public Location(string room, string assignedbed, DateTime dateofarrival)
         {
+            this.room = room;
             this.assignedbed = assignedbed;
             this.dateofarrival = dateofarrival;
-            this.room = room;
+
         }
         #endregion
     }

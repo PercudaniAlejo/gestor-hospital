@@ -45,13 +45,15 @@ namespace Menu
             if (c == null)
             {
                 Contact.Obj = new Contact(txtEmail.Text, (int)nudNP.Value,(int)nudNP2.Value,txttutor.Text);
+                Contact.Contacts.Add(Contact.Obj);
+                this.Close();
             }
             else
             {
                 c.Mail = txtEmail.Text;
                 c.NumberPhone = (int)nudNP.Value;
                 c.TutorsPhone = (int)nudNP2.Value;
-                c.Tutor1 = txttutor.Text;
+                c.Tutor = txttutor.Text;
 
             }
 

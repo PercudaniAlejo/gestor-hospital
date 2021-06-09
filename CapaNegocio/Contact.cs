@@ -21,7 +21,7 @@ namespace CapaNegocio
         public int NumberPhone { get => numberPhone; set => numberPhone = value; }
         public int TutorsPhone { get => tutorsPhone; set => tutorsPhone = value; }
         public static List<Contact> Contacts { get => contacts; set => contacts = value; }
-        public string Tutor1 { get => tutor; set => tutor = value; }
+        public string Tutor { get => tutor; set => tutor = value; }
         public static Contact Obj { get => obj; set => obj = value; }
 
         #endregion
