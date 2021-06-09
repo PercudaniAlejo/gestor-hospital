@@ -17,21 +17,9 @@ namespace Menu
         public newPaciente(Pacient objpac = null)
         {
             InitializeComponent();
-
-            if (objpac != null)
-            {
-                obj = objpac;
-                modify(obj);
-            }
-            cmbgender.SelectedItem = null;
-            cmbBloodType.SelectedItem = null;
-            cmbDocumentType.SelectedItem = null;
+            obj = objpac;
         }
         #region events
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-            Save();
-        }
 
         private void newPaciente_Load(object sender, EventArgs e)
         {
@@ -41,6 +29,20 @@ namespace Menu
             cmbgender.DataSource = Gender.Gen;
             cmbDocumentType.DataSource = null;
             cmbDocumentType.DataSource = Document.DocTypes;
+            if (obj!= null)
+            {
+                modify(obj);
+            }
+        }
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if (Control())
+                MessageBox.Show("Error. Empty fields.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                Save();
+                Clean();
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -101,14 +103,23 @@ namespace Menu
             cmbDocumentType.SelectedItem = null;
             cmbgender.SelectedItem = null;
         }
+        private bool Control()
+        {
+            if (txtName.Text == "" ||
+                txtSurname.Text == "" ||
+                nudDocumentNum.Value == 0)
+                return true;           
+            return false;
+        }
+
         private void modify(Pacient obj)
         {
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
             nudDocumentNum.Value = obj.DocumentNumber;
-            cmbBloodType.SelectedItem = obj.BloodType;
-            cmbDocumentType.SelectedItem = obj.Document;
-            cmbgender.SelectedItem = obj.Gender;
+            cmbBloodType.Text = obj.BloodType.ToString();
+            cmbDocumentType.Text = obj.Document.ToString();
+            cmbgender.Text = obj.Gender.ToString();
             dateDateOfBirth.Value = obj.DateofBirth;
         }
 

@@ -31,8 +31,12 @@ namespace Menu
 
         private void btnconfirm_Click(object sender, EventArgs e)
         {
-            Save();
-            Clear();
+            if (Control())
+                MessageBox.Show("Error. Empty fields.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else { 
+                Save();
+                Clear();
+            }
         }
 
         #endregion
@@ -56,6 +60,16 @@ namespace Menu
                 obj.ConsultationDate = dtpCD.Value;
             }
         }
+        private bool Control() {
+            if (txtdescrip.Text == "" ||
+                cmbdoctor.SelectedItem == null ||
+                cmbPaciente.SelectedItem == null)
+            {
+                return true;
+            }
+            return false;
+        }
+
         private void Clear()
         {
             txtdescrip.Text = "";

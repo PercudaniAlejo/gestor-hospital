@@ -41,8 +41,13 @@ namespace Menu
         }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            Save();
-            Clear();
+            if (Control())
+                MessageBox.Show("Error. Empty fields.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                Save();
+                Clear();
+            }
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -78,6 +83,16 @@ namespace Menu
             cmbDocumentType.SelectedItem = null;
             cmbSpecialField.SelectedItem = null;
         }
+
+        private bool Control()
+        {
+            if (txtName.Text == "" ||
+                txtSurname.Text == "" ||
+                nudDocumentNum.Value == 0)
+                return true;
+            return false;
+        }
+
         private void Modify(Doctor modifyDoctor) {
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;

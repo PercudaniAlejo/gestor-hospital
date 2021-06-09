@@ -66,8 +66,15 @@ namespace Menu
 
         private void Search()
         {
-            dgvPacient.DataSource = null;
-            dgvPacient.DataSource = Pacient.Search(txtFilterPacient.Text);
+            try
+            {
+                dgvPacient.DataSource = null; 
+                dgvPacient.DataSource = Pacient.Search(txtFilterPacient.Text);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void DGVLoad()
         {

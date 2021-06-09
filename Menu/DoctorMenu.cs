@@ -27,7 +27,9 @@ namespace Menu
         }
         private void btnFilterDoc_Click(object sender, EventArgs e)
         {
-            Search();
+                Search();
+         
+
         }
         private void btneditdoc_Click(object sender, EventArgs e)
         {

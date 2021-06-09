@@ -53,10 +53,18 @@ namespace CapaNegocio
 
             foreach (Pacient e in Pacient.pacients)
             {
+                    if (e.HealthInsurance.ToString() == null ||
+                        e.Contact.ToString() == null ||
+                        e.Location.ToString() == null)
+                {
+
+                }else
+                { 
                     if (e.Name.ToLower().Contains(PacientSearch) || e.Surname.ToLower().Contains(PacientSearch) || e.HealthInsurance.ToString().Contains(PacientSearch) ||
                     e.Contact.ToString().Contains(PacientSearch) || e.BloodType.ToString().Contains(PacientSearch) || e.DateofBirth.ToString().Contains(PacientSearch) || e.Document.ToString().Contains(PacientSearch) ||
                     e.DocumentNumber.ToString().Contains(PacientSearch) || e.Gender.ToString().Contains(PacientSearch) || e.DocumentNumber.ToString() == PacientSearch || e.Location.ToString().ToLower().Contains(PacientSearch))
                     PacientFound.Add(e);
+                }
             }
 
             return PacientFound;

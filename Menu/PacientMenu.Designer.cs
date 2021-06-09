@@ -44,13 +44,12 @@ namespace Menu
             this.dgvPacient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPacient.Location = new System.Drawing.Point(12, 65);
             this.dgvPacient.Name = "dgvPacient";
-            this.dgvPacient.Size = new System.Drawing.Size(499, 299);
+            this.dgvPacient.Size = new System.Drawing.Size(885, 299);
             this.dgvPacient.TabIndex = 1;
-           
             // 
             // txtFilterPacient
             // 
-            this.txtFilterPacient.Location = new System.Drawing.Point(121, 28);
+            this.txtFilterPacient.Location = new System.Drawing.Point(488, 31);
             this.txtFilterPacient.Name = "txtFilterPacient";
             this.txtFilterPacient.Size = new System.Drawing.Size(271, 20);
             this.txtFilterPacient.TabIndex = 7;
@@ -63,7 +62,7 @@ namespace Menu
             this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndelete.FlatAppearance.BorderSize = 0;
             this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndelete.Location = new System.Drawing.Point(48, 370);
+            this.btndelete.Location = new System.Drawing.Point(51, 25);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(30, 30);
             this.btndelete.TabIndex = 10;
@@ -78,7 +77,7 @@ namespace Menu
             this.btnedit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnedit.FlatAppearance.BorderSize = 0;
             this.btnedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnedit.Location = new System.Drawing.Point(12, 370);
+            this.btnedit.Location = new System.Drawing.Point(15, 25);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(30, 30);
             this.btnedit.TabIndex = 9;
@@ -93,7 +92,7 @@ namespace Menu
             this.btnFilterPacient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFilterPacient.FlatAppearance.BorderSize = 0;
             this.btnFilterPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFilterPacient.Location = new System.Drawing.Point(398, 25);
+            this.btnFilterPacient.Location = new System.Drawing.Point(765, 28);
             this.btnFilterPacient.Name = "btnFilterPacient";
             this.btnFilterPacient.Size = new System.Drawing.Size(25, 25);
             this.btnFilterPacient.TabIndex = 8;
@@ -108,7 +107,7 @@ namespace Menu
             this.btnNewPacient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewPacient.FlatAppearance.BorderSize = 0;
             this.btnNewPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewPacient.Location = new System.Drawing.Point(470, 370);
+            this.btnNewPacient.Location = new System.Drawing.Point(867, 25);
             this.btnNewPacient.Name = "btnNewPacient";
             this.btnNewPacient.Size = new System.Drawing.Size(30, 30);
             this.btnNewPacient.TabIndex = 0;
@@ -119,7 +118,7 @@ namespace Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 406);
+            this.ClientSize = new System.Drawing.Size(909, 380);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnFilterPacient);
@@ -127,8 +126,8 @@ namespace Menu
             this.Controls.Add(this.dgvPacient);
             this.Controls.Add(this.btnNewPacient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(541, 445);
-            this.MinimumSize = new System.Drawing.Size(541, 445);
+            this.MaximumSize = new System.Drawing.Size(925, 419);
+            this.MinimumSize = new System.Drawing.Size(925, 419);
             this.Name = "PacientMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pacient Menu";

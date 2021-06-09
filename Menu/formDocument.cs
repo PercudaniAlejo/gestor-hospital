@@ -20,8 +20,13 @@ namespace Menu
         }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            Save();
-            Clear();
+            if (Control())
+                MessageBox.Show("Error. Empty fields.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                Save();
+                Clear();
+            }
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -44,6 +49,12 @@ namespace Menu
         }
         private void Clear() {
             txtDocumentType.Text = "";
+        }
+
+        private bool Control() {
+            if (txtDocumentType.Text == "")
+                return true;
+            return false;
         }
 
         #endregion
