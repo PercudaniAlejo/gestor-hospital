@@ -142,6 +142,7 @@ namespace Menu
             this.btncancel.Size = new System.Drawing.Size(30, 30);
             this.btncancel.TabIndex = 9;
             this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // NewConsultation
             // 

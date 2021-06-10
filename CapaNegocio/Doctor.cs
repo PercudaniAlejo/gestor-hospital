@@ -52,7 +52,7 @@ namespace CapaNegocio
         #region METHODS
         public override string ToString()
         {
-            return name + "" + surname + "" + dateOfBirth.ToShortDateString() + "" + specialField + "" + documentType + "" + documentNumber;
+            return name + " " + surname;
         }
         public static bool Delete(Doctor newDoc)
         {

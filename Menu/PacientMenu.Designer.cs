@@ -39,6 +39,7 @@ namespace Menu
             this.dgvHealthInsurence = new System.Windows.Forms.DataGridView();
             this.dgvContact = new System.Windows.Forms.DataGridView();
             this.dgvLocation = new System.Windows.Forms.DataGridView();
+            this.btnDetalles = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHealthInsurence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContact)).BeginInit();
@@ -144,11 +145,22 @@ namespace Menu
             this.dgvLocation.Size = new System.Drawing.Size(249, 62);
             this.dgvLocation.TabIndex = 13;
             // 
+            // btnDetalles
+            // 
+            this.btnDetalles.Location = new System.Drawing.Point(823, 450);
+            this.btnDetalles.Name = "btnDetalles";
+            this.btnDetalles.Size = new System.Drawing.Size(74, 41);
+            this.btnDetalles.TabIndex = 14;
+            this.btnDetalles.Text = "Detalles";
+            this.btnDetalles.UseVisualStyleBackColor = true;
+            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
+            // 
             // PacientMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 463);
+            this.ClientSize = new System.Drawing.Size(955, 503);
+            this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.dgvLocation);
             this.Controls.Add(this.dgvContact);
             this.Controls.Add(this.dgvHealthInsurence);
@@ -183,5 +195,6 @@ namespace Menu
         private System.Windows.Forms.DataGridView dgvHealthInsurence;
         private System.Windows.Forms.DataGridView dgvContact;
         private System.Windows.Forms.DataGridView dgvLocation;
+        private System.Windows.Forms.Button btnDetalles;
     }
 }

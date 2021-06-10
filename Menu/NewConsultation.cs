@@ -28,6 +28,10 @@ namespace Menu
             cmbdoctor.DataSource = Doctor.Doctors;
         }
         #region EVENTS
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
 
         private void btnconfirm_Click(object sender, EventArgs e)
         {
@@ -85,6 +89,5 @@ namespace Menu
             dtpCD.Value = obj.ConsultationDate;
         }
         #endregion
-
     }
 }

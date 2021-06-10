@@ -16,6 +16,7 @@ namespace Menu
         {
             InitializeComponent();
             DGVLoad();
+            //vSync();
         }
         #region EVENTS
 
@@ -29,6 +30,7 @@ namespace Menu
             newPaciente newPaciente = new newPaciente();
             newPaciente.ShowDialog();
             DGVLoad();
+            //vSync();
         }
 
         private void btnedit_Click(object sender, EventArgs e)
@@ -37,6 +39,7 @@ namespace Menu
             newPaciente np = new newPaciente(objpac);
             np.ShowDialog();
             DGVLoad();
+            //vSync();
         }
 
         private void btnFilterPacient_Click(object sender, EventArgs e)
@@ -52,6 +55,7 @@ namespace Menu
                 {
                     MessageBox.Show("Pacient deleted succesfully.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DGVLoad();
+                    //vSync();
                 }
                 else
                     MessageBox.Show("Error.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -78,7 +82,6 @@ namespace Menu
         }
         private void DGVLoad()
         {
-
             dgvHealthInsurence.DataSource = null;
             dgvHealthInsurence.DataSource = HealthInsurance.Healthinsurances.ToList();
             dgvContact.DataSource = null;
@@ -86,25 +89,45 @@ namespace Menu
             dgvLocation.DataSource = null;
             dgvLocation.DataSource = CapaNegocio.Location.Locations.ToList();
 
-
             dgvPacient.DataSource = null;
             dgvPacient.DataSource = Pacient.Pacients.ToList();
             dgvPacient.Columns[5].Visible = false;
-            dgvPacient.Columns[6].Visible = false;
+            dgvPacient.Columns[9].Visible = false;
             dgvPacient.Columns[8].Visible = false;
         }
+
+        /*private void vSync() {
+            if (dgvPacient.CurrentRow != null)
+            {
+            int a = dgvPacient.CurrentCell.RowIndex;
+            //int x = dgvHealthInsurence.;
+            dgvHealthInsurence.Rows[a].Visible = false;
+            dgvContact.Rows[a].Visible = false;
+            dgvLocation.Rows[a].Visible = false;
+            }
+
+        }*/
 
         private Pacient Selected()
         {
             if (dgvPacient.CurrentRow != null)
                 return dgvPacient.CurrentRow.DataBoundItem as Pacient;
             return null;
+
+
         }
+
+
 
         #endregion
 
+        private void btnDetalles_Click(object sender, EventArgs e)
+        {
+            Pacient p = Selected();
+            dgvContact.DataSource = null;
+            dgvContact.DataSource = p.Contact;
 
-
+        }
     }
 
 }
