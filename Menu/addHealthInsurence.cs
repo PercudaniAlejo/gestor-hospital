@@ -24,7 +24,7 @@ namespace Menu
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             HealthInsurance.Obj = new HealthInsurance(txtName.Text,txtPlan.Text,(int)nudHealthInsurenceNum.Value,dateDueDate.Value,txtType.Text);
-            HealthInsurance.Healthinsurances.Add(HealthInsurance.Obj);
+           // HealthInsurance.Healthinsurances.Add(HealthInsurance.Obj);
             Clean();
             this.Close();
         }
