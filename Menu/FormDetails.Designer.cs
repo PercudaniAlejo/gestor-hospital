@@ -29,6 +29,7 @@ namespace Menu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetails));
             this.lblpacient = new System.Windows.Forms.Label();
             this.lblPS = new System.Windows.Forms.Label();
             this.lblContactoMail = new System.Windows.Forms.Label();
@@ -61,6 +62,8 @@ namespace Menu
             this.lblDDS = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTS = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblpacient
@@ -75,7 +78,7 @@ namespace Menu
             // lblPS
             // 
             this.lblPS.AutoSize = true;
-            this.lblPS.Location = new System.Drawing.Point(70, 44);
+            this.lblPS.Location = new System.Drawing.Point(61, 44);
             this.lblPS.Name = "lblPS";
             this.lblPS.Size = new System.Drawing.Size(13, 13);
             this.lblPS.TabIndex = 1;
@@ -84,7 +87,7 @@ namespace Menu
             // lblContactoMail
             // 
             this.lblContactoMail.AutoSize = true;
-            this.lblContactoMail.Location = new System.Drawing.Point(47, 168);
+            this.lblContactoMail.Location = new System.Drawing.Point(43, 168);
             this.lblContactoMail.Name = "lblContactoMail";
             this.lblContactoMail.Size = new System.Drawing.Size(13, 13);
             this.lblContactoMail.TabIndex = 3;
@@ -102,9 +105,10 @@ namespace Menu
             // lblmr
             // 
             this.lblmr.AutoSize = true;
+            this.lblmr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmr.Location = new System.Drawing.Point(3, 9);
             this.lblmr.Name = "lblmr";
-            this.lblmr.Size = new System.Drawing.Size(82, 13);
+            this.lblmr.Size = new System.Drawing.Size(112, 18);
             this.lblmr.TabIndex = 4;
             this.lblmr.Text = "Medical Record";
             // 
@@ -120,7 +124,7 @@ namespace Menu
             // lblDOBs
             // 
             this.lblDOBs.AutoSize = true;
-            this.lblDOBs.Location = new System.Drawing.Point(84, 71);
+            this.lblDOBs.Location = new System.Drawing.Point(82, 71);
             this.lblDOBs.Name = "lblDOBs";
             this.lblDOBs.Size = new System.Drawing.Size(13, 13);
             this.lblDOBs.TabIndex = 6;
@@ -138,7 +142,7 @@ namespace Menu
             // lblGS
             // 
             this.lblGS.AutoSize = true;
-            this.lblGS.Location = new System.Drawing.Point(63, 95);
+            this.lblGS.Location = new System.Drawing.Point(60, 95);
             this.lblGS.Name = "lblGS";
             this.lblGS.Size = new System.Drawing.Size(13, 13);
             this.lblGS.TabIndex = 8;
@@ -165,7 +169,7 @@ namespace Menu
             // lblNDs
             // 
             this.lblNDs.AutoSize = true;
-            this.lblNDs.Location = new System.Drawing.Point(140, 122);
+            this.lblNDs.Location = new System.Drawing.Point(111, 122);
             this.lblNDs.Name = "lblNDs";
             this.lblNDs.Size = new System.Drawing.Size(13, 13);
             this.lblNDs.TabIndex = 11;
@@ -183,7 +187,7 @@ namespace Menu
             // lblBTS
             // 
             this.lblBTS.AutoSize = true;
-            this.lblBTS.Location = new System.Drawing.Point(82, 146);
+            this.lblBTS.Location = new System.Drawing.Point(79, 146);
             this.lblBTS.Name = "lblBTS";
             this.lblBTS.Size = new System.Drawing.Size(13, 13);
             this.lblBTS.TabIndex = 13;
@@ -201,7 +205,7 @@ namespace Menu
             // lblPNS
             // 
             this.lblPNS.AutoSize = true;
-            this.lblPNS.Location = new System.Drawing.Point(98, 200);
+            this.lblPNS.Location = new System.Drawing.Point(96, 200);
             this.lblPNS.Name = "lblPNS";
             this.lblPNS.Size = new System.Drawing.Size(13, 13);
             this.lblPNS.TabIndex = 15;
@@ -219,7 +223,7 @@ namespace Menu
             // lblTNS
             // 
             this.lblTNS.AutoSize = true;
-            this.lblTNS.Location = new System.Drawing.Point(94, 222);
+            this.lblTNS.Location = new System.Drawing.Point(90, 222);
             this.lblTNS.Name = "lblTNS";
             this.lblTNS.Size = new System.Drawing.Size(13, 13);
             this.lblTNS.TabIndex = 17;
@@ -237,7 +241,7 @@ namespace Menu
             // lblTPS
             // 
             this.lblTPS.AutoSize = true;
-            this.lblTPS.Location = new System.Drawing.Point(94, 248);
+            this.lblTPS.Location = new System.Drawing.Point(90, 248);
             this.lblTPS.Name = "lblTPS";
             this.lblTPS.Size = new System.Drawing.Size(13, 13);
             this.lblTPS.TabIndex = 19;
@@ -255,16 +259,17 @@ namespace Menu
             // lblHI
             // 
             this.lblHI.AutoSize = true;
-            this.lblHI.Location = new System.Drawing.Point(3, 317);
+            this.lblHI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHI.Location = new System.Drawing.Point(3, 303);
             this.lblHI.Name = "lblHI";
-            this.lblHI.Size = new System.Drawing.Size(88, 13);
+            this.lblHI.Size = new System.Drawing.Size(118, 18);
             this.lblHI.TabIndex = 22;
             this.lblHI.Text = "Health Insurance";
             // 
             // lblN
             // 
             this.lblN.AutoSize = true;
-            this.lblN.Location = new System.Drawing.Point(12, 345);
+            this.lblN.Location = new System.Drawing.Point(12, 336);
             this.lblN.Name = "lblN";
             this.lblN.Size = new System.Drawing.Size(38, 13);
             this.lblN.TabIndex = 23;
@@ -273,7 +278,7 @@ namespace Menu
             // lblNS
             // 
             this.lblNS.AutoSize = true;
-            this.lblNS.Location = new System.Drawing.Point(56, 345);
+            this.lblNS.Location = new System.Drawing.Point(52, 336);
             this.lblNS.Name = "lblNS";
             this.lblNS.Size = new System.Drawing.Size(13, 13);
             this.lblNS.TabIndex = 24;
@@ -282,7 +287,7 @@ namespace Menu
             // lblP
             // 
             this.lblP.AutoSize = true;
-            this.lblP.Location = new System.Drawing.Point(12, 368);
+            this.lblP.Location = new System.Drawing.Point(12, 359);
             this.lblP.Name = "lblP";
             this.lblP.Size = new System.Drawing.Size(31, 13);
             this.lblP.TabIndex = 25;
@@ -291,7 +296,7 @@ namespace Menu
             // lblPlanS
             // 
             this.lblPlanS.AutoSize = true;
-            this.lblPlanS.Location = new System.Drawing.Point(49, 368);
+            this.lblPlanS.Location = new System.Drawing.Point(46, 359);
             this.lblPlanS.Name = "lblPlanS";
             this.lblPlanS.Size = new System.Drawing.Size(13, 13);
             this.lblPlanS.TabIndex = 26;
@@ -300,7 +305,7 @@ namespace Menu
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 393);
+            this.label3.Location = new System.Drawing.Point(12, 384);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 27;
@@ -309,7 +314,7 @@ namespace Menu
             // lblNumberS
             // 
             this.lblNumberS.AutoSize = true;
-            this.lblNumberS.Location = new System.Drawing.Point(65, 393);
+            this.lblNumberS.Location = new System.Drawing.Point(62, 384);
             this.lblNumberS.Name = "lblNumberS";
             this.lblNumberS.Size = new System.Drawing.Size(13, 13);
             this.lblNumberS.TabIndex = 28;
@@ -318,7 +323,7 @@ namespace Menu
             // lblDD
             // 
             this.lblDD.AutoSize = true;
-            this.lblDD.Location = new System.Drawing.Point(210, 345);
+            this.lblDD.Location = new System.Drawing.Point(210, 336);
             this.lblDD.Name = "lblDD";
             this.lblDD.Size = new System.Drawing.Size(56, 13);
             this.lblDD.TabIndex = 29;
@@ -327,7 +332,7 @@ namespace Menu
             // lblDDS
             // 
             this.lblDDS.AutoSize = true;
-            this.lblDDS.Location = new System.Drawing.Point(272, 345);
+            this.lblDDS.Location = new System.Drawing.Point(268, 336);
             this.lblDDS.Name = "lblDDS";
             this.lblDDS.Size = new System.Drawing.Size(13, 13);
             this.lblDDS.TabIndex = 30;
@@ -336,7 +341,7 @@ namespace Menu
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(207, 365);
+            this.label4.Location = new System.Drawing.Point(207, 356);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 31;
@@ -345,17 +350,28 @@ namespace Menu
             // lblTS
             // 
             this.lblTS.AutoSize = true;
-            this.lblTS.Location = new System.Drawing.Point(243, 363);
+            this.lblTS.Location = new System.Drawing.Point(241, 354);
             this.lblTS.Name = "lblTS";
             this.lblTS.Size = new System.Drawing.Size(13, 13);
             this.lblTS.TabIndex = 32;
             this.lblTS.Text = "_";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Menu.Properties.Resources._1_80_icon_icons_com_65644;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(279, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 62);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 450);
+            this.ClientSize = new System.Drawing.Size(354, 407);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTS);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblDDS);
@@ -388,9 +404,14 @@ namespace Menu
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.lblPS);
             this.Controls.Add(this.lblpacient);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(370, 446);
+            this.MinimumSize = new System.Drawing.Size(370, 446);
             this.Name = "FormDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Details";
             this.Load += new System.EventHandler(this.FormEjemplo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,5 +451,6 @@ namespace Menu
         private System.Windows.Forms.Label lblDDS;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTS;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

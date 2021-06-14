@@ -219,5 +219,11 @@
   <ItemGroup>
     <None Include="Resources\biggarbagebin_121980.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_details-48_46573.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-80_icon-icons.com_65644.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

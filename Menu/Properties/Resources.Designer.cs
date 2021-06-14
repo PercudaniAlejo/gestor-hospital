@@ -73,6 +73,16 @@ namespace Menu.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_80_icon_icons_com_65644 {
+            get {
+                object obj = ResourceManager.GetObject("1-80_icon-icons.com_65644", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Add_Pacient {
             get {
                 object obj = ResourceManager.GetObject("Add Pacient", resourceCulture);
@@ -156,6 +166,16 @@ namespace Menu.Properties {
         internal static System.Drawing.Bitmap Tick {
             get {
                 object obj = ResourceManager.GetObject("Tick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_details_48_46573 {
+            get {
+                object obj = ResourceManager.GetObject("view_details-48_46573", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
