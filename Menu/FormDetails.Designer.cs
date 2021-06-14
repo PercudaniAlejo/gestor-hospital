@@ -32,7 +32,7 @@ namespace Menu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetails));
             this.lblpacient = new System.Windows.Forms.Label();
             this.lblPS = new System.Windows.Forms.Label();
-            this.lblContactoMail = new System.Windows.Forms.Label();
+            this.lblMails = new System.Windows.Forms.Label();
             this.lblMail = new System.Windows.Forms.Label();
             this.lblmr = new System.Windows.Forms.Label();
             this.lblDOB = new System.Windows.Forms.Label();
@@ -84,8 +84,14 @@ namespace Menu
             this.lblPS.TabIndex = 1;
             this.lblPS.Text = "_";
             // 
-            // lblContactoMail
+            // lblMails
             // 
+            this.lblMails.AutoSize = true;
+            this.lblMails.Location = new System.Drawing.Point(47, 168);
+            this.lblMails.Name = "lblMails";
+            this.lblMails.Size = new System.Drawing.Size(13, 13);
+            this.lblMails.TabIndex = 3;
+            this.lblMails.Text = "_";
             this.lblContactoMail.AutoSize = true;
             this.lblContactoMail.Location = new System.Drawing.Point(43, 168);
             this.lblContactoMail.Name = "lblContactoMail";
@@ -400,7 +406,7 @@ namespace Menu
             this.Controls.Add(this.lblDOBs);
             this.Controls.Add(this.lblDOB);
             this.Controls.Add(this.lblmr);
-            this.Controls.Add(this.lblContactoMail);
+            this.Controls.Add(this.lblMails);
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.lblPS);
             this.Controls.Add(this.lblpacient);
@@ -421,7 +427,7 @@ namespace Menu
 
         private System.Windows.Forms.Label lblpacient;
         private System.Windows.Forms.Label lblPS;
-        private System.Windows.Forms.Label lblContactoMail;
+        private System.Windows.Forms.Label lblMails;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.Label lblmr;
         private System.Windows.Forms.Label lblDOB;
