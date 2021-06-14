@@ -27,7 +27,7 @@ namespace CapaNegocio
         #region Methods
         public override string ToString()
         {
-            return room + " " + assignedbed + " " + dateofarrival.ToShortDateString();
+            return "Room: " + room + ", " + "Bed: " + assignedbed + ", " + "Date Of arrival: " + dateofarrival.ToShortDateString();
         }
         #endregion
 
