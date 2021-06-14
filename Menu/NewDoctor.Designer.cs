@@ -85,6 +85,7 @@ namespace Menu
             this.dateDateOfBirth.Name = "dateDateOfBirth";
             this.dateDateOfBirth.Size = new System.Drawing.Size(192, 20);
             this.dateDateOfBirth.TabIndex = 32;
+            this.dateDateOfBirth.Value = new System.DateTime(2021, 6, 14, 0, 0, 0, 0);
             // 
             // cmbDocumentType
             // 
