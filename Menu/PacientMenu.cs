@@ -125,8 +125,21 @@ namespace Menu
         {
             Pacient p = Selected();
             dgvContact.DataSource = null;
-            dgvContact.DataSource = p.Contact;
 
+            dgvContact.DataSource = new List<Contact>() { p.Contact };
+            dgvHealthInsurence.DataSource = null;
+            dgvHealthInsurence.DataSource = new List<HealthInsurance>() { p.HealthInsurance };
+            dgvLocation.DataSource = null;
+            dgvLocation.DataSource = new List<Location>() { p.Location };
+
+            FormDetails f = new FormDetails(p);
+            f.ShowDialog();
+
+        }
+
+        private void dgvPacient_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
+        {
+            
         }
     }
 

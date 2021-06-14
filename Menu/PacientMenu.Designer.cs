@@ -53,6 +53,7 @@ namespace Menu
             this.dgvPacient.Name = "dgvPacient";
             this.dgvPacient.Size = new System.Drawing.Size(885, 299);
             this.dgvPacient.TabIndex = 1;
+            this.dgvPacient.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dgvPacient_RowStateChanged);
             // 
             // txtFilterPacient
             // 
