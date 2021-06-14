@@ -22,7 +22,9 @@ namespace Menu
         private void FormEjemplo_Load(object sender, EventArgs e)
         {
             lblContactoMail.Text = actual.Contact.Mail;
-            lblPaciente.Text = actual.ToString();
+            lblPS.Text = actual.ToString();
         }
+
+       
     }
 }
