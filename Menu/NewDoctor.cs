@@ -16,11 +16,7 @@ namespace Menu
         public NewDoctor(Doctor modifyDoctor = null)
         {
             InitializeComponent();
-            if (modifyDoctor != null)
-            {
-                obj = modifyDoctor;
-                Modify(obj);
-            }
+            obj = modifyDoctor;
         }
 
         #region EVENTS
@@ -31,6 +27,10 @@ namespace Menu
 
             cmbSpecialField.DataSource = null;
             cmbSpecialField.DataSource = SpecialField.Specialities;
+            if (obj != null)
+            {
+                Modify(obj);
+            }
         }
         private void btnfield_Click(object sender, EventArgs e)
         {
@@ -92,15 +92,16 @@ namespace Menu
                 return true;
             return false;
         }
-
-        private void Modify(Doctor modifyDoctor) {
+        private void Modify(Doctor obj) {
             txtName.Text = obj.Name;
             txtSurname.Text = obj.Surname;
             nudDocumentNum.Value = obj.DocumentNumber;
-            cmbDocumentType.SelectedItem = obj.DocumentType;
-            cmbSpecialField.SelectedItem = obj.SpecialField;
+            cmbDocumentType.Text = obj.DocumentType.ToString();
+            cmbSpecialField.Text = obj.SpecialField.ToString();
             dateDateOfBirth.Value = obj.DateOfBirth;
         }
         #endregion
+
+
     }
 }
