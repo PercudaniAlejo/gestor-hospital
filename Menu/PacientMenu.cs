@@ -74,6 +74,9 @@ namespace Menu
             {
                 dgvPacient.DataSource = null;
                 dgvPacient.DataSource = Pacient.Search(txtFilterPacient.Text);
+                dgvPacient.Columns[5].Visible = false;
+                dgvPacient.Columns[9].Visible = false;
+                dgvPacient.Columns[8].Visible = false;
             }
             catch (Exception e)
             {
