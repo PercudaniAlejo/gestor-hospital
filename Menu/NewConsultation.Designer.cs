@@ -103,6 +103,7 @@ namespace Menu
             this.dtpCD.Name = "dtpCD";
             this.dtpCD.Size = new System.Drawing.Size(164, 20);
             this.dtpCD.TabIndex = 6;
+            this.dtpCD.Value = new System.DateTime(2021, 6, 17, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -148,7 +149,7 @@ namespace Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 174);
+            this.ClientSize = new System.Drawing.Size(405, 175);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnconfirm);
             this.Controls.Add(this.label1);
